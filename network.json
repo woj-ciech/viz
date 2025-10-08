@@ -1,0 +1,1739 @@
+{
+  "nodes": [
+    {
+      "id": "STOWARZYSZENIE NA RZECZ NOWEJ KONSTYTUCJI KUKIZ'15",
+      "type": "organization",
+      "org_id": 599414,
+      "miasto": "Wrocław",
+      "krs": "0000599414",
+      "nip": "8982216779",
+      "regon": "363649475",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "Piotr Apel",
+      "type": "person",
+      "name": "Piotr Apel",
+      "party": "Kukiz'15",
+      "district": "9  Łódź",
+      "profession": "dziennikarz",
+      "birth_date": "08-02-1984",
+      "birth_place": "Warszawa",
+      "rejestr_id": "401323"
+    },
+    {
+      "id": "Marek Jakubiak",
+      "type": "person",
+      "name": "Marek Jakubiak",
+      "party": "Kukiz'15",
+      "district": "16  Płock",
+      "profession": "przedsiębiorca",
+      "birth_date": "30-04-1959",
+      "birth_place": "Warszawa",
+      "rejestr_id": "1338033"
+    },
+    {
+      "id": "Stefan Romecki",
+      "type": "person",
+      "name": "Stefan Romecki",
+      "party": "Kukiz'15",
+      "district": "40  Koszalin",
+      "profession": "emeryt",
+      "birth_date": "02-09-1950",
+      "birth_place": "Koszalin",
+      "rejestr_id": "1128783"
+    },
+    {
+      "id": "glowna_osoba:462757",
+      "type": "glowna_osoba",
+      "glowna_id": "462757",
+      "label": "Paweł Piotr Kukiz"
+    },
+    {
+      "id": "Jarosław Porwich",
+      "type": "person",
+      "name": "Jarosław Porwich",
+      "party": "Kukiz'15",
+      "district": "8  Zielona Góra",
+      "profession": "specjalista administracji publicznej",
+      "birth_date": "17-08-1966",
+      "birth_place": "Gorzów Wielkopolski",
+      "rejestr_id": "1001294"
+    },
+    {
+      "id": "Grzegorz Długi",
+      "type": "person",
+      "name": "Grzegorz Długi",
+      "party": "Kukiz'15",
+      "district": "31  Katowice",
+      "profession": "adwokat",
+      "birth_date": "16-06-1955",
+      "birth_place": "Katowice",
+      "rejestr_id": "994061"
+    },
+    {
+      "id": "Stanisław Tyszka",
+      "type": "person",
+      "name": "Stanisław Tyszka",
+      "party": "Kukiz'15",
+      "district": "20  Warszawa",
+      "profession": "wykładowca akademicki",
+      "birth_date": "11-04-1979",
+      "birth_place": "Warszawa",
+      "rejestr_id": "401301"
+    },
+    {
+      "id": "Paweł Kukiz",
+      "type": "person",
+      "name": "Paweł Kukiz",
+      "party": "Kukiz'15",
+      "district": "19  Warszawa",
+      "profession": "muzyk",
+      "birth_date": "24-06-1963",
+      "birth_place": "Paczków",
+      "rejestr_id": "462757"
+    },
+    {
+      "id": "OKO I UCHO",
+      "type": "organization",
+      "org_id": 367813,
+      "miasto": "Warszawa",
+      "krs": "0000367813",
+      "nip": "5252490696",
+      "regon": "142626838",
+      "pkd_przewazajace_dzial": "Działalność związana z produkcją filmów, nagrań wideo, programów telewizyjnych, nagrań dźwiękowych i muzycznych",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "PWC OKO I UCHO",
+      "type": "organization",
+      "org_id": 416178,
+      "miasto": "Warszawa",
+      "krs": "0000416178",
+      "nip": "5213629693",
+      "regon": "146067583",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "FUNDACJA \"AKTYWIZACJA BEZ GRANIC\"",
+      "type": "organization",
+      "org_id": 821895,
+      "miasto": "Warszawa",
+      "krs": "0000821895",
+      "nip": "7010967569",
+      "regon": "385397950",
+      "pkd_przewazajace_dzial": "Działalność związana z zatrudnieniem",
+      "czy_dofinansowana_przez_ue": true,
+      "czy_otrzymala_pomoc_publiczna": true,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "BROWAR LWÓWEK",
+      "type": "organization",
+      "org_id": 330597,
+      "miasto": "Lwówek Śląski",
+      "krs": "0000330597",
+      "nip": "5242678719",
+      "regon": "141817105",
+      "pkd_przewazajace_dzial": "Handel hurtowy, z wyłączeniem handlu pojazdami samochodowymi",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": true,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE REGIONALNYCH BROWARÓW POLSKICH",
+      "type": "organization",
+      "org_id": 501,
+      "miasto": "Olsztyn",
+      "krs": "0000000501",
+      "nip": null,
+      "regon": "510944344",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "BROWARY REGIONALNE JAKUBIAK",
+      "type": "organization",
+      "org_id": 289290,
+      "miasto": "Dziekanów Nowy",
+      "krs": "0000289290",
+      "nip": "5242627811",
+      "regon": "141155740",
+      "pkd_przewazajace_dzial": "Produkcja napojów",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": true,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "DARO",
+      "type": "organization",
+      "org_id": 39175,
+      "miasto": "Warszawa",
+      "krs": "0000039175",
+      "nip": "9521812461",
+      "regon": "014981777",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": true,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "ENDECJA",
+      "type": "organization",
+      "org_id": 634863,
+      "miasto": "Szczecin",
+      "krs": "0000634863",
+      "nip": "7792446665",
+      "regon": "365374137",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "BROWAR WIELKOPOLSKI W KROTOSZYNIE",
+      "type": "organization",
+      "org_id": 109006,
+      "miasto": "Krotoszyn",
+      "krs": "0000109006",
+      "nip": null,
+      "regon": "250489668",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "BROWAR CIECHAN",
+      "type": "organization",
+      "org_id": 278943,
+      "miasto": "Warszawa",
+      "krs": "0000278943",
+      "nip": "5661927386",
+      "regon": "140903363",
+      "pkd_przewazajace_dzial": "Działalność usługowa związana z wyżywieniem",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": true,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE IM. MARSZAŁKA JÓZEFA PIŁSUDSKIEGO",
+      "type": "organization",
+      "org_id": 37340,
+      "miasto": "Koszalin",
+      "krs": "0000037340",
+      "nip": "6692244832",
+      "regon": "330984765",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "TOWARZYSTWO WSPIERANIA ROZWOJU I RESTRUKTURYZACJI ROLNICTWA ORAZ PRZEMYSŁU ROLNO-SPOŻYWCZEGO",
+      "type": "organization",
+      "org_id": 179151,
+      "miasto": "Koszalin",
+      "krs": "0000179151",
+      "nip": null,
+      "regon": "330030942",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE KOMITET OBYWATELSKI MIASTA KOSZALINA",
+      "type": "organization",
+      "org_id": 225496,
+      "miasto": "Koszalin",
+      "krs": "0000225496",
+      "nip": "6692386673",
+      "regon": "320003189",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "KLUB ABSTYNENTA \"POMORZE\"",
+      "type": "organization",
+      "org_id": 160068,
+      "miasto": "Koszalin",
+      "krs": "0000160068",
+      "nip": "6692214481",
+      "regon": "330065515",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "FUNDACJA KUKIZ # ZMIENIAMY POLSKE",
+      "type": "organization",
+      "org_id": 565883,
+      "miasto": "Wrocław",
+      "krs": "0000565883",
+      "nip": "8982212586",
+      "regon": "361969419",
+      "pkd_przewazajace_dzial": "Badania naukowe i prace rozwojowe",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE NA RZECZ BUDOWY POMNIKA MARSZAŁKA JÓZEFA PIŁSUDSKIEGO",
+      "type": "organization",
+      "org_id": 297086,
+      "miasto": "Gorzów Wielkopolski",
+      "krs": "0000297086",
+      "nip": null,
+      "regon": null,
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "FUNDACJA RUCH MŁODZIEŻY NIEZALEŻNEJ",
+      "type": "organization",
+      "org_id": 1023463,
+      "miasto": "Gorzów Wielkopolski",
+      "krs": "0001023463",
+      "nip": "5993273101",
+      "regon": "524689450",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE \"DLA POLSKI\"",
+      "type": "organization",
+      "org_id": 738863,
+      "miasto": "Kraków",
+      "krs": "0000738863",
+      "nip": "6793171595",
+      "regon": "380718444",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "AGENCJA ROZWOJU PRZEMYSŁU",
+      "type": "organization",
+      "org_id": 37957,
+      "miasto": "Warszawa",
+      "krs": "0000037957",
+      "nip": "5260300204",
+      "regon": "006746410",
+      "pkd_przewazajace_dzial": "Finansowa działalność usługowa, z wyłączeniem ubezpieczeń i funduszów emerytalnych",
+      "czy_dofinansowana_przez_ue": true,
+      "czy_otrzymala_pomoc_publiczna": true,
+      "czy_spolka_skarbu_panstwa": true
+    },
+    {
+      "id": "RUSAKIEWICZ I SPÓŁKA PRO DEVELOPMENT",
+      "type": "organization",
+      "org_id": 398580,
+      "miasto": "Czechów",
+      "krs": "0000398580",
+      "nip": "5993158831",
+      "regon": "080989388",
+      "pkd_przewazajace_dzial": "Leśnictwo i pozyskiwanie drewna",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE PROMOCJI PRZEDSIĘBIORCZOŚCI TRANSGRANICZNEJ",
+      "type": "organization",
+      "org_id": 47522,
+      "miasto": "Ownice",
+      "krs": "0000047522",
+      "nip": "9271786135",
+      "regon": "211195894",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE PATRIOTYCZNO-STRZELECKIE ZIEMI LUBUSKIEJ \"PATRON\" IM. BŁ KS. JERZEGO POPIEŁUSZKI",
+      "type": "organization",
+      "org_id": 1030204,
+      "miasto": "Jasieniec",
+      "krs": "0001030204",
+      "nip": "5961766059",
+      "regon": "524998866",
+      "pkd_przewazajace_dzial": "Edukacja",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "MIĘDZYNARODOWA GIEŁDA TOWAROWA",
+      "type": "organization",
+      "org_id": 250187,
+      "miasto": "Katowice",
+      "krs": "0000250187",
+      "nip": "6412362342",
+      "regon": "240206164",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": true,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "ADP POPIOŁEK ADWOKACI I RADCOWIE PRAWNI",
+      "type": "organization",
+      "org_id": 763788,
+      "miasto": "Katowice",
+      "krs": "0000763788",
+      "nip": "9542252731",
+      "regon": "276157667",
+      "pkd_przewazajace_dzial": "Działalność prawnicza, rachunkowo-księgowa i doradztwo podatkowe",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": true,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "NOWY MARCHOŁT",
+      "type": "organization",
+      "org_id": 1002046,
+      "miasto": "Katowice",
+      "krs": "0001002046",
+      "nip": "9542847447",
+      "regon": "523663218",
+      "pkd_przewazajace_dzial": "Działalność związana z obsługą rynku nieruchomości",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "TARGET PROJECTS WRZEŚNIA",
+      "type": "organization",
+      "org_id": 212831,
+      "miasto": "Warszawa",
+      "krs": "0000212831",
+      "nip": null,
+      "regon": null,
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "FUNDACJA MARCHOŁT",
+      "type": "organization",
+      "org_id": 428829,
+      "miasto": "Katowice",
+      "krs": "0000428829",
+      "nip": null,
+      "regon": null,
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "CENTRALA HANDLU ZAGRANICZNEGO ALIANS POŁUDNIOWO-WSCHODNI",
+      "type": "organization",
+      "org_id": 283764,
+      "miasto": "Bukowno",
+      "krs": "0000283764",
+      "nip": "6372099558",
+      "regon": "120459317",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "ADWOKACI I DORADCY - L. CHOLEWA, G. DŁUGI, J. PICHURA, A. ZAWADZKA-KUBICA",
+      "type": "organization",
+      "org_id": 77326,
+      "miasto": "Katowice",
+      "krs": "0000077326",
+      "nip": "6340199044",
+      "regon": "271241890",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "TARGET PROJECTS ŁOPUSZAŃSKA",
+      "type": "organization",
+      "org_id": 213026,
+      "miasto": "Warszawa",
+      "krs": "0000213026",
+      "nip": "5252309567",
+      "regon": "015775494",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "ADP POPIOŁEK, ADWOKACI I DORADCY KANCELARIA ADWOKATÓW I RADCÓW PRAWNYCH",
+      "type": "organization",
+      "org_id": 138418,
+      "miasto": "Katowice",
+      "krs": "0000138418",
+      "nip": "9542252731",
+      "regon": "276157667",
+      "pkd_przewazajace_dzial": "Działalność prawnicza, rachunkowo-księgowa i doradztwo podatkowe",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": true,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "FUNDACJA \"POTRAFISZ POLSKO\"",
+      "type": "organization",
+      "org_id": 150277,
+      "miasto": "Lewin Brzeski",
+      "krs": "0000150277",
+      "nip": "7342960787",
+      "regon": "492893206",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "FUNDACJA REPUBLIKAŃSKA",
+      "type": "organization",
+      "org_id": 340559,
+      "miasto": "Warszawa",
+      "krs": "0000340559",
+      "nip": "9522078626",
+      "regon": "142075516",
+      "pkd_przewazajace_dzial": "Badania naukowe i prace rozwojowe",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": true,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "FUNDACJA INSTYTUT KULTURY POLITYCZNEJ",
+      "type": "organization",
+      "org_id": 656315,
+      "miasto": "Warszawa",
+      "krs": "0000656315",
+      "nip": "5223080642",
+      "regon": "366229532",
+      "pkd_przewazajace_dzial": "Badania naukowe i prace rozwojowe",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "OPOLSKI KLUB STRZELECKI \"HUSARZ\"",
+      "type": "organization",
+      "org_id": 504320,
+      "miasto": "Tułowice",
+      "krs": "0000504320",
+      "nip": "9910497663",
+      "regon": "161579950",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "glowna_osoba:770414",
+      "type": "glowna_osoba",
+      "glowna_id": "770414",
+      "label": "Piotr Henryk Kornobis"
+    },
+    {
+      "id": "glowna_osoba:1701436",
+      "type": "glowna_osoba",
+      "glowna_id": "1701436",
+      "label": "Sylwia Małgorzata Szczepańska"
+    },
+    {
+      "id": "glowna_osoba:892823",
+      "type": "glowna_osoba",
+      "glowna_id": "892823",
+      "label": "Irmina Donata Ochenkowska"
+    },
+    {
+      "id": "glowna_osoba:1402325",
+      "type": "glowna_osoba",
+      "glowna_id": "1402325",
+      "label": "Andrzej Olkowski"
+    },
+    {
+      "id": "glowna_osoba:665173",
+      "type": "glowna_osoba",
+      "glowna_id": "665173",
+      "label": "Sylwester Arkadiusz Chruszcz"
+    },
+    {
+      "id": "Adam Andruszkiewicz",
+      "type": "person",
+      "name": "Adam Andruszkiewicz",
+      "party": "Kukiz'15",
+      "district": "24  Białystok",
+      "profession": "specjalista ds. medialnych",
+      "birth_date": "30-06-1990",
+      "birth_place": "Grajewo",
+      "rejestr_id": "1198245"
+    },
+    {
+      "id": "Sylwester Chruszcz",
+      "type": "person",
+      "name": "Sylwester Chruszcz",
+      "party": "Kukiz'15",
+      "district": "41  Szczecin",
+      "profession": "architekt",
+      "birth_date": "22-08-1972",
+      "birth_place": "Głogów",
+      "rejestr_id": "665173"
+    },
+    {
+      "id": "glowna_osoba:1341834",
+      "type": "glowna_osoba",
+      "glowna_id": "1341834",
+      "label": "Paweł Michalak"
+    },
+    {
+      "id": "glowna_osoba:363317",
+      "type": "glowna_osoba",
+      "glowna_id": "363317",
+      "label": "Krzysztof Szafulski"
+    },
+    {
+      "id": "glowna_osoba:1350521",
+      "type": "glowna_osoba",
+      "glowna_id": "1350521",
+      "label": "Zenon Michałowski"
+    },
+    {
+      "id": "glowna_osoba:1293663",
+      "type": "glowna_osoba",
+      "glowna_id": "1293663",
+      "label": "Roman Błaszczak"
+    },
+    {
+      "id": "glowna_osoba:1198245",
+      "type": "glowna_osoba",
+      "glowna_id": "1198245",
+      "label": "Adam Andruszkiewicz"
+    },
+    {
+      "id": "glowna_osoba:1319147",
+      "type": "glowna_osoba",
+      "glowna_id": "1319147",
+      "label": "Bartłomiej Babuśka"
+    },
+    {
+      "id": "glowna_osoba:1323936",
+      "type": "glowna_osoba",
+      "glowna_id": "1323936",
+      "label": "Mirosław Jerzy Więckowski"
+    },
+    {
+      "id": "glowna_osoba:115086",
+      "type": "glowna_osoba",
+      "glowna_id": "115086",
+      "label": "Józef Jęcz"
+    },
+    {
+      "id": "glowna_osoba:1047155",
+      "type": "glowna_osoba",
+      "glowna_id": "1047155",
+      "label": "Jacek Edward Jadwiszczok"
+    },
+    {
+      "id": "glowna_osoba:1280835",
+      "type": "glowna_osoba",
+      "glowna_id": "1280835",
+      "label": "Przemysław Tadeusz Miśkiewicz"
+    },
+    {
+      "id": "glowna_osoba:1266213",
+      "type": "glowna_osoba",
+      "glowna_id": "1266213",
+      "label": "Zofia Krystyna Lewandowska Kac"
+    },
+    {
+      "id": "glowna_osoba:242574",
+      "type": "glowna_osoba",
+      "glowna_id": "242574",
+      "label": "Zbigniew Oborski"
+    },
+    {
+      "id": "Jarosław Sachajko",
+      "type": "person",
+      "name": "Jarosław Sachajko",
+      "party": "Kukiz'15",
+      "district": "7  Chełm",
+      "profession": "przedsiębiorca",
+      "birth_date": "08-10-1971",
+      "birth_place": "Lublin",
+      "rejestr_id": "521040"
+    },
+    {
+      "id": "glowna_osoba:1264556",
+      "type": "glowna_osoba",
+      "glowna_id": "1264556",
+      "label": "Marek Edward Wróbel"
+    },
+    {
+      "id": "glowna_osoba:3358819",
+      "type": "glowna_osoba",
+      "glowna_id": "3358819",
+      "label": "Michał Rutkowski"
+    },
+    {
+      "id": "glowna_osoba:462749",
+      "type": "glowna_osoba",
+      "glowna_id": "462749",
+      "label": "Maciej Tomasz Sadłoń"
+    },
+    {
+      "id": "STOWARZYSZENIE ODRA-NIEMEN, ODDZIAŁ PODLASKI",
+      "type": "organization",
+      "org_id": 443556,
+      "miasto": "Białystok",
+      "krs": "0000443556",
+      "nip": "5423229480",
+      "regon": "200755590",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE MŁODZIEŻ WSZECHPOLSKA",
+      "type": "organization",
+      "org_id": 156223,
+      "miasto": "Warszawa",
+      "krs": "0000156223",
+      "nip": "5262322144",
+      "regon": "632042578",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE KOCHAM PODLASKIE",
+      "type": "organization",
+      "org_id": 1174877,
+      "miasto": "Białystok",
+      "krs": "0001174877",
+      "nip": "5423500155",
+      "regon": "541833161",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "FUNDACJA POGOŃ LWÓW",
+      "type": "organization",
+      "org_id": 855921,
+      "miasto": "Głogów",
+      "krs": "0000855921",
+      "nip": "6932187253",
+      "regon": "386846373",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE PUBLICZNA SZKOŁA PODSTAWOWA NA GŁĘBOKIEM",
+      "type": "organization",
+      "org_id": 303140,
+      "miasto": "Szczecin",
+      "krs": "0000303140",
+      "nip": "8522532390",
+      "regon": "320509121",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": true,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "SINOR POLSKA",
+      "type": "organization",
+      "org_id": 1172308,
+      "miasto": "Szczecin",
+      "krs": "0001172308",
+      "nip": "8522719668",
+      "regon": "541697048",
+      "pkd_przewazajace_dzial": "Produkcja chemikaliów i wyrobów chemicznych",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "FUNDACJA IM. BOLESŁAWA CHROBREGO",
+      "type": "organization",
+      "org_id": 253907,
+      "miasto": "Szczecin",
+      "krs": "0000253907",
+      "nip": "8512971142",
+      "regon": "320182230",
+      "pkd_przewazajace_dzial": "Edukacja",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "AKADEMIA DOBREJ JAKOŚCI",
+      "type": "organization",
+      "org_id": 470700,
+      "miasto": "Lublin",
+      "krs": "0000470700",
+      "nip": "8641950314",
+      "regon": "260709033",
+      "pkd_przewazajace_dzial": "Badania naukowe i prace rozwojowe",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "FUNDACJA EGIDA",
+      "type": "organization",
+      "org_id": 484864,
+      "miasto": "Lublin",
+      "krs": "0000484864",
+      "nip": null,
+      "regon": "363536558",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE ROLNIKÓW I KONSUMENTÓW",
+      "type": "organization",
+      "org_id": 631259,
+      "miasto": "Zamość",
+      "krs": "0000631259",
+      "nip": "9223053512",
+      "regon": "365116257",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE POLSKA - BIAŁORUŚ",
+      "type": "organization",
+      "org_id": 158306,
+      "miasto": "Warszawa",
+      "krs": "0000158306",
+      "nip": null,
+      "regon": "011573983",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "FUNDACJA ROZWOJU AKADEMII ZAMOJSKIEJ",
+      "type": "organization",
+      "org_id": 1018091,
+      "miasto": "Zamość",
+      "krs": "0001018091",
+      "nip": "9223075531",
+      "regon": "524408818",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "glowna_osoba:498653",
+      "type": "glowna_osoba",
+      "glowna_id": "498653",
+      "label": "Małgorzata Suszyńska"
+    },
+    {
+      "id": "Anna Maria Siarkowska",
+      "type": "person",
+      "name": "Anna Maria Siarkowska",
+      "party": "Kukiz'15",
+      "district": "18  Siedlce",
+      "profession": "specjalista ds. planowania obronnego",
+      "birth_date": "23-03-1982",
+      "birth_place": "Warszawa",
+      "rejestr_id": "363929"
+    },
+    {
+      "id": "glowna_osoba:2726853",
+      "type": "glowna_osoba",
+      "glowna_id": "2726853",
+      "label": "Marcin Tomasz Osowski"
+    },
+    {
+      "id": "Robert Winnicki",
+      "type": "person",
+      "name": "Robert Winnicki",
+      "party": "Kukiz'15",
+      "district": "1  Legnica",
+      "profession": "publicysta",
+      "birth_date": "18-07-1985",
+      "birth_place": "Zgorzelec",
+      "rejestr_id": "1198242"
+    },
+    {
+      "id": "glowna_osoba:3232764",
+      "type": "glowna_osoba",
+      "glowna_id": "3232764",
+      "label": "Michaela Marta Vašiček"
+    },
+    {
+      "id": "glowna_osoba:585926",
+      "type": "glowna_osoba",
+      "glowna_id": "585926",
+      "label": "Rafał Sylwester Wiechecki"
+    },
+    {
+      "id": "Norbert Kaczmarczyk",
+      "type": "person",
+      "name": "Norbert Kaczmarczyk",
+      "party": "Kukiz'15",
+      "district": "15  Tarnów",
+      "profession": "rolnik",
+      "birth_date": "16-11-1989",
+      "birth_place": "Proszowice",
+      "rejestr_id": "212171"
+    },
+    {
+      "id": "glowna_osoba:1844579",
+      "type": "glowna_osoba",
+      "glowna_id": "1844579",
+      "label": "Wojciech Adamczyk"
+    },
+    {
+      "id": "OBRONANARODOWA.PL - RUCH NA RZECZ OBRONY POWSZECHNEJ I ODPORNOŚCI PAŃSTWA",
+      "type": "organization",
+      "org_id": 394881,
+      "miasto": "Warszawa",
+      "krs": "0000394881",
+      "nip": "8943033922",
+      "regon": "021704510",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "FUNDACJA POLSKA JEST JEDNA",
+      "type": "organization",
+      "org_id": 947384,
+      "miasto": "Siemianowice Śląskie",
+      "krs": "0000947384",
+      "nip": "6431776961",
+      "regon": "521041470",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE \"REPUBLIKANIE\"",
+      "type": "organization",
+      "org_id": 472238,
+      "miasto": "Warszawa",
+      "krs": "0000472238",
+      "nip": "9522125573",
+      "regon": "146806247",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "LIBERTAS",
+      "type": "organization",
+      "org_id": 282772,
+      "miasto": "Warszawa",
+      "krs": "0000282772",
+      "nip": null,
+      "regon": null,
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE RUCH SAMORZĄDOWY LPR",
+      "type": "organization",
+      "org_id": 261171,
+      "miasto": "Warszawa",
+      "krs": "0000261171",
+      "nip": null,
+      "regon": null,
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE TWORZENIA ROZWOJU AMBICJI S.T.A.R.",
+      "type": "organization",
+      "org_id": 2580,
+      "miasto": "Wrocław",
+      "krs": "0000002580",
+      "nip": "6391382166",
+      "regon": "001396738",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "INTERNATIONAL COOPERATION FOUNDATION - FUNDACJA WSPÓŁPRACY MIĘDZYNARODOWEJ",
+      "type": "organization",
+      "org_id": 1061621,
+      "miasto": "Warszawa",
+      "krs": "0001061621",
+      "nip": "7011167836",
+      "regon": "526612322",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "COGITATIONIS",
+      "type": "organization",
+      "org_id": 1121303,
+      "miasto": "Warszawa",
+      "krs": "0001121303",
+      "nip": "5273126033",
+      "regon": "529409337",
+      "pkd_przewazajace_dzial": "Działalność związana z produkcją filmów, nagrań wideo, programów telewizyjnych, nagrań dźwiękowych i muzycznych",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "FUNDACJA BRATERSKA POMOC NORBERTA KACZMARCZYKA",
+      "type": "organization",
+      "org_id": 662705,
+      "miasto": "Tarnów",
+      "krs": "0000662705",
+      "nip": "9930662361",
+      "regon": "366591701",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "STOWARZYSZENIE \"KPR RAZEM\"",
+      "type": "organization",
+      "org_id": 558614,
+      "miasto": "Proszowice",
+      "krs": "0000558614",
+      "nip": "6821771049",
+      "regon": "361796545",
+      "pkd_przewazajace_dzial": "Działalność wydawnicza",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "glowna_osoba:798738",
+      "type": "glowna_osoba",
+      "glowna_id": "798738",
+      "label": "Grzegorz Paweł Matyasik"
+    },
+    {
+      "id": "Magdalena Błeńska",
+      "type": "person",
+      "name": "Magdalena Błeńska",
+      "party": "Kukiz'15",
+      "district": "25  Gdańsk",
+      "profession": "architekt",
+      "birth_date": "22-03-1983",
+      "birth_place": "Gdynia",
+      "rejestr_id": "2865219"
+    },
+    {
+      "id": "Tomasz Jaskóła",
+      "type": "person",
+      "name": "Tomasz Jaskóła",
+      "party": "Kukiz'15",
+      "district": "28  Częstochowa",
+      "profession": "dyrektor generalny",
+      "birth_date": "31-07-1974",
+      "birth_place": "Częstochowa",
+      "rejestr_id": "488207"
+    },
+    {
+      "id": "glowna_osoba:488235",
+      "type": "glowna_osoba",
+      "glowna_id": "488235",
+      "label": "Karol Kazimierz Rabenda"
+    },
+    {
+      "id": "glowna_osoba:1402174",
+      "type": "glowna_osoba",
+      "glowna_id": "1402174",
+      "label": "Emil Baran"
+    },
+    {
+      "id": "glowna_osoba:1198242",
+      "type": "glowna_osoba",
+      "glowna_id": "1198242",
+      "label": "Robert Artur Winnicki"
+    },
+    {
+      "id": "glowna_osoba:140938",
+      "type": "glowna_osoba",
+      "glowna_id": "140938",
+      "label": "Jakub Tomasz Migała"
+    },
+    {
+      "id": "glowna_osoba:19787",
+      "type": "glowna_osoba",
+      "glowna_id": "19787",
+      "label": "Piotr Szczepan Łakomy"
+    },
+    {
+      "id": "FUNDACJA ORDER JANA III SOBIESKIEGO",
+      "type": "organization",
+      "org_id": 781969,
+      "miasto": "Częstochowa",
+      "krs": "0000781969",
+      "nip": "5732910885",
+      "regon": "383114623",
+      "pkd_przewazajace_dzial": "Działalność organizacji członkowskich",
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": true,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "POTRAFISZ CZĘSTOCHOWO",
+      "type": "organization",
+      "org_id": 729221,
+      "miasto": "Częstochowa",
+      "krs": "0000729221",
+      "nip": "5732900266",
+      "regon": "380057221",
+      "pkd_przewazajace_dzial": null,
+      "czy_dofinansowana_przez_ue": false,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_spolka_skarbu_panstwa": false
+    },
+    {
+      "id": "glowna_osoba:488207",
+      "type": "glowna_osoba",
+      "glowna_id": "488207",
+      "label": "Tomasz Janusz Jaskóła"
+    }
+  ],
+  "links": [
+    {
+      "source": "Paweł Kukiz",
+      "target": "FUNDACJA KUKIZ # ZMIENIAMY POLSKE",
+      "relation": "current"
+    },
+    {
+      "source": "STOWARZYSZENIE KOCHAM PODLASKIE",
+      "target": "glowna_osoba:1198245",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Marek Jakubiak",
+      "target": "STOWARZYSZENIE NA RZECZ NOWEJ KONSTYTUCJI KUKIZ'15",
+      "relation": "historical"
+    },
+    {
+      "source": "OKO I UCHO",
+      "target": "glowna_osoba:770414",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "FUNDACJA ROZWOJU AKADEMII ZAMOJSKIEJ",
+      "target": "glowna_osoba:1844579",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Anna Maria Siarkowska",
+      "target": "FUNDACJA POLSKA JEST JEDNA",
+      "relation": "historical"
+    },
+    {
+      "source": "ENDECJA",
+      "target": "glowna_osoba:665173",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "FUNDACJA REPUBLIKAŃSKA",
+      "target": "glowna_osoba:1264556",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Stefan Romecki",
+      "target": "STOWARZYSZENIE IM. MARSZAŁKA JÓZEFA PIŁSUDSKIEGO",
+      "relation": "historical"
+    },
+    {
+      "source": "Piotr Apel",
+      "target": "STOWARZYSZENIE NA RZECZ NOWEJ KONSTYTUCJI KUKIZ'15",
+      "relation": "current"
+    },
+    {
+      "source": "Grzegorz Długi",
+      "target": "ADWOKACI I DORADCY - L. CHOLEWA, G. DŁUGI, J. PICHURA, A. ZAWADZKA-KUBICA",
+      "relation": "historical"
+    },
+    {
+      "source": "Grzegorz Długi",
+      "target": "STOWARZYSZENIE NA RZECZ NOWEJ KONSTYTUCJI KUKIZ'15",
+      "relation": "current"
+    },
+    {
+      "source": "COGITATIONIS",
+      "target": "glowna_osoba:1198242",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Anna Maria Siarkowska",
+      "target": "STOWARZYSZENIE MŁODZIEŻ WSZECHPOLSKA",
+      "relation": "historical"
+    },
+    {
+      "source": "Tomasz Jaskóła",
+      "target": "FUNDACJA ORDER JANA III SOBIESKIEGO",
+      "relation": "current"
+    },
+    {
+      "source": "Piotr Apel",
+      "target": "FUNDACJA \"AKTYWIZACJA BEZ GRANIC\"",
+      "relation": "current"
+    },
+    {
+      "source": "Grzegorz Długi",
+      "target": "TARGET PROJECTS WRZEŚNIA",
+      "relation": "historical"
+    },
+    {
+      "source": "Jarosław Sachajko",
+      "target": "STOWARZYSZENIE ROLNIKÓW I KONSUMENTÓW",
+      "relation": "current"
+    },
+    {
+      "source": "Stefan Romecki",
+      "target": "KLUB ABSTYNENTA \"POMORZE\"",
+      "relation": "historical"
+    },
+    {
+      "source": "Grzegorz Długi",
+      "target": "NOWY MARCHOŁT",
+      "relation": "current"
+    },
+    {
+      "source": "STOWARZYSZENIE REGIONALNYCH BROWARÓW POLSKICH",
+      "target": "glowna_osoba:1402325",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Norbert Kaczmarczyk",
+      "target": "STOWARZYSZENIE \"KPR RAZEM\"",
+      "relation": "historical"
+    },
+    {
+      "source": "Paweł Kukiz",
+      "target": "OPOLSKI KLUB STRZELECKI \"HUSARZ\"",
+      "relation": "historical"
+    },
+    {
+      "source": "Sylwester Chruszcz",
+      "target": "FUNDACJA POGOŃ LWÓW",
+      "relation": "current"
+    },
+    {
+      "source": "Anna Maria Siarkowska",
+      "target": "OBRONANARODOWA.PL - RUCH NA RZECZ OBRONY POWSZECHNEJ I ODPORNOŚCI PAŃSTWA",
+      "relation": "historical"
+    },
+    {
+      "source": "KLUB ABSTYNENTA \"POMORZE\"",
+      "target": "glowna_osoba:363317",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "FUNDACJA RUCH MŁODZIEŻY NIEZALEŻNEJ",
+      "target": "glowna_osoba:1293663",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "STOWARZYSZENIE NA RZECZ NOWEJ KONSTYTUCJI KUKIZ'15",
+      "target": "glowna_osoba:462757",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Jarosław Porwich",
+      "target": "RUSAKIEWICZ I SPÓŁKA PRO DEVELOPMENT",
+      "relation": "current"
+    },
+    {
+      "source": "Tomasz Jaskóła",
+      "target": "STOWARZYSZENIE \"REPUBLIKANIE\"",
+      "relation": "historical"
+    },
+    {
+      "source": "Anna Maria Siarkowska",
+      "target": "STOWARZYSZENIE \"REPUBLIKANIE\"",
+      "relation": "historical"
+    },
+    {
+      "source": "Sylwester Chruszcz",
+      "target": "STOWARZYSZENIE PUBLICZNA SZKOŁA PODSTAWOWA NA GŁĘBOKIEM",
+      "relation": "historical"
+    },
+    {
+      "source": "Jarosław Porwich",
+      "target": "STOWARZYSZENIE PATRIOTYCZNO-STRZELECKIE ZIEMI LUBUSKIEJ \"PATRON\" IM. BŁ KS. JERZEGO POPIEŁUSZKI",
+      "relation": "current"
+    },
+    {
+      "source": "Stanisław Tyszka",
+      "target": "FUNDACJA \"POTRAFISZ POLSKO\"",
+      "relation": "historical"
+    },
+    {
+      "source": "Marek Jakubiak",
+      "target": "BROWARY REGIONALNE JAKUBIAK",
+      "relation": "historical"
+    },
+    {
+      "source": "Stefan Romecki",
+      "target": "STOWARZYSZENIE KOMITET OBYWATELSKI MIASTA KOSZALINA",
+      "relation": "current"
+    },
+    {
+      "source": "Stanisław Tyszka",
+      "target": "FUNDACJA INSTYTUT KULTURY POLITYCZNEJ",
+      "relation": "historical"
+    },
+    {
+      "source": "FUNDACJA INSTYTUT KULTURY POLITYCZNEJ",
+      "target": "glowna_osoba:3358819",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "NOWY MARCHOŁT",
+      "target": "glowna_osoba:1280835",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Marek Jakubiak",
+      "target": "BROWAR WIELKOPOLSKI W KROTOSZYNIE",
+      "relation": "historical"
+    },
+    {
+      "source": "BROWARY REGIONALNE JAKUBIAK",
+      "target": "glowna_osoba:892823",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "FUNDACJA \"AKTYWIZACJA BEZ GRANIC\"",
+      "target": "glowna_osoba:1701436",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "STOWARZYSZENIE \"KPR RAZEM\"",
+      "target": "glowna_osoba:19787",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Adam Andruszkiewicz",
+      "target": "STOWARZYSZENIE KOCHAM PODLASKIE",
+      "relation": "current"
+    },
+    {
+      "source": "Piotr Apel",
+      "target": "OKO I UCHO",
+      "relation": "historical"
+    },
+    {
+      "source": "Jarosław Sachajko",
+      "target": "FUNDACJA ROZWOJU AKADEMII ZAMOJSKIEJ",
+      "relation": "current"
+    },
+    {
+      "source": "Stanisław Tyszka",
+      "target": "FUNDACJA REPUBLIKAŃSKA",
+      "relation": "historical"
+    },
+    {
+      "source": "Norbert Kaczmarczyk",
+      "target": "STOWARZYSZENIE ROLNIKÓW I KONSUMENTÓW",
+      "relation": "historical"
+    },
+    {
+      "source": "STOWARZYSZENIE ODRA-NIEMEN, ODDZIAŁ PODLASKI",
+      "target": "glowna_osoba:498653",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "FUNDACJA ORDER JANA III SOBIESKIEGO",
+      "target": "glowna_osoba:488207",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "STOWARZYSZENIE MŁODZIEŻ WSZECHPOLSKA",
+      "target": "glowna_osoba:2726853",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Sylwester Chruszcz",
+      "target": "SINOR POLSKA",
+      "relation": "current"
+    },
+    {
+      "source": "Adam Andruszkiewicz",
+      "target": "STOWARZYSZENIE MŁODZIEŻ WSZECHPOLSKA",
+      "relation": "historical"
+    },
+    {
+      "source": "Piotr Apel",
+      "target": "PWC OKO I UCHO",
+      "relation": "historical"
+    },
+    {
+      "source": "Marek Jakubiak",
+      "target": "ENDECJA",
+      "relation": "historical"
+    },
+    {
+      "source": "FUNDACJA IM. BOLESŁAWA CHROBREGO",
+      "target": "glowna_osoba:585926",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Sylwester Chruszcz",
+      "target": "FUNDACJA IM. BOLESŁAWA CHROBREGO",
+      "relation": "historical"
+    },
+    {
+      "source": "BROWAR CIECHAN",
+      "target": "glowna_osoba:892823",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Grzegorz Długi",
+      "target": "TARGET PROJECTS ŁOPUSZAŃSKA",
+      "relation": "current"
+    },
+    {
+      "source": "STOWARZYSZENIE PROMOCJI PRZEDSIĘBIORCZOŚCI TRANSGRANICZNEJ",
+      "target": "glowna_osoba:1323936",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "POTRAFISZ CZĘSTOCHOWO",
+      "target": "glowna_osoba:488207",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Paweł Kukiz",
+      "target": "FUNDACJA \"POTRAFISZ POLSKO\"",
+      "relation": "current"
+    },
+    {
+      "source": "Jarosław Sachajko",
+      "target": "AKADEMIA DOBREJ JAKOŚCI",
+      "relation": "historical"
+    },
+    {
+      "source": "FUNDACJA KUKIZ # ZMIENIAMY POLSKE",
+      "target": "glowna_osoba:462757",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Grzegorz Długi",
+      "target": "ADP POPIOŁEK, ADWOKACI I DORADCY KANCELARIA ADWOKATÓW I RADCÓW PRAWNYCH",
+      "relation": "historical"
+    },
+    {
+      "source": "Marek Jakubiak",
+      "target": "STOWARZYSZENIE REGIONALNYCH BROWARÓW POLSKICH",
+      "relation": "historical"
+    },
+    {
+      "source": "Jarosław Sachajko",
+      "target": "FUNDACJA EGIDA",
+      "relation": "historical"
+    },
+    {
+      "source": "Sylwester Chruszcz",
+      "target": "STOWARZYSZENIE PUBLICZNA SZKOŁA PODSTAWOWA NA GŁĘBOKIEM",
+      "relation": "current"
+    },
+    {
+      "source": "Marek Jakubiak",
+      "target": "BROWAR LWÓWEK",
+      "relation": "historical"
+    },
+    {
+      "source": "Jarosław Porwich",
+      "target": "FUNDACJA RUCH MŁODZIEŻY NIEZALEŻNEJ",
+      "relation": "current"
+    },
+    {
+      "source": "Marek Jakubiak",
+      "target": "BROWARY REGIONALNE JAKUBIAK",
+      "relation": "current"
+    },
+    {
+      "source": "MIĘDZYNARODOWA GIEŁDA TOWAROWA",
+      "target": "glowna_osoba:1047155",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "FUNDACJA MARCHOŁT",
+      "target": "glowna_osoba:1266213",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Robert Winnicki",
+      "target": "COGITATIONIS",
+      "relation": "current"
+    },
+    {
+      "source": "STOWARZYSZENIE \"REPUBLIKANIE\"",
+      "target": "glowna_osoba:488235",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "FUNDACJA POGOŃ LWÓW",
+      "target": "glowna_osoba:3232764",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "STOWARZYSZENIE \"DLA POLSKI\"",
+      "target": "glowna_osoba:1198245",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Jarosław Sachajko",
+      "target": "FUNDACJA \"POTRAFISZ POLSKO\"",
+      "relation": "current"
+    },
+    {
+      "source": "OPOLSKI KLUB STRZELECKI \"HUSARZ\"",
+      "target": "glowna_osoba:462749",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "FUNDACJA BRATERSKA POMOC NORBERTA KACZMARCZYKA",
+      "target": "glowna_osoba:140938",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Jarosław Porwich",
+      "target": "STOWARZYSZENIE NA RZECZ NOWEJ KONSTYTUCJI KUKIZ'15",
+      "relation": "current"
+    },
+    {
+      "source": "Marek Jakubiak",
+      "target": "BROWAR CIECHAN",
+      "relation": "historical"
+    },
+    {
+      "source": "Paweł Kukiz",
+      "target": "STOWARZYSZENIE NA RZECZ NOWEJ KONSTYTUCJI KUKIZ'15",
+      "relation": "current"
+    },
+    {
+      "source": "INTERNATIONAL COOPERATION FOUNDATION - FUNDACJA WSPÓŁPRACY MIĘDZYNARODOWEJ",
+      "target": "glowna_osoba:1198242",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "STOWARZYSZENIE NA RZECZ BUDOWY POMNIKA MARSZAŁKA JÓZEFA PIŁSUDSKIEGO",
+      "target": "glowna_osoba:1350521",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Adam Andruszkiewicz",
+      "target": "STOWARZYSZENIE \"DLA POLSKI\"",
+      "relation": "current"
+    },
+    {
+      "source": "Jarosław Porwich",
+      "target": "AGENCJA ROZWOJU PRZEMYSŁU",
+      "relation": "historical"
+    },
+    {
+      "source": "Robert Winnicki",
+      "target": "STOWARZYSZENIE MŁODZIEŻ WSZECHPOLSKA",
+      "relation": "historical"
+    },
+    {
+      "source": "Anna Maria Siarkowska",
+      "target": "LIBERTAS",
+      "relation": "historical"
+    },
+    {
+      "source": "Adam Andruszkiewicz",
+      "target": "ENDECJA",
+      "relation": "historical"
+    },
+    {
+      "source": "Grzegorz Długi",
+      "target": "ADP POPIOŁEK ADWOKACI I RADCOWIE PRAWNI",
+      "relation": "current"
+    },
+    {
+      "source": "Jarosław Porwich",
+      "target": "STOWARZYSZENIE \"DLA POLSKI\"",
+      "relation": "current"
+    },
+    {
+      "source": "STOWARZYSZENIE IM. MARSZAŁKA JÓZEFA PIŁSUDSKIEGO",
+      "target": "glowna_osoba:1341834",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Jarosław Porwich",
+      "target": "STOWARZYSZENIE NA RZECZ BUDOWY POMNIKA MARSZAŁKA JÓZEFA PIŁSUDSKIEGO",
+      "relation": "current"
+    },
+    {
+      "source": "BROWAR LWÓWEK",
+      "target": "glowna_osoba:892823",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "STOWARZYSZENIE TWORZENIA ROZWOJU AMBICJI S.T.A.R.",
+      "target": "glowna_osoba:1402174",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Robert Winnicki",
+      "target": "INTERNATIONAL COOPERATION FOUNDATION - FUNDACJA WSPÓŁPRACY MIĘDZYNARODOWEJ",
+      "relation": "current"
+    },
+    {
+      "source": "Stefan Romecki",
+      "target": "STOWARZYSZENIE NA RZECZ NOWEJ KONSTYTUCJI KUKIZ'15",
+      "relation": "current"
+    },
+    {
+      "source": "Grzegorz Długi",
+      "target": "CENTRALA HANDLU ZAGRANICZNEGO ALIANS POŁUDNIOWO-WSCHODNI",
+      "relation": "historical"
+    },
+    {
+      "source": "Stefan Romecki",
+      "target": "TOWARZYSTWO WSPIERANIA ROZWOJU I RESTRUKTURYZACJI ROLNICTWA ORAZ PRZEMYSŁU ROLNO-SPOŻYWCZEGO",
+      "relation": "historical"
+    },
+    {
+      "source": "Tomasz Jaskóła",
+      "target": "POTRAFISZ CZĘSTOCHOWO",
+      "relation": "current"
+    },
+    {
+      "source": "Grzegorz Długi",
+      "target": "FUNDACJA MARCHOŁT",
+      "relation": "current"
+    },
+    {
+      "source": "Norbert Kaczmarczyk",
+      "target": "FUNDACJA BRATERSKA POMOC NORBERTA KACZMARCZYKA",
+      "relation": "historical"
+    },
+    {
+      "source": "STOWARZYSZENIE PATRIOTYCZNO-STRZELECKIE ZIEMI LUBUSKIEJ \"PATRON\" IM. BŁ KS. JERZEGO POPIEŁUSZKI",
+      "target": "glowna_osoba:115086",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Robert Winnicki",
+      "target": "STOWARZYSZENIE TWORZENIA ROZWOJU AMBICJI S.T.A.R.",
+      "relation": "historical"
+    },
+    {
+      "source": "OBRONANARODOWA.PL - RUCH NA RZECZ OBRONY POWSZECHNEJ I ODPORNOŚCI PAŃSTWA",
+      "target": "glowna_osoba:798738",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Anna Maria Siarkowska",
+      "target": "STOWARZYSZENIE RUCH SAMORZĄDOWY LPR",
+      "relation": "historical"
+    },
+    {
+      "source": "Sylwester Chruszcz",
+      "target": "ENDECJA",
+      "relation": "current"
+    },
+    {
+      "source": "AGENCJA ROZWOJU PRZEMYSŁU",
+      "target": "glowna_osoba:1319147",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Stanisław Tyszka",
+      "target": "STOWARZYSZENIE NA RZECZ NOWEJ KONSTYTUCJI KUKIZ'15",
+      "relation": "historical"
+    },
+    {
+      "source": "Marek Jakubiak",
+      "target": "DARO",
+      "relation": "historical"
+    },
+    {
+      "source": "Jarosław Sachajko",
+      "target": "STOWARZYSZENIE POLSKA - BIAŁORUŚ",
+      "relation": "current"
+    },
+    {
+      "source": "Adam Andruszkiewicz",
+      "target": "STOWARZYSZENIE ODRA-NIEMEN, ODDZIAŁ PODLASKI",
+      "relation": "historical"
+    },
+    {
+      "source": "Stefan Romecki",
+      "target": "STOWARZYSZENIE KOMITET OBYWATELSKI MIASTA KOSZALINA",
+      "relation": "historical"
+    },
+    {
+      "source": "Magdalena Błeńska",
+      "target": "STOWARZYSZENIE \"REPUBLIKANIE\"",
+      "relation": "current"
+    },
+    {
+      "source": "Grzegorz Długi",
+      "target": "MIĘDZYNARODOWA GIEŁDA TOWAROWA",
+      "relation": "current"
+    },
+    {
+      "source": "FUNDACJA \"POTRAFISZ POLSKO\"",
+      "target": "glowna_osoba:242574",
+      "relation": "glowna_osoba"
+    },
+    {
+      "source": "Jarosław Porwich",
+      "target": "STOWARZYSZENIE PROMOCJI PRZEDSIĘBIORCZOŚCI TRANSGRANICZNEJ",
+      "relation": "current"
+    }
+  ]
+}

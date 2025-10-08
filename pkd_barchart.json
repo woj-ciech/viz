@@ -1,0 +1,759 @@
+[
+  {
+    "kod_pkd": "68",
+    "opis_pkd": "ZARZĄDZANIE NIERUCHOMOŚCIAMI WYKONYWANE NA ZLECENIE",
+    "current": {
+      "Platforma Obywatelska": 10,
+      "Prawo i Sprawiedliwość": 9,
+      "Mniejszość Niemiecka": 1,
+      "Polskie Stronnictwo Ludowe": 4
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 29,
+      "Platforma Obywatelska": 28,
+      "Polskie Stronnictwo Ludowe": 3
+    }
+  },
+  {
+    "kod_pkd": "70",
+    "opis_pkd": "POZOSTAŁE DORADZTWO W ZAKRESIE PROWADZENIA DZIAŁALNOŚCI GOSPODARCZEJ I ZARZĄDZANIA",
+    "current": {
+      "Prawo i Sprawiedliwość": 10,
+      "Platforma Obywatelska": 8,
+      "Polskie Stronnictwo Ludowe": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 11,
+      "Platforma Obywatelska": 15
+    }
+  },
+  {
+    "kod_pkd": "93",
+    "opis_pkd": "POZOSTAŁA DZIAŁALNOŚĆ ZWIĄZANA ZE SPORTEM",
+    "current": {
+      "Platforma Obywatelska": 5,
+      "Prawo i Sprawiedliwość": 2
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 12,
+      "Platforma Obywatelska": 15,
+      "Polskie Stronnictwo Ludowe": 1
+    }
+  },
+  {
+    "kod_pkd": "85",
+    "opis_pkd": "POZOSTAŁE POZASZKOLNE FORMY EDUKACJI, GDZIE INDZIEJ NIESKLASYFIKOWANE",
+    "current": {
+      "Mniejszość Niemiecka": 1,
+      "Platforma Obywatelska": 5,
+      "Polskie Stronnictwo Ludowe": 1,
+      "Prawo i Sprawiedliwość": 3
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 9,
+      "Platforma Obywatelska": 10,
+      "Polskie Stronnictwo Ludowe": 1
+    }
+  },
+  {
+    "kod_pkd": "35",
+    "opis_pkd": "HANDEL ENERGIĄ ELEKTRYCZNĄ",
+    "current": {
+      "Prawo i Sprawiedliwość": 1,
+      "Platforma Obywatelska": 2
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 16,
+      "Polskie Stronnictwo Ludowe": 2,
+      "Platforma Obywatelska": 9
+    }
+  },
+  {
+    "kod_pkd": "58",
+    "opis_pkd": "WYDAWANIE KSIĄŻEK",
+    "current": {
+      "Platforma Obywatelska": 4,
+      "Prawo i Sprawiedliwość": 3,
+      "Polskie Stronnictwo Ludowe": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 14,
+      "Platforma Obywatelska": 8
+    }
+  },
+  {
+    "kod_pkd": "41",
+    "opis_pkd": "ROBOTY BUDOWLANE ZWIĄZANE ZE WZNOSZENIEM BUDYNKÓW MIESZKALNYCH I NIEMIESZKALNYCH",
+    "current": {
+      "Prawo i Sprawiedliwość": 4,
+      "Platforma Obywatelska": 10
+    },
+    "historical": {
+      "Platforma Obywatelska": 7,
+      "Prawo i Sprawiedliwość": 9
+    }
+  },
+  {
+    "kod_pkd": "73",
+    "opis_pkd": "DZIAŁALNOŚĆ AGENCJI REKLAMOWYCH",
+    "current": {
+      "Prawo i Sprawiedliwość": 4,
+      "Platforma Obywatelska": 6
+    },
+    "historical": {
+      "Platforma Obywatelska": 12,
+      "Prawo i Sprawiedliwość": 6
+    }
+  },
+  {
+    "kod_pkd": "86",
+    "opis_pkd": "DZIAŁALNOŚĆ W ZAKRESIE POZOSTAŁEJ OPIEKI ZDROWOTNEJ",
+    "current": {
+      "Platforma Obywatelska": 3,
+      "Prawo i Sprawiedliwość": 2
+    },
+    "historical": {
+      "Platforma Obywatelska": 11,
+      "Prawo i Sprawiedliwość": 11,
+      "Polskie Stronnictwo Ludowe": 1
+    }
+  },
+  {
+    "kod_pkd": "64",
+    "opis_pkd": "POZOSTAŁE POŚREDNICTWO PIENIĘŻNE",
+    "current": {
+      "Platforma Obywatelska": 3
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 14,
+      "Platforma Obywatelska": 9
+    }
+  },
+  {
+    "kod_pkd": "46",
+    "opis_pkd": "SPRZEDAŻ HURTOWA PALIW STAŁYCH, CIEKŁYCH, GAZOWYCH ORAZ PRODUKTÓW POCHODNYCH",
+    "current": {
+      "Prawo i Sprawiedliwość": 5,
+      "Platforma Obywatelska": 4
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 6,
+      "Platforma Obywatelska": 8,
+      "Polskie Stronnictwo Ludowe": 1
+    }
+  },
+  {
+    "kod_pkd": "94",
+    "opis_pkd": "DZIAŁALNOŚĆ ORGANIZACJI KOMERCYJNYCH I PRACODAWCÓW",
+    "current": {
+      "Mniejszość Niemiecka": 1,
+      "Platforma Obywatelska": 5,
+      "Prawo i Sprawiedliwość": 3
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 9,
+      "Platforma Obywatelska": 4
+    }
+  },
+  {
+    "kod_pkd": "82",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z ORGANIZACJĄ TARGÓW I WYSTAW",
+    "current": {
+      "Prawo i Sprawiedliwość": 4,
+      "Platforma Obywatelska": 4,
+      "Polskie Stronnictwo Ludowe": 1
+    },
+    "historical": {
+      "Polskie Stronnictwo Ludowe": 2,
+      "Platforma Obywatelska": 9,
+      "Prawo i Sprawiedliwość": 1
+    }
+  },
+  {
+    "kod_pkd": "36",
+    "opis_pkd": "POBÓR, UZDATNIANIE I DOSTARCZANIE WODY",
+    "current": {
+      "Prawo i Sprawiedliwość": 3
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 10,
+      "Platforma Obywatelska": 5,
+      "Polskie Stronnictwo Ludowe": 1
+    }
+  },
+  {
+    "kod_pkd": "47",
+    "opis_pkd": "POZOSTAŁA SPRZEDAŻ DETALICZNA PROWADZONA W NIEWYSPECJALIZOWANYCH SKLEPACH",
+    "current": {
+      "Platforma Obywatelska": 2
+    },
+    "historical": {
+      "Platforma Obywatelska": 8,
+      "Prawo i Sprawiedliwość": 7
+    }
+  },
+  {
+    "kod_pkd": "49",
+    "opis_pkd": "POZOSTAŁY TRANSPORT LĄDOWY PASAŻERSKI, GDZIE INDZIEJ NIESKLASYFIKOWANY",
+    "current": {
+      "Prawo i Sprawiedliwość": 2,
+      "Polskie Stronnictwo Ludowe": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 5,
+      "Platforma Obywatelska": 5,
+      "Polskie Stronnictwo Ludowe": 1
+    }
+  },
+  {
+    "kod_pkd": "38",
+    "opis_pkd": "ZBIERANIE ODPADÓW INNYCH NIŻ NIEBEZPIECZNE",
+    "current": {},
+    "historical": {
+      "Platforma Obywatelska": 6,
+      "Prawo i Sprawiedliwość": 7
+    }
+  },
+  {
+    "kod_pkd": "72",
+    "opis_pkd": "BADANIA NAUKOWE I PRACE ROZWOJOWE W DZIEDZINIE POZOSTAŁYCH NAUK PRZYRODNICZYCH I TECHNICZNYCH",
+    "current": {
+      "Prawo i Sprawiedliwość": 4
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 5,
+      "Platforma Obywatelska": 4
+    }
+  },
+  {
+    "kod_pkd": "74",
+    "opis_pkd": "POZOSTAŁA DZIAŁALNOŚĆ PROFESJONALNA, NAUKOWA I TECHNICZNA, GDZIE INDZIEJ NIESKLASYFIKOWANA",
+    "current": {
+      "Platforma Obywatelska": 2,
+      "Prawo i Sprawiedliwość": 2
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 4,
+      "Platforma Obywatelska": 3
+    }
+  },
+  {
+    "kod_pkd": "63",
+    "opis_pkd": "POZOSTAŁA DZIAŁALNOŚĆ USŁUGOWA W ZAKRESIE INFORMACJI",
+    "current": {
+      "Prawo i Sprawiedliwość": 3
+    },
+    "historical": {
+      "Platforma Obywatelska": 5,
+      "Prawo i Sprawiedliwość": 2
+    }
+  },
+  {
+    "kod_pkd": "62",
+    "opis_pkd": "POZOSTAŁA DZIAŁALNOŚĆ W ZAKRESIE PROGRAMOWANIA",
+    "current": {
+      "Platforma Obywatelska": 2,
+      "Prawo i Sprawiedliwość": 2
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 2,
+      "Platforma Obywatelska": 4
+    }
+  },
+  {
+    "kod_pkd": "55",
+    "opis_pkd": "HOTELE I PODOBNE OBIEKTY ZAKWATEROWANIA",
+    "current": {
+      "Polskie Stronnictwo Ludowe": 1,
+      "Platforma Obywatelska": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 3,
+      "Polskie Stronnictwo Ludowe": 2,
+      "Platforma Obywatelska": 3
+    }
+  },
+  {
+    "kod_pkd": "01",
+    "opis_pkd": "UPRAWA ZBÓŻ, ROŚLIN STRĄCZKOWYCH I ROŚLIN OLEISTYCH NA NASIONA, Z WYŁĄCZENIEM RYŻU",
+    "current": {
+      "Platforma Obywatelska": 2
+    },
+    "historical": {
+      "Platforma Obywatelska": 2,
+      "Prawo i Sprawiedliwość": 5
+    }
+  },
+  {
+    "kod_pkd": "52",
+    "opis_pkd": "DZIAŁALNOŚĆ USŁUGOWA WSPOMAGAJĄCA TRANSPORT MORSKI",
+    "current": {},
+    "historical": {
+      "Platforma Obywatelska": 4,
+      "Prawo i Sprawiedliwość": 5
+    }
+  },
+  {
+    "kod_pkd": "22",
+    "opis_pkd": "PRODUKCJA POZOSTAŁYCH WYROBÓW Z TWORZYW SZTUCZNYCH",
+    "current": {
+      "Platforma Obywatelska": 2,
+      "Polskie Stronnictwo Ludowe": 1,
+      "Prawo i Sprawiedliwość": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 3,
+      "Platforma Obywatelska": 1
+    }
+  },
+  {
+    "kod_pkd": "66",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z ZARZĄDZANIEM FUNDUSZAMI",
+    "current": {
+      "Platforma Obywatelska": 1
+    },
+    "historical": {
+      "Platforma Obywatelska": 3,
+      "Prawo i Sprawiedliwość": 4
+    }
+  },
+  {
+    "kod_pkd": "90",
+    "opis_pkd": "ARANŻACJA IMPREZ ARTYSTYCZNYCH, MUZYCZNYCH, ESTRADOWYCH I TEATRALNYCH",
+    "current": {
+      "Prawo i Sprawiedliwość": 2,
+      "Platforma Obywatelska": 1
+    },
+    "historical": {
+      "Platforma Obywatelska": 5
+    }
+  },
+  {
+    "kod_pkd": "25",
+    "opis_pkd": "PRODUKCJA BRONI I AMUNICJI",
+    "current": {
+      "Polskie Stronnictwo Ludowe": 1,
+      "Prawo i Sprawiedliwość": 2,
+      "Platforma Obywatelska": 1
+    },
+    "historical": {
+      "Platforma Obywatelska": 2,
+      "Prawo i Sprawiedliwość": 2
+    }
+  },
+  {
+    "kod_pkd": "43",
+    "opis_pkd": "POZOSTAŁE SPECJALISTYCZNE ROBOTY BUDOWLANE, GDZIE INDZIEJ NIESKLASYFIKOWANE",
+    "current": {
+      "Prawo i Sprawiedliwość": 2,
+      "Platforma Obywatelska": 2
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 3,
+      "Platforma Obywatelska": 1
+    }
+  },
+  {
+    "kod_pkd": "69",
+    "opis_pkd": "DZIAŁALNOŚĆ RACHUNKOWO-KSIĘGOWA; DORADZTWO PODATKOWE Z WYŁĄCZENIEM DZIAŁALNOŚCI BIEGŁYCH KSIĘGOWYCH I BIEGŁYCH REWIDENTÓW ORAZ DORADZTWA PODATKOWEGO",
+    "current": {
+      "Prawo i Sprawiedliwość": 3
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 4
+    }
+  },
+  {
+    "kod_pkd": "60",
+    "opis_pkd": "NADAWANIE PROGRAMÓW RADIOFONICZNYCH",
+    "current": {
+      "Prawo i Sprawiedliwość": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 5,
+      "Platforma Obywatelska": 1
+    }
+  },
+  {
+    "kod_pkd": "65",
+    "opis_pkd": "POZOSTAŁE UBEZPIECZENIA OSOBOWE ORAZ UBEZPIECZENIA MAJĄTKOWE",
+    "current": {},
+    "historical": {
+      "Prawo i Sprawiedliwość": 7
+    }
+  },
+  {
+    "kod_pkd": "59",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z PRODUKCJĄ FILMÓW, NAGRAŃ WIDEO I PROGRAMÓW TELEWIZYJNYCH",
+    "current": {
+      "Prawo i Sprawiedliwość": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 2,
+      "Platforma Obywatelska": 3
+    }
+  },
+  {
+    "kod_pkd": "10",
+    "opis_pkd": "PRZETWARZANIE I KONSERWOWANIE MIĘSA Z DROBIU",
+    "current": {
+      "Prawo i Sprawiedliwość": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 5
+    }
+  },
+  {
+    "kod_pkd": "18",
+    "opis_pkd": "DZIAŁALNOŚĆ POLIGRAFICZNA",
+    "current": {
+      "Platforma Obywatelska": 1,
+      "Prawo i Sprawiedliwość": 1
+    },
+    "historical": {
+      "Platforma Obywatelska": 4
+    }
+  },
+  {
+    "kod_pkd": "33",
+    "opis_pkd": "NAPRAWA I KONSERWACJA STATKÓW I ŁODZI",
+    "current": {
+      "Platforma Obywatelska": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 4
+    }
+  },
+  {
+    "kod_pkd": "20",
+    "opis_pkd": "PRODUKCJA TWORZYW SZTUCZNYCH W FORMACH PODSTAWOWYCH",
+    "current": {
+      "Prawo i Sprawiedliwość": 1,
+      "Polskie Stronnictwo Ludowe": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 2,
+      "Platforma Obywatelska": 1
+    }
+  },
+  {
+    "kod_pkd": "42",
+    "opis_pkd": "ROBOTY ZWIĄZANE Z BUDOWĄ DRÓG I AUTOSTRAD",
+    "current": {
+      "Platforma Obywatelska": 2
+    },
+    "historical": {
+      "Polskie Stronnictwo Ludowe": 1,
+      "Prawo i Sprawiedliwość": 1,
+      "Platforma Obywatelska": 1
+    }
+  },
+  {
+    "kod_pkd": "56",
+    "opis_pkd": "RESTAURACJE I INNE STAŁE PLACÓWKI GASTRONOMICZNE",
+    "current": {},
+    "historical": {
+      "Prawo i Sprawiedliwość": 4,
+      "Platforma Obywatelska": 1
+    }
+  },
+  {
+    "kod_pkd": "81",
+    "opis_pkd": "DZIAŁALNOŚĆ POMOCNICZA ZWIĄZANA Z UTRZYMANIEM PORZĄDKU W BUDYNKACH",
+    "current": {
+      "Prawo i Sprawiedliwość": 1,
+      "Platforma Obywatelska": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 1,
+      "Platforma Obywatelska": 2
+    }
+  },
+  {
+    "kod_pkd": "32",
+    "opis_pkd": "PRODUKCJA ARTYKUŁÓW PRZEMYSŁOWYCH SZCZOTKARSKO-PĘDZLARSKICH",
+    "current": {
+      "Platforma Obywatelska": 1,
+      "Prawo i Sprawiedliwość": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 2,
+      "Platforma Obywatelska": 1
+    }
+  },
+  {
+    "kod_pkd": "91",
+    "opis_pkd": "DZIAŁALNOŚĆ ARCHIWÓW",
+    "current": {
+      "Prawo i Sprawiedliwość": 2
+    },
+    "historical": {
+      "Platforma Obywatelska": 1,
+      "Prawo i Sprawiedliwość": 2
+    }
+  },
+  {
+    "kod_pkd": "23",
+    "opis_pkd": "KSZTAŁTOWANIE I OBRÓBKA SZKŁA PŁASKIEGO",
+    "current": {
+      "Prawo i Sprawiedliwość": 1,
+      "Platforma Obywatelska": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 1,
+      "Platforma Obywatelska": 1
+    }
+  },
+  {
+    "kod_pkd": "08",
+    "opis_pkd": "WYDOBYWANIE ŻWIRU I PIASKU; WYDOBYWANIE GLINY I KAOLINU",
+    "current": {},
+    "historical": {
+      "Prawo i Sprawiedliwość": 3
+    }
+  },
+  {
+    "kod_pkd": "79",
+    "opis_pkd": "DZIAŁALNOŚĆ W ZAKRESIE INFORMACJI TURYSTYCZNEJ",
+    "current": {
+      "Platforma Obywatelska": 1
+    },
+    "historical": {
+      "Platforma Obywatelska": 2
+    }
+  },
+  {
+    "kod_pkd": "11",
+    "opis_pkd": "PRODUKCJA PIWA",
+    "current": {
+      "Prawo i Sprawiedliwość": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 2
+    }
+  },
+  {
+    "kod_pkd": "71",
+    "opis_pkd": "POZOSTAŁE BADANIA I ANALIZY TECHNICZNE",
+    "current": {
+      "Prawo i Sprawiedliwość": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 1,
+      "Platforma Obywatelska": 1
+    }
+  },
+  {
+    "kod_pkd": "45",
+    "opis_pkd": "KONSERWACJA I NAPRAWA POJAZDÓW SAMOCHODOWYCH, Z WYŁĄCZENIEM MOTOCYKLI",
+    "current": {
+      "Platforma Obywatelska": 1,
+      "Prawo i Sprawiedliwość": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 1
+    }
+  },
+  {
+    "kod_pkd": "37",
+    "opis_pkd": "ODPROWADZANIE I OCZYSZCZANIE ŚCIEKÓW",
+    "current": {
+      "Prawo i Sprawiedliwość": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 2
+    }
+  },
+  {
+    "kod_pkd": "84",
+    "opis_pkd": "KIEROWANIE W ZAKRESIE DZIAŁALNOŚCI ZWIĄZANEJ Z OCHRONĄ ZDROWIA, EDUKACJĄ, KULTURĄ ORAZ POZOSTAŁYMI USŁUGAMI SPOŁECZNYMI, Z WYŁĄCZENIEM ZABEZPIECZEŃ SPOŁECZNYCH",
+    "current": {
+      "Platforma Obywatelska": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 1,
+      "Platforma Obywatelska": 1
+    }
+  },
+  {
+    "kod_pkd": "51",
+    "opis_pkd": "HANDEL HURTOWY I KOMISOWY, Z WYJĄTKIEM HANDLU POJAZDAMI MECHANICZNYMI I MOTOCYKLAMI",
+    "current": {},
+    "historical": {
+      "Platforma Obywatelska": 1,
+      "Prawo i Sprawiedliwość": 2
+    }
+  },
+  {
+    "kod_pkd": "13",
+    "opis_pkd": "PRODUKCJA GOTOWYCH WYROBÓW TEKSTYLNYCH",
+    "current": {
+      "Prawo i Sprawiedliwość": 2
+    },
+    "historical": {}
+  },
+  {
+    "kod_pkd": "29",
+    "opis_pkd": "PRODUKCJA SAMOCHODÓW OSOBOWYCH",
+    "current": {},
+    "historical": {
+      "Platforma Obywatelska": 2
+    }
+  },
+  {
+    "kod_pkd": "96",
+    "opis_pkd": "FRYZJERSTWO I POZOSTAŁE ZABIEGI KOSMETYCZNE",
+    "current": {
+      "Prawo i Sprawiedliwość": 1
+    },
+    "historical": {
+      "Platforma Obywatelska": 1
+    }
+  },
+  {
+    "kod_pkd": "19",
+    "opis_pkd": "WYTWARZANIE I PRZETWARZANIE PRODUKTÓW RAFINACJI ROPY NAFTOWEJ",
+    "current": {},
+    "historical": {
+      "Prawo i Sprawiedliwość": 2
+    }
+  },
+  {
+    "kod_pkd": "17",
+    "opis_pkd": "PRODUKCJA PAPIERU FALISTEGO I TEKTURY FALISTEJ ORAZ OPAKOWAŃ Z PAPIERU I TEKTURY",
+    "current": {},
+    "historical": {
+      "Platforma Obywatelska": 2
+    }
+  },
+  {
+    "kod_pkd": "61",
+    "opis_pkd": "DZIAŁALNOŚĆ W ZAKRESIE TELEKOMUNIKACJI PRZEWODOWEJ",
+    "current": {
+      "Platforma Obywatelska": 1
+    },
+    "historical": {
+      "Prawo i Sprawiedliwość": 1
+    }
+  },
+  {
+    "kod_pkd": "78",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z WYSZUKIWANIEM MIEJSC PRACY I POZYSKIWANIEM PRACOWNIKÓW",
+    "current": {
+      "Prawo i Sprawiedliwość": 1
+    },
+    "historical": {}
+  },
+  {
+    "kod_pkd": "50",
+    "opis_pkd": "TRANSPORT MORSKI I PRZYBRZEŻNY TOWARÓW",
+    "current": {},
+    "historical": {
+      "Prawo i Sprawiedliwość": 1
+    }
+  },
+  {
+    "kod_pkd": "09",
+    "opis_pkd": "DZIAŁALNOŚĆ USŁUGOWA WSPOMAGAJĄCA POZOSTAŁE GÓRNICTWO I WYDOBYWANIE",
+    "current": {
+      "Platforma Obywatelska": 1
+    },
+    "historical": {}
+  },
+  {
+    "kod_pkd": "92",
+    "opis_pkd": "WSPIERANIE DZIAŁALNOŚCI OŚWIATOWEJ I PUBLICYSTYCZNEJ",
+    "current": {},
+    "historical": {
+      "Prawo i Sprawiedliwość": 1
+    }
+  },
+  {
+    "kod_pkd": "67",
+    "opis_pkd": "ZARZĄDZANIE RYNKIEM FINANSOWYM",
+    "current": {
+      "Prawo i Sprawiedliwość": 1
+    },
+    "historical": {}
+  },
+  {
+    "kod_pkd": "26",
+    "opis_pkd": "PRODUKCJA ELEMENTÓW ELEKTRONICZNYCH",
+    "current": {},
+    "historical": {
+      "Platforma Obywatelska": 1
+    }
+  },
+  {
+    "kod_pkd": "21",
+    "opis_pkd": "PRODUKCJA LEKÓW I POZOSTAŁYCH WYROBÓW FARMACEUTYCZNYCH",
+    "current": {},
+    "historical": {
+      "Platforma Obywatelska": 1
+    }
+  },
+  {
+    "kod_pkd": "88",
+    "opis_pkd": "POZOSTAŁA POMOC SPOŁECZNA BEZ ZAKWATEROWANIA, GDZIE INDZIEJ NIESKLASYFIKOWANA",
+    "current": {
+      "Platforma Obywatelska": 1
+    },
+    "historical": {}
+  },
+  {
+    "kod_pkd": "24",
+    "opis_pkd": "PRODUKCJA OŁOWIU, CYNKU I CYNY",
+    "current": {},
+    "historical": {
+      "Platforma Obywatelska": 1
+    }
+  },
+  {
+    "kod_pkd": "77",
+    "opis_pkd": "WYNAJEM I DZIERŻAWA POZOSTAŁYCH MASZYN, URZĄDZEŃ ORAZ DÓBR MATERIALNYCH, GDZIE INDZIEJ NIESKLASYFIKOWANE",
+    "current": {},
+    "historical": {
+      "Platforma Obywatelska": 1
+    }
+  },
+  {
+    "kod_pkd": "02",
+    "opis_pkd": "GOSPODARKA LEŚNA I POZOSTAŁA DZIAŁALNOŚĆ LEŚNA, Z WYŁĄCZENIEM POZYSKIWANIA PRODUKTÓW LEŚNYCH",
+    "current": {
+      "Prawo i Sprawiedliwość": 1
+    },
+    "historical": {}
+  },
+  {
+    "kod_pkd": "14",
+    "opis_pkd": "PRODUKCJA POZOSTAŁEJ ODZIEŻY WIERZCHNIEJ",
+    "current": {
+      "Prawo i Sprawiedliwość": 1
+    },
+    "historical": {}
+  },
+  {
+    "kod_pkd": "28",
+    "opis_pkd": "PRODUKCJA POZOSTAŁYCH MASZYN OGÓLNEGO PRZEZNACZENIA, GDZIE INDZIEJ NIESKLASYFIKOWANA",
+    "current": {},
+    "historical": {
+      "Prawo i Sprawiedliwość": 1
+    }
+  },
+  {
+    "kod_pkd": "06",
+    "opis_pkd": "GÓRNICTWO GAZU ZIEMNEGO",
+    "current": {},
+    "historical": {
+      "Prawo i Sprawiedliwość": 1
+    }
+  },
+  {
+    "kod_pkd": "07",
+    "opis_pkd": "GÓRNICTWO POZOSTAŁYCH RUD METALI NIEŻELAZNYCH",
+    "current": {},
+    "historical": {
+      "Prawo i Sprawiedliwość": 1
+    }
+  }
+]

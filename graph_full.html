@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+  <title>Clustered Network Graph with Search & Highlight</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    html, body { margin:0; padding:0; width:100%; height:100%; font-family:system-ui; background:#fafafa; }
+    svg { width:100%; height:100%; cursor:grab; }
+    .node text { font-size: 10px; pointer-events: auto; fill: #333; cursor: pointer; }
+    .node:hover { cursor: pointer; }
+    .link { stroke-opacity:0.45; }
+    .legend {
+      position:absolute; top:10px; left:10px;
+      background:rgba(255,255,255,0.9); padding:8px 12px;
+      border-radius:8px; font-size:13px; box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    }
+    .legend div { margin:2px 0; }
+    .popup {
+      position:absolute; top:60px; right:20px;
+      background:#fff; border:1px solid #ccc; border-radius:8px;
+      padding:12px; width:320px; max-height:400px; overflow-y:auto;
+      box-shadow:0 4px 12px rgba(0,0,0,0.15);
+      font-size:14px; display:none;
+    }
+    .popup h3 { margin-top:0; font-size:16px; }
+    .popup .close { position:absolute; top:8px; right:10px; cursor:pointer; font-weight:bold; }
+    .popup td { padding:3px 0; vertical-align:top; font-size:13px; }
+    .popup td:first-child { font-weight:bold; width:40%; }
+    .search-bar {
+      position:absolute; top:10px; left:50%; transform:translateX(-50%);
+    }
+    .search-bar input {
+      padding:5px 10px; width:250px; font-size:14px;
+      border:1px solid #aaa; border-radius:5px;
+    }
+    .autocomplete-suggestions {
+      position:absolute; top:35px; left:50%; transform:translateX(-50%);
+      background:#fff; border:1px solid #aaa; border-radius:5px;
+      width:250px; max-height:200px; overflow-y:auto; display:none;
+      z-index:10; font-size:14px;
+    }
+    .autocomplete-suggestions div { padding:5px 8px; cursor:pointer; }
+    .autocomplete-suggestions div:hover { background:#eee; }
+    #controls {
+      position:absolute; top:10px; right:10px;
+      background:#fff; padding:6px 10px; border-radius:6px;
+      font-size:13px; box-shadow:0 2px 6px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Search person or company...">
+    <div id="suggestions" class="autocomplete-suggestions"></div>
+  </div>
+
+  <div class="legend">
+    <strong>Legenda:</strong>
+    <div><span style="color:#cc0000">●</span> PiS</div>
+    <div><span style="color:#ff7f00">●</span> PO</div>
+    <div><span style="color:#2ca02c">●</span> PSL</div>
+    <div><span style="color:#d62728">●</span> Lewica</div>
+    <div><span style="color:#000000">●</span> Kukiz'15</div>
+    <div><span style="color:#4A90E2">●</span> Inni politycy</div>
+    <div><span style="color:#f39c12">■</span> Organizacje</div>
+    <div><span style="color:#8e44ad">◆</span> Główna Osoba</div>
+    <div><span style="color:#28a745">━</span> Aktualne powiązanie</div>
+    <div><span style="color:#aaa">━</span> Historyczne powiązanie</div>
+  </div>
+
+  <div id="controls">
+    <label><input type="checkbox" id="toggleHist" checked> Pokaż historyczne</label>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="close" onclick="hidePopup()">×</div>
+    <div id="popup-content"></div>
+  </div>
+
+  <svg></svg>
+  <script>
+const svg = d3.select("svg");
+const container = svg.append("g");
+
+const zoom = d3.zoom().scaleExtent([0.05, 5]).on("zoom", e => container.attr("transform", e.transform));
+svg.call(zoom);
+
+const partyColor = {
+  "Prawo i Sprawiedliwość":"#cc0000",
+  "Platforma Obywatelska":"#ff7f00",
+  "Kukiz'15":"#000000",
+  "Polskie Stronnictwo Ludowe":"#2ca02c",
+  "Lewica":"#d62728"
+};
+
+const linkColor = d3.scaleOrdinal()
+  .domain(["current","historical","glowna_osoba"])
+  .range(["#28a745","#aaa","#8e44ad"]);
+
+function nodeFill(d) {
+  if (d.type==="organization") return "#f39c12";
+  if (d.type==="glowna_osoba") return "#8e44ad";
+  return partyColor[d.party] || "#4A90E2";
+}
+function nodeSymbol(d) {
+  if (d.type==="organization") return d3.symbolSquare;
+  if (d.type==="glowna_osoba") return d3.symbolDiamond;
+  return d3.symbolCircle;
+}
+
+// popup
+function hidePopup() {
+  const p = document.getElementById("popup");
+  if (p) p.style.display = "none";
+}
+function showPopup(d) {
+  const popup = document.getElementById("popup");
+  const content = document.getElementById("popup-content");
+  let html = `<h3>${d.label || d.name || d.id}</h3><table>`;
+  if (d.type==="person") {
+    html += `<tr><td>Partia</td><td>${d.party||""}</td></tr>`;
+    html += `<tr><td>Data ur.</td><td>${d.birth_date||""}</td></tr>`;
+    html += `<tr><td>Okręg</td><td>${d.district||""}</td></tr>`;
+    html += `<tr><td>Zawód</td><td>${d.profession||""}</td></tr>`;
+    html += `<tr><td>Rejestr ID</td><td>${d.rejestr_id||""}</td></tr>`;
+  } else if (d.type==="organization") {
+    html += `<tr><td>Org ID</td><td>${d.org_id||""}</td></tr>`;
+    html += `<tr><td>KRS</td><td>${d.krs||""}</td></tr>`;
+    html += `<tr><td>NIP</td><td>${d.nip||""}</td></tr>`;
+    html += `<tr><td>Miasto</td><td>${d.miasto||""}</td></tr>`;
+    html += `<tr><td>PKD</td><td>${d.pkd_przewazajace_dzial||""}</td></tr>`;
+  } else if (d.type==="glowna_osoba") {
+    html += `<tr><td>ID</td><td>${d.glowna_id||""}</td></tr>`;
+  }
+  html += "</table>";
+  content.innerHTML = html;
+  popup.style.display = "block";
+}
+
+d3.json("network_full.json").then(graph => {
+  const allNodes = graph.nodes.map(d => ({...d}));
+  const allLinks = graph.links.map(l => {
+    const sId = (typeof l.source === "object") ? l.source.id : l.source;
+    const tId = (typeof l.target === "object") ? l.target.id : l.target;
+    return {...l, sourceId: sId, targetId: tId, _isHistorical:(l.relation==="historical")};
+  });
+
+  let linkSel = container.append("g").selectAll("line");
+  let nodeSel = container.append("g").selectAll("g");
+
+  const simulation = d3.forceSimulation()
+    .force("link", d3.forceLink().id(d => d.id).distance(60))
+    .force("charge", d3.forceManyBody().strength(-100))
+    .force("center", d3.forceCenter(innerWidth/2, innerHeight/2))
+    .force("collision", d3.forceCollide().radius(40));
+
+  function render(showHistorical){
+let linksData;
+if (showHistorical) {
+  // keep all links
+  linksData = allLinks;
+} else {
+  // keep only current + glowna_osoba links
+  const currentLinks = allLinks.filter(l => l.relation === "current");
+
+  // find organizations that survive thanks to current links
+  const orgsWithCurrent = new Set();
+  currentLinks.forEach(l => {
+    orgsWithCurrent.add(l.sourceId);
+    orgsWithCurrent.add(l.targetId);
+  });
+
+  // keep głowna_osoba links only if they connect to a surviving organization
+  const glownaLinks = allLinks.filter(
+    l => l.relation === "glowna_osoba" &&
+         (orgsWithCurrent.has(l.sourceId) || orgsWithCurrent.has(l.targetId))
+  );
+
+  linksData = currentLinks.concat(glownaLinks);
+}
+
+// collect visible node ids
+const visibleIds = new Set();
+linksData.forEach(l => { visibleIds.add(l.sourceId); visibleIds.add(l.targetId); });
+
+// filter nodes
+const nodesData = allNodes.filter(n => visibleIds.has(n.id));
+
+// assign to finalLinks
+const finalLinks = linksData;
+
+    linkSel = linkSel
+      .data(finalLinks, d => `${d.sourceId}|${d.targetId}|${d.relation}`)
+      .join(
+        enter => enter.append("line")
+          .attr("class","link")
+          .attr("stroke", d => linkColor(d.relation))
+          .attr("stroke-width", 1.1),
+        update => update,
+        exit => exit.remove()
+      );
+
+    const nodeEnter = nodeSel
+      .data(nodesData, d => d.id)
+      .join(
+        enter => {
+          const g = enter.append("g").attr("class","node").call(drag(simulation));
+          g.append("path")
+            .attr("d", d => d3.symbol().type(nodeSymbol(d)).size(150)())
+            .attr("fill", nodeFill)
+            .attr("stroke","#fff").attr("stroke-width",1.2);
+          g.append("text")
+            .attr("x", 10).attr("y", 3)
+            .text(d => {
+              const t = d.label || d.name || d.id;
+              return t.length > 26 ? t.slice(0, 26) + "…" : t;
+            })
+            .on("click", (event, d) => { event.stopPropagation(); highlightSelection(d); showPopup(d); });
+          g.on("click", (event,d)=> { event.stopPropagation(); highlightSelection(d); showPopup(d); });
+          return g;
+        },
+        update => update,
+        exit => exit.remove()
+      );
+
+    nodeSel = nodeEnter;
+
+    simulation.nodes(nodesData).on("tick", () => {
+      linkSel
+        .attr("x1", d => (typeof d.source==="object" ? d.source.x : nodesData.find(n=>n.id===d.sourceId).x))
+        .attr("y1", d => (typeof d.source==="object" ? d.source.y : nodesData.find(n=>n.id===d.sourceId).y))
+        .attr("x2", d => (typeof d.target==="object" ? d.target.x : nodesData.find(n=>n.id===d.targetId).x))
+        .attr("y2", d => (typeof d.target==="object" ? d.target.y : nodesData.find(n=>n.id===d.targetId).y));
+      nodeSel.attr("transform", d => `translate(${d.x},${d.y})`);
+    });
+    simulation.force("link").links(finalLinks);
+    simulation.alpha(0.6).restart();
+
+    currentNodeMap = new Map(nodesData.map(n => [n.id, n]));
+    currentLinks = finalLinks;
+  }
+
+  let currentNodeMap = new Map();
+  let currentLinks = [];
+  render(true);
+
+  d3.select("#toggleHist").on("change", function(){
+    hidePopup();
+    render(this.checked);
+  });
+
+  // highlight neighbors
+  function highlightSelection(d) {
+    const neighbors = new Set([d.id]);
+    currentLinks.forEach(l => {
+      const src = l.source.id || l.source;
+      const tgt = l.target.id || l.target;
+      if (src === d.id) neighbors.add(tgt);
+      if (tgt === d.id) neighbors.add(src);
+    });
+
+    nodeSel.selectAll("path")
+      .attr("transform", n => neighbors.has(n.id) ? "scale(1.6)" : "scale(1)")
+      .attr("opacity", n => neighbors.has(n.id) ? 1 : 0.2);
+
+    linkSel
+      .attr("stroke-width", l => {
+        const src = l.source.id || l.source;
+        const tgt = l.target.id || l.target;
+        return (src === d.id || tgt === d.id) ? 3 : 1;
+      })
+      .attr("opacity", l => {
+        const src = l.source.id || l.source;
+        const tgt = l.target.id || l.target;
+        return (src === d.id || tgt === d.id) ? 1 : 0.1;
+      });
+  }
+
+  svg.on("click", () => {
+    hidePopup();
+    nodeSel.selectAll("path").attr("transform","scale(1)").attr("opacity",1);
+    linkSel.attr("stroke-width",1).attr("opacity",1);
+  });
+
+  // autocomplete search
+  const searchBox = document.getElementById("search");
+  const suggestions = document.getElementById("suggestions");
+  searchBox.addEventListener("input", function() {
+    const query = this.value.toLowerCase();
+    if (query.length < 2) { suggestions.style.display="none"; return; }
+    const matches = Array.from(currentNodeMap.values())
+      .filter(n => (n.label||n.name||n.id).toLowerCase().includes(query))
+      .slice(0,15);
+    if (matches.length === 0) { suggestions.style.display="none"; return; }
+    suggestions.innerHTML = "";
+    matches.forEach(m => {
+      const div = document.createElement("div");
+      div.textContent = m.label || m.name || m.id;
+      div.onclick = () => {
+        searchBox.value = div.textContent;
+        suggestions.style.display="none";
+        zoomToNode(m);
+        highlightSelection(m);
+        showPopup(m);
+      };
+      suggestions.appendChild(div);
+    });
+    suggestions.style.display="block";
+  });
+
+  function zoomToNode(found) {
+    const transform = d3.zoomIdentity
+      .translate(innerWidth/2 - found.x*2, innerHeight/2 - found.y*2)
+      .scale(2);
+    svg.transition().duration(750).call(zoom.transform, transform);
+  }
+});
+
+function drag(sim){
+  function dragstarted(e,d){ if(!e.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; }
+  function dragged(e,d){ d.fx=e.x; d.fy=e.y; }
+  function dragended(e,d){ if(!e.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }
+  return d3.drag().filter(event => event.target.tagName !== 'text')
+    .on("start", dragstarted).on("drag", dragged).on("end", dragended);
+}
+</script>
+
+</body>
+</html>

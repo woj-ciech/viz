@@ -1,0 +1,1322 @@
+[
+  {
+    "person": "Adam Abramowicz",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "\"INVESTNET\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2008-05-15",
+    "data_koniec": "2018-08-17",
+    "opis": ""
+  },
+  {
+    "person": "Maciej Badora",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "EURO-PARK ZĄBKOWICE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2022-04-27",
+    "data_koniec": "2024-11-13",
+    "opis": ""
+  },
+  {
+    "person": "Maciej Badora",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "\"INVEST-PARK DEVELOPMENT\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2017-02-15",
+    "data_koniec": "2017-07-05",
+    "opis": ""
+  },
+  {
+    "person": "Maciej Badora",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "WAŁBRZYSKA SPECJALNA STREFA EKONOMICZNA \"INVEST-PARK\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2016-05-20",
+    "data_koniec": "2019-07-17",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Paweł Bańkowski",
+    "party": "Platforma Obywatelska",
+    "company": "JAWORZNICKIE TOWARZYSTWO BUDOWNICTWA SPOŁECZNEGO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2003-11-18",
+    "data_koniec": "2007-01-05",
+    "opis": ""
+  },
+  {
+    "person": "Paweł Bejda",
+    "party": "Polskie Stronnictwo Ludowe",
+    "company": "MŁODZIEŻOWA SPÓŁDZIELNIA MIESZKANIOWA \"PRZYSZŁOŚĆ\" W ŁOWICZU",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2004-04-26",
+    "data_koniec": "2009-07-27",
+    "opis": ""
+  },
+  {
+    "person": "Kamil Bortniczuk",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "KM GROUP SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "ROBOTY BUDOWLANE ZWIĄZANE ZE WZNOSZENIEM BUDYNKÓW MIESZKALNYCH",
+    "data_start": "2025-09-29",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Małgorzata Chmiel",
+    "party": "Platforma Obywatelska",
+    "company": "SPÓŁDZIELNIA MIESZKANIOWA VII DWÓR",
+    "kod_pkd": "68",
+    "opis_pkd": "ZARZĄDZANIE NIERUCHOMOŚCIAMI WYKONYWANE NA ZLECENIE",
+    "data_start": "2025-07-25",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Małgorzata Chmiel",
+    "party": "Platforma Obywatelska",
+    "company": "FUNDACJA \"WSPÓLNOTA GDAŃSKA",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2016-07-15",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Małgorzata Chmiel",
+    "party": "Platforma Obywatelska",
+    "company": "SPÓŁDZIELNIA MIESZKANIOWA VII DWÓR",
+    "kod_pkd": "68",
+    "opis_pkd": "ZARZĄDZANIE NIERUCHOMOŚCIAMI WYKONYWANE NA ZLECENIE",
+    "data_start": "2002-09-19",
+    "data_koniec": "2004-12-20",
+    "opis": ""
+  },
+  {
+    "person": "Małgorzata Chmiel",
+    "party": "Platforma Obywatelska",
+    "company": "SPÓŁDZIELNIA MIESZKANIOWA VII DWÓR",
+    "kod_pkd": "68",
+    "opis_pkd": "ZARZĄDZANIE NIERUCHOMOŚCIAMI WYKONYWANE NA ZLECENIE",
+    "data_start": "2014-09-03",
+    "data_koniec": "2017-08-08",
+    "opis": ""
+  },
+  {
+    "person": "Janusz Cichoń",
+    "party": "Platforma Obywatelska",
+    "company": "POLSKIE TOWARZYSTWO EKONOMICZNE",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2006-02-02",
+    "data_koniec": "2009-06-01",
+    "opis": "CZŁONEK ZARZĄDU KRAJOWEGO"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "TRAKT INVEST III SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2024-12-17",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "MORAWA 33 SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW MIESZKALNYCH",
+    "data_start": "2024-05-20",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "VITIS PARK SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2021-08-12",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "TRAKT INVEST II SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2021-07-09",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "VESTRA INVESTMENT SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2021-01-22",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "TRAKT INVEST SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2020-02-25",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "UROCZE WICZLINO A. CYRAŃSKI SPÓŁKA JAWNA",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2016-12-29",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "UROCZE WICZLINO A. CYRAŃSKI SPÓŁKA JAWNA",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2016-12-29",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "VITIS PARK SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2016-12-28",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "TRAKT INVEST SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2004-03-04",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "TRAKT INVEST II SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ SPÓŁKA KOMANDYTOWA",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2021-10-25",
+    "data_koniec": "2024-07-12",
+    "opis": ""
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "TOPLOKUM SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2018-05-10",
+    "data_koniec": "2019-02-27",
+    "opis": ""
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "MAC INWESTYCJE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2016-01-28",
+    "data_koniec": "2016-07-15",
+    "opis": ""
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "VESTRA INVESTMENT SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2012-05-15",
+    "data_koniec": "2012-12-18",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "VESTRA INVESTMENT SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2012-05-15",
+    "data_koniec": "2012-12-18",
+    "opis": ""
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "TRAKT INVEST SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2004-03-04",
+    "data_koniec": "2020-02-11",
+    "opis": "PREZES"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "AM NIERUCHOMOŚCI SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2004-03-03",
+    "data_koniec": "2014-05-06",
+    "opis": ""
+  },
+  {
+    "person": "Krzysztof Czabański",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "\"SREBRNA-MEDIA\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2002-01-11",
+    "data_koniec": "2006-09-19",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Krzysztof Czabański",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "\"SREBRNA-MEDIA\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2010-06-11",
+    "data_koniec": "2016-01-08",
+    "opis": "CZŁONEK ZARZĄDU"
+  },
+  {
+    "person": "Grzegorz Długi",
+    "party": "Kukiz'15",
+    "company": "NOWY MARCHOŁT",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2022-11-14",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Antoni Duda",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "BRZESKIE TOWARZYSTWO BUDOWNICTWA SPOŁECZNEGO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2023-04-14",
+    "data_koniec": "2024-08-08",
+    "opis": ""
+  },
+  {
+    "person": "Katarzyna Dutkiewicz",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "SPÓŁDZIELNIA MIESZKANIOWA \"ORŁOWIEC\"",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2024-07-08",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Katarzyna Dutkiewicz",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "RACIBORSKIE TOWARZYSTWO BUDOWNICTWA SPOŁECZNEGO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2022-03-21",
+    "data_koniec": "2024-05-13",
+    "opis": ""
+  },
+  {
+    "person": "Barbara Dziuk",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "ŚLĄSKIE TOWARZYSTWO BUDOWNICTWA SPOŁECZNEGO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2024-09-19",
+    "data_koniec": "2025-05-12",
+    "opis": ""
+  },
+  {
+    "person": "Krzysztof Gadowski",
+    "party": "Platforma Obywatelska",
+    "company": "KATOWICKA SPECJALNA STREFA EKONOMICZNA SPÓŁKA AKCYJNA",
+    "kod_pkd": "68",
+    "opis_pkd": "ZARZĄDZANIE NIERUCHOMOŚCIAMI WYKONYWANENA ZLECENIE",
+    "data_start": "2002-04-11",
+    "data_koniec": "2004-05-13",
+    "opis": ""
+  },
+  {
+    "person": "Ryszard Galla",
+    "party": "Mniejszość Niemiecka",
+    "company": "TOWARZYSTWO SPOŁECZNO-KULTURALNE NIEMCÓW NA ŚLĄSKU OPOLSKIM",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2001-06-08",
+    "data_koniec": null,
+    "opis": "WICEPRZEWODNICZĄCY"
+  },
+  {
+    "person": "Zdzisław Gawlik",
+    "party": "Platforma Obywatelska",
+    "company": "POLSKIE ELEKTROWNIE JĄDROWE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2012-08-20",
+    "data_koniec": "2013-07-22",
+    "opis": "WICEPREZES ZARZĄDU"
+  },
+  {
+    "person": "Paweł Grabowski",
+    "party": "Kukiz'15",
+    "company": "PKG2 SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2022-02-09",
+    "data_koniec": null,
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Paweł Grabowski",
+    "party": "Kukiz'15",
+    "company": "PKG2 SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2022-02-09",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Paweł Grabowski",
+    "party": "Kukiz'15",
+    "company": "PKG INWESTYCJE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2020-07-13",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Paweł Grabowski",
+    "party": "Kukiz'15",
+    "company": "PKG INWESTYCJE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2020-07-13",
+    "data_koniec": "2022-02-14",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Jolanta Hibner",
+    "party": "Platforma Obywatelska",
+    "company": "SPÓŁDZIELNIA BUDOWLANO-MIESZKANIOWA PRACOWNIKÓW KULTURY",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2002-09-05",
+    "data_koniec": "2004-07-15",
+    "opis": ""
+  },
+  {
+    "person": "Jolanta Hibner",
+    "party": "Platforma Obywatelska",
+    "company": "SPÓŁDZIELNIA BUDOWLANO-MIESZKANIOWA PRACOWNIKÓW KULTURY",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2018-08-24",
+    "data_koniec": "2025-03-28",
+    "opis": ""
+  },
+  {
+    "person": "Stanisław Huskowski",
+    "party": "Platforma Obywatelska",
+    "company": "\"WROCŁAWSKI PARK TECHNOLOGICZNY\" SPÓŁKA AKCYJNA",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2019-06-11",
+    "data_koniec": "2021-01-20",
+    "opis": "WICEPREZES ZARZĄDU"
+  },
+  {
+    "person": "Michał Jach",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "SPOŁECZNA INICJATYWA MIESZKANIOWA KZN BAŁTYK SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2024-06-12",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Andrzej Jaworski",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "OGRODOWA - INWESTYCJE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2016-06-24",
+    "data_koniec": "2017-07-06",
+    "opis": ""
+  },
+  {
+    "person": "Eugeniusz Kłopotek",
+    "party": "Polskie Stronnictwo Ludowe",
+    "company": "FUNDACJA ROZWOJU",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI I DZIERŻAWIONYMI",
+    "data_start": "2002-08-01",
+    "data_koniec": "2004-06-14",
+    "opis": ""
+  },
+  {
+    "person": "Andrzej Kobylarz",
+    "party": "Kukiz'15",
+    "company": "AMKOB SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "POŚREDNICTWO W OBROCIE NIERUCHOMOŚCIAMI",
+    "data_start": "2022-03-29",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Andrzej Kobylarz",
+    "party": "Kukiz'15",
+    "company": "AMKOB SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "POŚREDNICTWO W OBROCIE NIERUCHOMOŚCIAMI",
+    "data_start": "2025-02-18",
+    "data_koniec": null,
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Paweł Kobyliński",
+    "party": "Platforma Obywatelska",
+    "company": "\"POLMARKET\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2011-08-17",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Paweł Kobyliński",
+    "party": "Platforma Obywatelska",
+    "company": "SPÓŁDZIELNIA MIESZKANIOWA \"ALEJA MAJOWA\"",
+    "kod_pkd": "68",
+    "opis_pkd": "ZARZĄDZANIE NIERUCHOMOŚCIAMI WYKONYWANE NA ZLECENIE",
+    "data_start": "2022-11-16",
+    "data_koniec": "2025-07-16",
+    "opis": ""
+  },
+  {
+    "person": "Władysław Kosiniak-Kamysz",
+    "party": "Polskie Stronnictwo Ludowe",
+    "company": "FUNDACJA ROZWOJU",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI I DZIERŻAWIONYMI",
+    "data_start": "2016-04-22",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Iwona Krawczyk",
+    "party": "Platforma Obywatelska",
+    "company": "\"SPECJALNA STREFA EKONOMICZNA MAŁEJ PRZEDSIĘBIORCZOŚCI\" SPÓŁKA AKCYJNA",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2009-07-08",
+    "data_koniec": "2016-05-05",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Robert Kropiwnicki",
+    "party": "Platforma Obywatelska",
+    "company": "LEGNICKIE CENTRUM BIZNESU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2016-10-28",
+    "data_koniec": "2017-11-06",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Robert Kropiwnicki",
+    "party": "Platforma Obywatelska",
+    "company": "LEGNICKIE CENTRUM BIZNESU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2016-10-28",
+    "data_koniec": "2017-11-06",
+    "opis": ""
+  },
+  {
+    "person": "Robert Kropiwnicki",
+    "party": "Platforma Obywatelska",
+    "company": "JELENIOGÓRSKIE TOWARZYSTWO BUDOWNICTWA SPOŁECZNEGO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2007-08-02",
+    "data_koniec": "2010-10-27",
+    "opis": ""
+  },
+  {
+    "person": "Wojciech Król",
+    "party": "Platforma Obywatelska",
+    "company": "360R SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2024-11-27",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Marek Krząkała",
+    "party": "Platforma Obywatelska",
+    "company": "FUNDACJA WSPÓŁPRACY POLSKO-NIEMIECKIEJ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM NIERUCHOMOŚCIAMI NA WŁASNY RACHUNEK",
+    "data_start": "2009-02-20",
+    "data_koniec": "2017-03-20",
+    "opis": ""
+  },
+  {
+    "person": "Józef Lassota",
+    "party": "Platforma Obywatelska",
+    "company": "AGENCJA ROZWOJU MIASTA KRAKOWA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2025-04-03",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Józef Lassota",
+    "party": "Platforma Obywatelska",
+    "company": "MIECZYSŁAW KUBATY LUKARNA ZARZĄDZANIE I ADMINISTROWANIE NIERUCHOMOŚCIAMI SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "ZARZĄDZANIE NIERUCHOMOŚCIAMI WYKONYWANE NA ZLECENIE",
+    "data_start": "2022-01-12",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Józef Lassota",
+    "party": "Platforma Obywatelska",
+    "company": "POWIATOWY PARK ROZWOJU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ W LIKWIDACJI",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2011-09-07",
+    "data_koniec": "2014-06-09",
+    "opis": ""
+  },
+  {
+    "person": "Jan Łopata",
+    "party": "Polskie Stronnictwo Ludowe",
+    "company": "WARSZAWSKI ROLNO-SPOŻYWCZY RYNEK HURTOWY SPÓŁKA AKCYJNA",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2024-08-28",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Andrzej Maciejewski",
+    "party": "Kukiz'15",
+    "company": "SPOŁECZNA INICJATYWA MIESZKANIOWA KZN-PÓŁNOC SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2023-08-01",
+    "data_koniec": "2025-09-30",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Arkadiusz Marchewka",
+    "party": "Platforma Obywatelska",
+    "company": "TERMINAL PROMOWY ŚWINOUJŚCIE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "ZARZĄDZANIE NIERUCHOMOŚCIAMI WYKONYWANE NA ZLECENIE",
+    "data_start": "2015-08-03",
+    "data_koniec": "2015-12-15",
+    "opis": ""
+  },
+  {
+    "person": "Beata Mazurek",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "LUBELSKIE DWORCE SPÓŁKA AKCYJNA",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2025-03-10",
+    "data_koniec": null,
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Jerzy Meysztowicz",
+    "party": "Platforma Obywatelska",
+    "company": "\"COMBIS\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "POŚREDNICTWO W OBROCIE NIERUCHOMOŚCIAMI",
+    "data_start": "2009-09-07",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Jerzy Meysztowicz",
+    "party": "Platforma Obywatelska",
+    "company": "FUNDACJA POMOC MALTAŃSKA- MALTAŃSKA SŁUŻBA MEDYCZNA",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2013-09-09",
+    "data_koniec": "2018-05-10",
+    "opis": ""
+  },
+  {
+    "person": "Jerzy Meysztowicz",
+    "party": "Platforma Obywatelska",
+    "company": "FUNDACJA POLSKICH KAWALERÓW MALTAŃSKICH \"POMOC MALTAŃSKA\"",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2013-08-23",
+    "data_koniec": "2018-02-28",
+    "opis": ""
+  },
+  {
+    "person": "Jerzy Meysztowicz",
+    "party": "Platforma Obywatelska",
+    "company": "\"COMBIS\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "POŚREDNICTWO W OBROCIE NIERUCHOMOŚCIAMI",
+    "data_start": "2006-10-16",
+    "data_koniec": "2012-09-20",
+    "opis": ""
+  },
+  {
+    "person": "Jerzy Meysztowicz",
+    "party": "Platforma Obywatelska",
+    "company": "\"COMBIS\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "POŚREDNICTWO W OBROCIE NIERUCHOMOŚCIAMI",
+    "data_start": "2014-01-03",
+    "data_koniec": "2016-02-04",
+    "opis": ""
+  },
+  {
+    "person": "Mieczysław Miazga",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "PODKARPACKIE CENTRUM HURTOWE AGROHURT SPÓŁKA AKCYJNA",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2020-04-24",
+    "data_koniec": "2024-10-11",
+    "opis": "CZŁONEK ZARZĄDU"
+  },
+  {
+    "person": "Krzysztof Mieszkowski",
+    "party": "Platforma Obywatelska",
+    "company": "\"ABT\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2002-12-12",
+    "data_koniec": "2003-09-24",
+    "opis": "WICEPREZES ZARZĄDU"
+  },
+  {
+    "person": "Krzysztof Mieszkowski",
+    "party": "Platforma Obywatelska",
+    "company": "\"ABT\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2002-12-12",
+    "data_koniec": "2003-09-24",
+    "opis": ""
+  },
+  {
+    "person": "Piotr Misiło",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "MONDO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2011-11-17",
+    "data_koniec": "2013-05-23",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Piotr Misiło",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "MONDO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2011-11-17",
+    "data_koniec": "2013-05-23",
+    "opis": ""
+  },
+  {
+    "person": "Aldona Młyńczak",
+    "party": "Platforma Obywatelska",
+    "company": "\"INVEST-PARK DEVELOPMENT\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2014-02-04",
+    "data_koniec": "2014-08-18",
+    "opis": ""
+  },
+  {
+    "person": "Kornel Morawiecki",
+    "party": "Kukiz'15",
+    "company": "STOWARZYSZENIE SOLIDARNOŚĆ WALCZĄCA",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2007-06-21",
+    "data_koniec": "2019-11-27",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Izabela Katarzyna Mrzygłocka",
+    "party": "Platforma Obywatelska",
+    "company": "FUNDACJA \"CLEVER\"",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2009-06-29",
+    "data_koniec": "2021-09-29",
+    "opis": ""
+  },
+  {
+    "person": "Rafał Mucha",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "SPÓŁDZIELNIA MIESZKANIOWA \"REGALICA\"",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2011-08-04",
+    "data_koniec": "2013-04-25",
+    "opis": ""
+  },
+  {
+    "person": "Killion Munyama",
+    "party": "Platforma Obywatelska",
+    "company": "MIRBUD SPÓŁKA AKCYJNA",
+    "kod_pkd": "41",
+    "opis_pkd": "ROBOTY BUDOWLANE ZWIĄZANE ZE WZNOSZENIEM BUDYNKÓW MIESZKALNYCH I NIEMIESZKALNYCH",
+    "data_start": "2024-11-12",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Wojciech Murdzek",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "\"INVEST-PARK DEVELOPMENT\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2008-06-30",
+    "data_koniec": "2015-02-26",
+    "opis": ""
+  },
+  {
+    "person": "Sławomir Neumann",
+    "party": "Platforma Obywatelska",
+    "company": "SOLMAC SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "ROBOTY BUDOWLANE ZWIĄZANE ZE WZNOSZENIEM BUDYNKÓW MIESZKALNYCH I NIEMIESZKALNYCH",
+    "data_start": "2025-04-17",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Sławomir Nitras",
+    "party": "Platforma Obywatelska",
+    "company": "STARGARDZKIE TOWARZYSTWO BUDOWNICTWA SPOŁECZNEGO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "ZARZĄDZANIE NIERUCHOMOŚCIAMI WYKONYWANENA ZLECENIE",
+    "data_start": "2005-01-19",
+    "data_koniec": "2005-11-30",
+    "opis": ""
+  },
+  {
+    "person": "Katarzyna Osos",
+    "party": "Platforma Obywatelska",
+    "company": "\"ZIELONOGÓRSKI RYNEK ROLNO-TOWAROWY\" SPÓŁKA AKCYJNA",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2014-09-08",
+    "data_koniec": "2015-02-10",
+    "opis": ""
+  },
+  {
+    "person": "Urszula Pasławska",
+    "party": "Polskie Stronnictwo Ludowe",
+    "company": "FUNDACJA ROZWOJU",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI I DZIERŻAWIONYMI",
+    "data_start": "2015-12-08",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Krzysztof Paszyk",
+    "party": "Polskie Stronnictwo Ludowe",
+    "company": "FUNDACJA ROZWOJU",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI I DZIERŻAWIONYMI",
+    "data_start": "2017-08-31",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Zbigniew Pawłowicz",
+    "party": "Platforma Obywatelska",
+    "company": "BYDGOSKI PARK PRZEMYSŁOWO-TECHNOLOGICZNY SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2015-05-06",
+    "data_koniec": "2016-04-01",
+    "opis": ""
+  },
+  {
+    "person": "Ryszard Petru",
+    "party": "TERAZ!",
+    "company": "FAMILY HOUSE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2022-12-16",
+    "data_koniec": "2024-03-25",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Ryszard Petru",
+    "party": "TERAZ!",
+    "company": "FAMILY HOUSE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2022-12-16",
+    "data_koniec": "2024-03-25",
+    "opis": ""
+  },
+  {
+    "person": "Paweł Pudłowski",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "AX CAPITAL SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "POŚREDNICTWO W OBROCIE NIERUCHOMOŚCIAMI",
+    "data_start": "2015-03-04",
+    "data_koniec": "2017-08-08",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Paweł Pudłowski",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "AX CAPITAL SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "POŚREDNICTWO W OBROCIE NIERUCHOMOŚCIAMI",
+    "data_start": "2015-03-04",
+    "data_koniec": "2025-03-10",
+    "opis": ""
+  },
+  {
+    "person": "Paweł Pudłowski",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "AX CAPITAL SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "POŚREDNICTWO W OBROCIE NIERUCHOMOŚCIAMI",
+    "data_start": "2020-01-20",
+    "data_koniec": "2025-03-10",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Grzegorz Raniewicz",
+    "party": "Platforma Obywatelska",
+    "company": "CIECHPOL SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2006-04-03",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Grzegorz Raniewicz",
+    "party": "Platforma Obywatelska",
+    "company": "CIECHPOL SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2006-04-03",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Leszek Ruszczyk",
+    "party": "Platforma Obywatelska",
+    "company": "\"REWITALIZACJA\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2025-07-09",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Leszek Ruszczyk",
+    "party": "Platforma Obywatelska",
+    "company": "CENTRUM ADMINISTRACYJNE MAZOVIA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ W LIKWIDACJI",
+    "kod_pkd": "68",
+    "opis_pkd": "OBSŁUGA NIERUCHOMOŚCI",
+    "data_start": "2012-11-16",
+    "data_koniec": "2015-02-17",
+    "opis": ""
+  },
+  {
+    "person": "Łukasz Rzepecki",
+    "party": "Kukiz'15",
+    "company": "PANORAMA RZESZOWA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "ROBOTY BUDOWLANE ZWIĄZANE ZE WZNOSZENIEM BUDYNKÓW MIESZKALNYCH I NIEMIESZKALNYCH",
+    "data_start": "2016-05-06",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Łukasz Rzepecki",
+    "party": "Kukiz'15",
+    "company": "NORTHINVEST SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "ROBOTY BUDOWLANE ZWIĄZANE ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2006-06-12",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Łukasz Rzepecki",
+    "party": "Kukiz'15",
+    "company": "NORTHINVEST 2 SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "ROBOTY BUDOWLANE ZWIĄZANE ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2007-02-07",
+    "data_koniec": "2007-07-13",
+    "opis": ""
+  },
+  {
+    "person": "Łukasz Rzepecki",
+    "party": "Kukiz'15",
+    "company": "NORTHINVEST 2 SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "ROBOTY BUDOWLANE ZWIĄZANE ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2007-07-13",
+    "data_koniec": "2011-09-27",
+    "opis": "CZŁONEK ZARZĄDU"
+  },
+  {
+    "person": "Łukasz Rzepecki",
+    "party": "Kukiz'15",
+    "company": "NORTHINVEST SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "ROBOTY BUDOWLANE ZWIĄZANE ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2006-06-12",
+    "data_koniec": "2012-12-05",
+    "opis": "CZŁONEK ZARZĄDU"
+  },
+  {
+    "person": "Marek Sawicki",
+    "party": "Polskie Stronnictwo Ludowe",
+    "company": "FUNDACJA ROZWOJU",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI I DZIERŻAWIONYMI",
+    "data_start": "2002-08-01",
+    "data_koniec": "2004-06-14",
+    "opis": ""
+  },
+  {
+    "person": "Krzysztof Sitarski",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "EO SILESIA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2024-07-30",
+    "data_koniec": null,
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Krzysztof Sitarski",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "EO SILESIA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2024-07-30",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Kazimierz Smoliński",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "PRIMA PARK MARKI SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2014-06-02",
+    "data_koniec": "2014-09-22",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Kazimierz Smoliński",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "PRIMA PARK LUBAŃ SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2014-06-02",
+    "data_koniec": "2014-08-25",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Kazimierz Smoliński",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "KI SIEDEM SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2014-01-21",
+    "data_koniec": "2014-10-03",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Kazimierz Smoliński",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "KI SZEŚĆ SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2014-01-21",
+    "data_koniec": "2014-09-01",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Kazimierz Smoliński",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "PRIMA PARK 4 SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2014-01-20",
+    "data_koniec": "2014-08-29",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Kazimierz Smoliński",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "KI PROJEKT2 SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2013-10-09",
+    "data_koniec": "2014-08-27",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Kazimierz Smoliński",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "KI PROJEKT4 SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2013-10-08",
+    "data_koniec": "2014-09-17",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Kazimierz Smoliński",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "KI PROJEKT5 SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2013-10-04",
+    "data_koniec": "2014-09-09",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Kazimierz Smoliński",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "KI PROJEKT3 SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2013-09-23",
+    "data_koniec": "2014-08-21",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Kazimierz Smoliński",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "KI PROJEKT1 SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK",
+    "data_start": "2013-08-19",
+    "data_koniec": "2014-09-30",
+    "opis": "PREZES ZARZĄDU"
+  },
+  {
+    "person": "Kazimierz Smoliński",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "STOCZNIA GDYNIA SPÓŁKA AKCYJNA W UPADŁOŚCI LIKWIDACYJNEJ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2006-02-27",
+    "data_koniec": "2006-05-30",
+    "opis": ""
+  },
+  {
+    "person": "Kazimierz Smoliński",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "STOCZNIA GDYNIA SPÓŁKA AKCYJNA W UPADŁOŚCI LIKWIDACYJNEJ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2006-03-01",
+    "data_koniec": "2008-03-28",
+    "opis": "CZŁONEK ZARZĄDU"
+  },
+  {
+    "person": "Marek Sowa",
+    "party": "Platforma Obywatelska",
+    "company": "ADMINISTRACJA DOMÓW MIESZKALNYCH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "ZARZĄDZANIE NIERUCHOMOŚCIAMI WYKONYWANE NA ZLECENIE",
+    "data_start": "2005-11-18",
+    "data_koniec": "2008-02-14",
+    "opis": ""
+  },
+  {
+    "person": "Mirosław Suchoń",
+    "party": "Nowoczesna Ryszarda Petru",
+    "company": "KARPACKA SPÓŁDZIELNIA MIESZKANIOWA",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2010-07-12",
+    "data_koniec": "2016-09-28",
+    "opis": ""
+  },
+  {
+    "person": "Marek Suski",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "SREBRNA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2001-12-06",
+    "data_koniec": "2002-12-18",
+    "opis": ""
+  },
+  {
+    "person": "Jolanta Szczypińska",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "SREBRNA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2002-12-18",
+    "data_koniec": "2005-06-30",
+    "opis": ""
+  },
+  {
+    "person": "Janusz Śniadek",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "STOCZNIA GDYNIA SPÓŁKA AKCYJNA W UPADŁOŚCI LIKWIDACYJNEJ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2001-11-10",
+    "data_koniec": "2002-10-14",
+    "opis": ""
+  },
+  {
+    "person": "Ewa Tomaszewska",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "FUNDACJA IM.MIECZYSŁAWA GRABIŃSKIEGO",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2021-05-24",
+    "data_koniec": null,
+    "opis": ""
+  },
+  {
+    "person": "Jan Warzecha",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "\"ADMINISTRACJA DOMÓW MIESZKALNYCH\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "ZARZĄDZANIE NIERUCHOMOŚCIAMI WYKONYWANE NA ZLECENIE",
+    "data_start": "2009-08-04",
+    "data_koniec": "2010-07-29",
+    "opis": ""
+  },
+  {
+    "person": "Wojciech Wilk",
+    "party": "Platforma Obywatelska",
+    "company": "TOWARZYSTWO BUDOWNICTWA SPOŁECZNEGO \"NOWY DOM\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2024-11-14",
+    "data_koniec": null,
+    "opis": "ZASTĘPCA PREZESA ZARZĄDU TOWARZYSTWA"
+  },
+  {
+    "person": "Mariusz Witczak",
+    "party": "Platforma Obywatelska",
+    "company": "FUNDACJA KALISKI INKUBATOR PRZEDSIĘBIORCZOŚCI",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2001-11-23",
+    "data_koniec": "2005-11-22",
+    "opis": "CZŁONEK ZARZĄDU"
+  },
+  {
+    "person": "Grzegorz Adam Woźniak",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "GARWOLIŃSKA SPÓŁDZIELNIA BUDOWLANO-MIESZKANIOWA",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2004-01-16",
+    "data_koniec": "2007-01-02",
+    "opis": "ZASTĘPCA PREZESA"
+  },
+  {
+    "person": "Krzysztof Zaremba",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "ŻEGLUGA SZCZECIŃSKA TURYSTYKA WYDARZENIA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI",
+    "data_start": "2011-12-28",
+    "data_koniec": "2016-05-02",
+    "opis": ""
+  },
+  {
+    "person": "Artur Zasada",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "SPOŁECZNA INICJATYWA MIESZKANIOWA \"KZN - LUBUSKIE TRÓJMIASTO\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW",
+    "data_start": "2022-03-10",
+    "data_koniec": "2023-01-17",
+    "opis": ""
+  },
+  {
+    "person": "Sławomir Zawiślak",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "ZAKŁAD GOSPODARKI LOKALOWEJ W ZAMOŚCIU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "68",
+    "opis_pkd": "ZARZĄDZANIE NIERUCHOMOŚCIAMI WYKONYWANE NA ZLECENIE",
+    "data_start": "2001-10-23",
+    "data_koniec": "2003-09-02",
+    "opis": ""
+  },
+  {
+    "person": "Ireneusz Zyska",
+    "party": "Prawo i Sprawiedliwość",
+    "company": "\"TOWARZYSTWO BUDOWNICTWA SPOŁECZNEGO - BIELAWA\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "kod_pkd": "41",
+    "opis_pkd": "ROBOTY BUDOWLANE ZWIĄZANE ZE WZNOSZENIEM BUDYNKÓW MIESZKALNYCH I NIEMIESZKALNYCH",
+    "data_start": "2016-10-28",
+    "data_koniec": "2021-05-25",
+    "opis": ""
+  }
+]

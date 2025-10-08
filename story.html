@@ -1,0 +1,238 @@
+<!-- Updated index.html with Companies Overview animated from left in step 0 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spółki posłów - Storytelling</title>
+  <meta name="description" content="Immersive scroll-driven animations with D3 visualizations."/>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+
+  <script src="https://unpkg.com/scrollama"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <style>
+    /* Animation for Companies Overview text */
+    #companies-scroll .text {
+      opacity: 0;
+      transform: translateX(-100%);
+      transition: all 0.8s ease;
+    }
+    #companies-scroll .step.active .text {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+   <section id="global-stats">
+    <h1 class="stats-title">Spółki posłów*</h1>
+    <div class="stats-grid">
+      <div class="stat"><h2>Posłów</h2><p>439</p></div>
+      <div class="stat"><h2>Spółek</h2><p>582</p></div>
+      <div class="stat"><h2>Połączeń</h2><p>626</p></div>
+      <div class="stat"><h2>Dotowane z UE</h2><p>64</p></div>
+      <div class="stat"><h2>Pomoc publiczna</h2><p>173</p></div>
+      <div class="stat"><h2>Spółki skarbu państwa</h2><p>6</p></div>
+    </div>
+  </section>
+
+<!--  &lt;!&ndash; Hero stays after &ndash;&gt;-->
+<!--  <header class="hero" id="sec-hero">-->
+<!--    <div id="hero-network"></div>-->
+<!--    <h1>Mapping Influence, Money & Time</h1>-->
+<!--  </header>-->
+
+  <!-- Bar Chart Section -->
+<!-- Bar Chart Section -->
+<div class="scroll-container" id="bar-scroll">
+  <div class="graphic" id="bar-graphic">
+    <div class="viz" id="bar">
+<!--      <div class="btn-container">-->
+<!--        <button id="btn-current" class="btn active">Obecne</button>-->
+<!--        <button id="btn-historical" class="btn">Historyczne</button>-->
+<!--      </div>-->
+      <svg id="pkd-chart" viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid meet"></svg>
+      <div id="tooltip" class="tooltip"></div>
+    </div>
+    <div class="legend" id="bar-legend"></div>
+  </div>
+
+  <!-- scroll steps -->
+  <div class="step" data-step="0"></div>
+  <div class="step" data-step="1">
+    <div class="text">
+      <h2>Wykluczając Stowarzyszenia i Fundacje zostaje 211 spółek z ograniczoną odpowiedzialnością.</h2>
+      <p>Wykres pokazuje 15 najczęściej występujących kodów PKD z podziałem na partie.</p>
+    </div>
+  </div>
+  <div class="step" data-step="2"></div>
+      <div class="step" data-step="3"></div>
+</div>
+
+  <!-- Companies View -->
+<!-- Companies View -->
+<div class="scroll-container" id="companies-scroll">
+  <!-- PERSISTENT TIMELINE TITLE -->
+  <div id="timeline-header">
+    <h2>Oś czasu</h2>
+    <p>Widoczne jest jak długo osoby są związane z konkretną spółką z kodem PKD 68 oraz 41. </p>
+  </div>
+  <div class="graphic">
+    <div class="viz timeline-viz" id="companies">
+      <!-- timeline svg & tooltip will be injected here -->
+    </div>
+  </div>
+
+  <!-- Step 0: Overview -->
+  <div class="step" data-step="0">
+<!--    <div class="text">-->
+<!--      <h2>Timeline — Overview</h2>-->
+<!--      <p>Each bar shows a person’s tenure with a company; dashed right edge = ongoing.</p>-->
+<!--    </div>-->
+  </div>
+
+  <!-- Step 1: Spotlight #1 -->
+  <div class="step" data-step="1">
+    <div class="text" id="tl-cap-1">
+
+    </div>
+  </div>
+
+  <!-- Step 2: Spotlight #2 -->
+  <div class="step" data-step="2">
+    <div class="text" id="tl-cap-2">
+
+    </div>
+  </div>
+
+  <!-- Step 3: Spotlight #3 -->
+  <div class="step" data-step="3">
+    <div class="text" id="tl-cap-3">
+
+    </div>
+  </div>
+      <div class="step" data-step="4">
+    <div class="text" id="tl-cap-4">
+
+    </div>
+  </div>
+</div>
+
+  <!-- Map Section -->
+  <div class="scroll-container" id="map-scroll">
+    <div class="graphic">
+
+      <div id="map-container">
+        <div id="mapid"></div>
+      </div>
+    </div>
+    <div class="step map-step" data-step="0"></div>
+    <div class="step map-step" data-step="1">
+      <div class="map-tile"><h2>Rozkład geograficzny</h2><p>Każdy marker określa lokalizacje spółki a jej kolor powiązanie z członkiem partii.</p></div>
+    </div>
+    <div class="step map-step" data-step="2">
+      <div class="map-tile"><h2>Sprawdź sam</h2><p>Naciśnij na marker aby dowiedzieć się więcej.</p></div>
+    </div>
+          <div class="step map-step" data-step="3">
+<!--      <div class="map-tile"><h2>Sprawdź sam</h2><p>Naciśnij na marker aby dowiedzieć się więcej.</p></div>-->
+    </div>
+  </div>
+
+  <!-- Network Section (Sticky) -->
+<div class="scroll-container sticky" id="network-scroll">
+  <div class="graphic" id="network-container">
+    <div id="network-legend" class="network-legend"></div>
+
+    <!-- Invisible scroll triggers -->
+    <div class="step" data-step="0"></div>
+    <div class="step" data-step="1"></div>
+
+    <!-- Network graph -->
+    <div id="network-graphic" class="fade-block"></div>
+
+    <!-- Description panel (slides in from right on next scroll) -->
+    <div id="network-desc" class="fade-block">
+      <h2>Powiązania na grafie połączonym</h2>
+      <p>
+        Interaktywny wykres przedstawia <strong>złożoną sieć relacji</strong> pomiędzy osobami
+        i organizacjami, które tworzą dynamiczny układ współzależności
+        w zmieniającym się środowisku społecznym i gospodarczym.
+      </p>
+      <p>
+        Użytkownik może przełączać widok między trybem <strong>„Aktualne”</strong>
+        a <strong>„Historyczne”</strong>, aby zobaczyć, jak struktura sieci
+        <em>ewoluowała w czasie</em> i które połączenia utrzymują się, a które zanikły.
+      </p>
+      <p>
+        W centrum wizualizacji znajdują się węzły symbolizujące
+        <strong>osoby lub podmioty</strong>, natomiast linie między nimi
+        odzwierciedlają relację.
+      </p>
+
+      <p>
+        Wizualizacja ukazuje, jak z biegiem czasu sieć
+        <em>rozszerza się, przekształca i rozprasza</em>, odkrywając ukryte wzorce
+        współpracy, przepływu informacji i zależności między podmiotami w systemie.
+      </p>
+        <p><a href="/graph_full.html"> Kliknij aby zobaczyć pełny graf </a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Person → PKD Sankey Section -->
+<div class="scroll-container" id="sankey-scroll">
+  <div class="graphic">
+    <div id="sankey-legend"></div>
+    <div id="person-pkd-sankey"></div>
+      <div id="sankey-summary"></div>
+
+  </div>
+
+  <div class="step" data-party="Prawo i Sprawiedliwość">
+<!--    <div class="text"><h2>PiS Connections</h2></div>-->
+  </div>
+  <div class="step" data-party="Platforma Obywatelska">
+<!--    <div class="text"><h2>PO Connections</h2></div>-->
+  </div>
+  <div class="step" data-party="Polskie Stronnictwo Ludowe">
+<!--    <div class="text"><h2>PSL Connections</h2></div>-->
+  </div>
+  <div class="step" data-party="Kukiz'15">
+<!--    <div class="text"><h2>Kukiz'15 Connections</h2></div>-->
+  </div>
+</div>
+
+  <!-- OpenAI Credit Section -->
+<div class="scroll-container sticky" id="openai-scroll">
+  <div class="graphic" id="openai-graphic">
+    <div class="viz" id="openai-viz">
+      <div class="openai-credit">
+        <img
+          src="https://www.offensiveosint.io/content/images/2020/07/OffensiveOsint-logo-RGB-2.png"
+          class="openai-logo"
+        />
+        <a
+          href="https://offensiveosint.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="openai-link"
+        >
+          *Dowiedz się więcej o metodologi i bazie danych.
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="step" data-step="0"></div>
+  <div class="step" data-step="1"></div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

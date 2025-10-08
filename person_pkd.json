@@ -1,0 +1,1268 @@
+[
+  {
+    "person": "Adam Abramowicz",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "63",
+    "opis_pkd": "POZOSTAŁA DZIAŁALNOŚĆ USŁUGOWA W ZAKRESIE INFORMACJI"
+  },
+  {
+    "person": "Adam Abramowicz",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "73",
+    "opis_pkd": "BADANIE RYNKU I OPINII PUBLICZNEJ"
+  },
+  {
+    "person": "Zbigniew Ajchler",
+    "party": "Platforma Obywatelska",
+    "pkd": "01",
+    "opis_pkd": "UPRAWY ROLNE POŁĄCZONE Z CHOWEM ZWIERZĄT (DZIAŁALNOŚĆ MIESZANA)"
+  },
+  {
+    "person": "Zbigniew Ajchler",
+    "party": "Platforma Obywatelska",
+    "pkd": "47",
+    "opis_pkd": "SPRZEDAŻ DETALICZNA POZOSTAŁYCH NOWYCH WYROBÓW PROWADZONA W WYSPECJALIZOWANYCH SKLEPACH"
+  },
+  {
+    "person": "Zbigniew Ajchler",
+    "party": "Platforma Obywatelska",
+    "pkd": "01",
+    "opis_pkd": "UPRAWY ROLNE POŁĄCZONE Z CHOWEM I HODOWLĄ ZWIERZĄT (DZIAŁALNOŚĆ MIESZANA)"
+  },
+  {
+    "person": "Zbigniew Ajchler",
+    "party": "Platforma Obywatelska",
+    "pkd": "22",
+    "opis_pkd": "DZIAŁALNOŚĆ WYDAWNICZA - KSIĄŻKI, BROSZURY, ULOTKI I PODOBNE MATERIAŁY DRUKOWANE W POJEDYŃCZYCH ARKUSZACH"
+  },
+  {
+    "person": "Piotr Apel",
+    "party": "Kukiz'15",
+    "pkd": "78",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z WYSZUKIWANIEM MIEJSC PRACY I POZYSKIWANIEM PRACOWNIKÓW"
+  },
+  {
+    "person": "Piotr Apel",
+    "party": "Kukiz'15",
+    "pkd": "70",
+    "opis_pkd": "PROMOCJA POLSKIEJ PRZEDSIĘBIORCZOŚCI I POLSKICH PRODUKTÓW"
+  },
+  {
+    "person": "Dorota Arciszewska-Mielewczyk",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "13",
+    "opis_pkd": "PRODUKCJA GOTOWYCH WYROBÓW TEKSTYLNYCH"
+  },
+  {
+    "person": "Dorota Arciszewska-Mielewczyk",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "13",
+    "opis_pkd": "PRODUKCJA GOTOWYCH WYROBÓW TEKSTYLNYCH"
+  },
+  {
+    "person": "Maciej Badora",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "63",
+    "opis_pkd": "DZIAŁALNOŚĆ PORTALI INTERNETOWYCH"
+  },
+  {
+    "person": "Paweł Bańkowski",
+    "party": "Platforma Obywatelska",
+    "pkd": "09",
+    "opis_pkd": "DZIAŁALNOŚĆ USŁUGOWA WSPOMAGAJĄCA POZOSTAŁE GÓRNICTWO I WYDOBYWANIE"
+  },
+  {
+    "person": "Mieczysław Kazimierz Baszko",
+    "party": "Polskie Stronnictwo Ludowe",
+    "pkd": "55",
+    "opis_pkd": "HOTELE I PODOBNE OBIEKTY ZAKWATEROWANIA"
+  },
+  {
+    "person": "Jerzy Borowczak",
+    "party": "Platforma Obywatelska",
+    "pkd": "33",
+    "opis_pkd": "NAPRAWA I KONSERWACJA POZOSTAŁEGO SPRZĘTU I WYPOSAŻENIA"
+  },
+  {
+    "person": "Jerzy Borowczak",
+    "party": "Platforma Obywatelska",
+    "pkd": "70",
+    "opis_pkd": "POZOSTAŁE DORADZTWO W ZAKRESIE PROWADZENIA DZIAŁALNOŚCI GOSPODARCZEJ I ZARZĄDZANIA"
+  },
+  {
+    "person": "Jerzy Borowczak",
+    "party": "Platforma Obywatelska",
+    "pkd": "86",
+    "opis_pkd": "OPIEKA ZDROWOTNA, PRAKTYKA LEKARSKA SPECJALISTYCZNA, PORADY, DIAGNOSTYKA I LECZENIE ŚWIADCZONE PRZEZ LEKARZY SPECJALISTÓW, WŁĄCZAJĄC CHIRURGÓW"
+  },
+  {
+    "person": "Kamil Bortniczuk",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "41",
+    "opis_pkd": "ROBOTY BUDOWLANE ZWIĄZANE ZE WZNOSZENIEM BUDYNKÓW MIESZKALNYCH"
+  },
+  {
+    "person": "Małgorzata Chmiel",
+    "party": "Platforma Obywatelska",
+    "pkd": "68",
+    "opis_pkd": "ZARZĄDZANIE NIERUCHOMOŚCIAMI WYKONYWANE NA ZLECENIE"
+  },
+  {
+    "person": "Małgorzata Chmiel",
+    "party": "Platforma Obywatelska",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Sylwester Chruszcz",
+    "party": "Kukiz'15",
+    "pkd": "20",
+    "opis_pkd": "PRODUKCJA GAZÓW TECHNICZNYCH"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "68",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW MIESZKALNYCH"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "70",
+    "opis_pkd": "POZOSTAŁE DORADZTWO W ZAKRESIE PROWADZENIA DZIAŁALNOŚCI GOSPODARCZEJ I ZARZĄDZANIA"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "42",
+    "opis_pkd": "ROBOTY ZWIĄZANE Z BUDOWĄ DRÓG I AUTOSTRAD"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "58",
+    "opis_pkd": "WYDAWANIE KSIĄŻEK"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW"
+  },
+  {
+    "person": "Adam Cyrański",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "58",
+    "opis_pkd": "WYDAWANIE KSIĄŻEK"
+  },
+  {
+    "person": "Grzegorz Długi",
+    "party": "Kukiz'15",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Grzegorz Długi",
+    "party": "Kukiz'15",
+    "pkd": "69",
+    "opis_pkd": "DZIAŁALNOŚĆ PRAWNICZA"
+  },
+  {
+    "person": "Grzegorz Długi",
+    "party": "Kukiz'15",
+    "pkd": "70",
+    "opis_pkd": "PROMOCJA POLSKIEJ PRZEDSIĘBIORCZOŚCI I POLSKICH PRODUKTÓW"
+  },
+  {
+    "person": "Grzegorz Długi",
+    "party": "Kukiz'15",
+    "pkd": "67",
+    "opis_pkd": "ZARZĄDZANIE RYNKIEM FINANSOWYM"
+  },
+  {
+    "person": "Grzegorz Długi",
+    "party": "Kukiz'15",
+    "pkd": "70",
+    "opis_pkd": "ZAGOSPODAROWANIE I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK"
+  },
+  {
+    "person": "Marcin Duszek",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "46",
+    "opis_pkd": "SPRZEDAŻ HURTOWA PALIW I PRODUKTÓW POCHODNYCH"
+  },
+  {
+    "person": "Marcin Duszek",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "58",
+    "opis_pkd": "WYDAWANIE KSIĄŻEK"
+  },
+  {
+    "person": "Katarzyna Dutkiewicz",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Krzysztof Gadowski",
+    "party": "Platforma Obywatelska",
+    "pkd": "18",
+    "opis_pkd": "REPRODUKCJA ZAPISANYCH NOŚNIKÓW INFORMACJI"
+  },
+  {
+    "person": "Ryszard Galla",
+    "party": "Mniejszość Niemiecka",
+    "pkd": "94",
+    "opis_pkd": "DZIAŁALNOŚĆ POZOSTAŁYCH ORGANIZACJI CZŁONKOWSKICH, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  },
+  {
+    "person": "Ryszard Galla",
+    "party": "Mniejszość Niemiecka",
+    "pkd": "85",
+    "opis_pkd": "POZOSTAŁE POZASZKOLNE FORMY EDUKACJI, GDZIE INDZIEJ NIESKLASYFIKOWANE"
+  },
+  {
+    "person": "Ryszard Galla",
+    "party": "Mniejszość Niemiecka",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Lidia Gądek",
+    "party": "Platforma Obywatelska",
+    "pkd": "86",
+    "opis_pkd": "PRAKTYKA LEKARSKA OGÓLNA"
+  },
+  {
+    "person": "Artur Gierada",
+    "party": "Platforma Obywatelska",
+    "pkd": "66",
+    "opis_pkd": "DZIAŁALNOŚĆ AGENTÓW I BROKERÓW UBEZPIECZENIOWYCH"
+  },
+  {
+    "person": "Małgorzata Gosiewska",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "96",
+    "opis_pkd": "POGRZEBY I DZIAŁALNOŚĆ POKREWNA"
+  },
+  {
+    "person": "Paweł Grabowski",
+    "party": "Kukiz'15",
+    "pkd": "70",
+    "opis_pkd": "POZOSTAŁE DORADZTWO W ZAKRESIE PROWADZENIA DZIAŁALNOŚCI GOSPODARCZEJ I ZARZĄDZANIA"
+  },
+  {
+    "person": "Paweł Grabowski",
+    "party": "Kukiz'15",
+    "pkd": "63",
+    "opis_pkd": "DZIAŁALNOŚĆ PORTALI INTERNETOWYCH"
+  },
+  {
+    "person": "Paweł Grabowski",
+    "party": "Kukiz'15",
+    "pkd": "69",
+    "opis_pkd": "DZIAŁALNOŚĆ PRAWNICZA"
+  },
+  {
+    "person": "Paweł Grabowski",
+    "party": "Kukiz'15",
+    "pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK"
+  },
+  {
+    "person": "Paweł Grabowski",
+    "party": "Kukiz'15",
+    "pkd": "69",
+    "opis_pkd": "DZIAŁALNOŚĆ PRAWNICZA"
+  },
+  {
+    "person": "Paweł Grabowski",
+    "party": "Kukiz'15",
+    "pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK"
+  },
+  {
+    "person": "Kazimierz Gwiazdowski",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "73",
+    "opis_pkd": "DZIAŁALNOŚĆ AGENCJI REKLAMOWYCH"
+  },
+  {
+    "person": "Jolanta Hibner",
+    "party": "Platforma Obywatelska",
+    "pkd": "94",
+    "opis_pkd": "DZIAŁALNOŚĆ POZOSTAŁYCH ORGANIZACJI CZŁONKOWSKICH, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  },
+  {
+    "person": "Jolanta Hibner",
+    "party": "Platforma Obywatelska",
+    "pkd": "85",
+    "opis_pkd": "POZOSTAŁE POZASZKOLNE FORMY EDUKACJI, GDZIE INDZIEJ NIESKLASYFIKOWANE"
+  },
+  {
+    "person": "Stanisław Huskowski",
+    "party": "Platforma Obywatelska",
+    "pkd": "93",
+    "opis_pkd": "DZIAŁALNOŚĆ KLUBÓW SPORTOWYCH"
+  },
+  {
+    "person": "Michał Jach",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "41",
+    "opis_pkd": "REALIZACJA PROJEKTÓW BUDOWLANYCH ZWIĄZANYCH ZE WZNOSZENIEM BUDYNKÓW"
+  },
+  {
+    "person": "Marek Jakubiak",
+    "party": "Kukiz'15",
+    "pkd": "11",
+    "opis_pkd": "PRODUKCJA PIWA"
+  },
+  {
+    "person": "Michał Jaros",
+    "party": "Platforma Obywatelska",
+    "pkd": "73",
+    "opis_pkd": "DZIAŁALNOŚĆ AGENCJI REKLAMOWYCH"
+  },
+  {
+    "person": "Krystian Jarubas",
+    "party": "Polskie Stronnictwo Ludowe",
+    "pkd": "70",
+    "opis_pkd": "POZOSTAŁE DORADZTWO W ZAKRESIE PROWADZENIA DZIAŁALNOŚCI GOSPODARCZEJ I ZARZĄDZANIA"
+  },
+  {
+    "person": "Tomasz Jaskóła",
+    "party": "Kukiz'15",
+    "pkd": "94",
+    "opis_pkd": "DZIAŁALNOŚĆ POZOSTAŁYCH ORGANIZACJI CZŁONKOWSKICH, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  },
+  {
+    "person": "Andrzej Jaworski",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "71",
+    "opis_pkd": "BADANIA I ANALIZY ZWIĄZANE Z JAKOŚCIĄ ŻYWNOŚCI"
+  },
+  {
+    "person": "Mieczysław Kasprzak",
+    "party": "Polskie Stronnictwo Ludowe",
+    "pkd": "20",
+    "opis_pkd": "PRODUKCJA NAWOZÓW I ZWIĄZKÓW AZOTOWYCH"
+  },
+  {
+    "person": "Mieczysław Kasprzak",
+    "party": "Polskie Stronnictwo Ludowe",
+    "pkd": "25",
+    "opis_pkd": "PRODUKCJA KONSTRUKCJI METALOWYCH I ICH CZĘŚCI"
+  },
+  {
+    "person": "Jan Klawiter",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "94",
+    "opis_pkd": "DZIAŁALNOŚĆ POZOSTAŁYCH ORGANIZACJI CZŁONKOWSKICH, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  },
+  {
+    "person": "Andrzej Kobylarz",
+    "party": "Kukiz'15",
+    "pkd": "25",
+    "opis_pkd": "OBRÓBKA MECHANICZNA ELEMENTÓW METALOWYCH"
+  },
+  {
+    "person": "Andrzej Kobylarz",
+    "party": "Kukiz'15",
+    "pkd": "68",
+    "opis_pkd": "POŚREDNICTWO W OBROCIE NIERUCHOMOŚCIAMI"
+  },
+  {
+    "person": "Andrzej Kobylarz",
+    "party": "Kukiz'15",
+    "pkd": "93",
+    "opis_pkd": "POZOSTAŁA DZIAŁALNOŚĆ ROZRYWKOWA I REKREACYJNA, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  },
+  {
+    "person": "Paweł Kobyliński",
+    "party": "Kukiz'15",
+    "pkd": "46",
+    "opis_pkd": "DZIAŁALNOŚĆ AGENTÓW ZAJMUJĄCYCH SIĘ SPRZEDAŻĄ HURTOWĄ NIEWYSPECJALIZOWANĄ"
+  },
+  {
+    "person": "Paweł Kobyliński",
+    "party": "Kukiz'15",
+    "pkd": "23",
+    "opis_pkd": "PRODUKCJA MASY BETONOWEJ PREFABRYKOWANEJ"
+  },
+  {
+    "person": "Paweł Kobyliński",
+    "party": "Kukiz'15",
+    "pkd": "46",
+    "opis_pkd": "SPRZEDAŻ HURTOWA POZOSTAŁYCH MASZYN I URZĄDZEŃ"
+  },
+  {
+    "person": "Paweł Kobyliński",
+    "party": "Kukiz'15",
+    "pkd": "81",
+    "opis_pkd": "DZIAŁALNOŚĆ USŁUGOWA ZWIĄZANA Z ZAGOSPODAROWANIEM TERENÓW ZIELENI"
+  },
+  {
+    "person": "Paweł Kobyliński",
+    "party": "Kukiz'15",
+    "pkd": "46",
+    "opis_pkd": "SPRZEDAŻ HURTOWA NIEWYSPECJALIZOWANA"
+  },
+  {
+    "person": "Paweł Kobyliński",
+    "party": "Kukiz'15",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Adam Korol",
+    "party": "Platforma Obywatelska",
+    "pkd": "94",
+    "opis_pkd": "DZIAŁALNOŚĆ POZOSTAŁYCH ORGANIZACJI CZŁONKOWSKICH, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  },
+  {
+    "person": "Adam Korol",
+    "party": "Platforma Obywatelska",
+    "pkd": "93",
+    "opis_pkd": "ORGANIZACJA IMPREZ REKREACYJNYCH ORAZ SPORTOWYCH Z WYŁĄCZENIEM WIOŚLARSKICH"
+  },
+  {
+    "person": "Adam Korol",
+    "party": "Platforma Obywatelska",
+    "pkd": "94",
+    "opis_pkd": "DZIAŁALNOŚĆ POZOSTAŁYCH ORGANIZACJI CZŁONKOWSKICH, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  },
+  {
+    "person": "Leszek Korzeniowski",
+    "party": "Platforma Obywatelska",
+    "pkd": "42",
+    "opis_pkd": "ROBOTY ZWIĄZANE Z BUDOWĄ DRÓG I AUTOSTRAD"
+  },
+  {
+    "person": "Leszek Korzeniowski",
+    "party": "Platforma Obywatelska",
+    "pkd": "45",
+    "opis_pkd": "SPRZEDAŻ HURTOWA I DETALICZNA SAMOCHODÓW OSOBOWYCH I FURGONETEK"
+  },
+  {
+    "person": "Leszek Korzeniowski",
+    "party": "Platforma Obywatelska",
+    "pkd": "74",
+    "opis_pkd": "DZIAŁALNOŚĆ W ZAKRESIE SPECJALISTYCZNEGO PROJEKTOWANIA"
+  },
+  {
+    "person": "Leszek Korzeniowski",
+    "party": "Platforma Obywatelska",
+    "pkd": "32",
+    "opis_pkd": "PRODUKCJA POZOSTAŁYCH WYROBÓW, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  },
+  {
+    "person": "Leszek Korzeniowski",
+    "party": "Platforma Obywatelska",
+    "pkd": "25",
+    "opis_pkd": "PRODUKCJA POZOSTAŁYCH GOTOWYCH WYROBÓW METALOWYCH, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  },
+  {
+    "person": "Leszek Korzeniowski",
+    "party": "Platforma Obywatelska",
+    "pkd": "23",
+    "opis_pkd": "KSZTAŁTOWANIE I OBRÓBKA SZKŁA PŁASKIEGO"
+  },
+  {
+    "person": "Leszek Korzeniowski",
+    "party": "Platforma Obywatelska",
+    "pkd": "64",
+    "opis_pkd": "DZIAŁALNOŚĆ HOLDINGÓW FINANSOWYCH"
+  },
+  {
+    "person": "Leszek Korzeniowski",
+    "party": "Platforma Obywatelska",
+    "pkd": "46",
+    "opis_pkd": "SPRZEDAŻ HURTOWA WYROBÓW CHEMICZNYCH"
+  },
+  {
+    "person": "Władysław Kosiniak-Kamysz",
+    "party": "Polskie Stronnictwo Ludowe",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI I DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Kazimierz Kotowski",
+    "party": "Polskie Stronnictwo Ludowe",
+    "pkd": "22",
+    "opis_pkd": "PRODUKCJA PŁYT, ARKUSZY, RUR I KSZTAŁTOWNIKÓW Z TWORZYW SZTUCZNYCH"
+  },
+  {
+    "person": "Henryk Kowalczyk",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "35",
+    "opis_pkd": "ENERGETYKA SŁONECZNA"
+  },
+  {
+    "person": "Ewa Kozanecka",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "36",
+    "opis_pkd": "POBÓR, UZDATNIANIE I DOSTARCZANIE WODY"
+  },
+  {
+    "person": "Maks Kraczkowski",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "70",
+    "opis_pkd": "ZARZĄDZANIE I ADMINISTROWANIE NIERUCHOMOŚCIAMI"
+  },
+  {
+    "person": "Wiesław Krajewski",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "91",
+    "opis_pkd": "DZIAŁALNOŚĆ POZOSTAŁYCH ORGANIZACJI CZŁONKOWSKICH, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  },
+  {
+    "person": "Wojciech Król",
+    "party": "Platforma Obywatelska",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Bernadeta Krynicka",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "37",
+    "opis_pkd": "ODPROWADZANIE I OCZYSZCZANIE ŚCIEKÓW"
+  },
+  {
+    "person": "Tomasz Kucharski",
+    "party": "Platforma Obywatelska",
+    "pkd": "85",
+    "opis_pkd": "POZOSTAŁE POZASZKOLNE FORMY EDUKACJI, GDZIE INDZIEJ NIESKLASYFIKOWANE"
+  },
+  {
+    "person": "Tomasz Kucharski",
+    "party": "Platforma Obywatelska",
+    "pkd": "93",
+    "opis_pkd": "POZOSTAŁA DZIAŁALNOŚĆ ZWIĄZANA ZE SPORTEM"
+  },
+  {
+    "person": "Tomasz Kucharski",
+    "party": "Platforma Obywatelska",
+    "pkd": "93",
+    "opis_pkd": "DZIAŁALNOŚĆ KLUBÓW SPORTOWYCH"
+  },
+  {
+    "person": "Marek Kuchciński",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "82",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z ORGANIZACJĄ TARGÓW, WYSTAW I KONGRESÓW"
+  },
+  {
+    "person": "Paweł Kukiz",
+    "party": "Kukiz'15",
+    "pkd": "70",
+    "opis_pkd": "PROMOCJA POLSKIEJ PRZEDSIĘBIORCZOŚCI I POLSKICH PRODUKTÓW"
+  },
+  {
+    "person": "Paweł Kukiz",
+    "party": "Kukiz'15",
+    "pkd": "72",
+    "opis_pkd": "BADANIA NAUKOWE I PRACE ROZWOJOWE W DZIEDZINIE NAUK SPOŁECZNYCH I HUMANISTYCZNYCH"
+  },
+  {
+    "person": "Józef Lassota",
+    "party": "Platforma Obywatelska",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Józef Lassota",
+    "party": "Platforma Obywatelska",
+    "pkd": "94",
+    "opis_pkd": "DZIAŁALNOŚĆ ORGANIZACJI KOMERCYJNYCH I PRACODAWCÓW"
+  },
+  {
+    "person": "Józef Lassota",
+    "party": "Platforma Obywatelska",
+    "pkd": "79",
+    "opis_pkd": "DZIAŁALNOŚĆ W ZAKRESIE INFORMACJI TURYSTYCZNEJ"
+  },
+  {
+    "person": "Józef Lassota",
+    "party": "Platforma Obywatelska",
+    "pkd": "93",
+    "opis_pkd": "POZOSTAŁA DZIAŁALNOŚĆ ZWIĄZANA ZE SPORTEM"
+  },
+  {
+    "person": "Józef Lassota",
+    "party": "Platforma Obywatelska",
+    "pkd": "68",
+    "opis_pkd": "ZARZĄDZANIE NIERUCHOMOŚCIAMI WYKONYWANE NA ZLECENIE"
+  },
+  {
+    "person": "Józef Lassota",
+    "party": "Platforma Obywatelska",
+    "pkd": "88",
+    "opis_pkd": "POZOSTAŁA POMOC SPOŁECZNA BEZ ZAKWATEROWANIA, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  },
+  {
+    "person": "Józef Lassota",
+    "party": "Platforma Obywatelska",
+    "pkd": "74",
+    "opis_pkd": "USŁUGI PROMOCYJNE"
+  },
+  {
+    "person": "Tomasz Latos",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "93",
+    "opis_pkd": "POZOSTAŁA DZIAŁALNOŚĆ ZWIĄZANA ZE SPORTEM"
+  },
+  {
+    "person": "Bogdan Latosiński",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "49",
+    "opis_pkd": "TRANSPORT LĄDOWY PASAŻERSKI, MIEJSKI I PODMIEJSKI"
+  },
+  {
+    "person": "Bogdan Latosiński",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "49",
+    "opis_pkd": "TRANSPORT LĄDOWY PASAŻERSKI, MIEJSKI I PODMIEJSKI"
+  },
+  {
+    "person": "Bogdan Latosiński",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "45",
+    "opis_pkd": "KONSERWACJA I NAPRAWA POJAZDÓW SAMOCHODOWYCH, Z WYŁĄCZENIEM MOTOCYKLI"
+  },
+  {
+    "person": "Tomasz Lenz",
+    "party": "Platforma Obywatelska",
+    "pkd": "46",
+    "opis_pkd": "SPRZEDAŻ HURTOWA NAPOJÓW ALKOHOLOWYCH"
+  },
+  {
+    "person": "Tomasz Lenz",
+    "party": "Platforma Obywatelska",
+    "pkd": "46",
+    "opis_pkd": "DZIAŁALNOŚĆ AGENTÓW ZAJMUJĄCYCH SIĘ SPRZEDAŻĄ TOWARÓW RÓŻNEGO RODZAJU"
+  },
+  {
+    "person": "Grzegorz Lipiec",
+    "party": "Platforma Obywatelska",
+    "pkd": "84",
+    "opis_pkd": "KIEROWANIE W ZAKRESIE EFEKTYWNOŚCI GOSPODAROWANIA"
+  },
+  {
+    "person": "Piotr Liroy-Marzec",
+    "party": "Kukiz'15",
+    "pkd": "74",
+    "opis_pkd": "POZOSTAŁA DZIAŁALNOŚĆ PROFESJONALNA, NAUKOWA I TECHNICZNA, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  },
+  {
+    "person": "Piotr Liroy-Marzec",
+    "party": "Kukiz'15",
+    "pkd": "46",
+    "opis_pkd": "DZIAŁALNOŚĆ AGENTÓW ZAJMUJĄCYCH SIĘ SPRZEDAŻĄ TOWARÓW RÓŻNEGO RODZAJU"
+  },
+  {
+    "person": "Zofia Ławrynowicz",
+    "party": "Platforma Obywatelska",
+    "pkd": "82",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z ORGANIZACJĄ TARGÓW, WYSTAW I KONGRESÓW"
+  },
+  {
+    "person": "Jan Łopata",
+    "party": "Polskie Stronnictwo Ludowe",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Mirosław Maliszewski",
+    "party": "Polskie Stronnictwo Ludowe",
+    "pkd": "82",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z ORGANIZACJĄ TARGÓW, WYSTAW I KONGRESÓW"
+  },
+  {
+    "person": "Maciej Masłowski",
+    "party": "Kukiz'15",
+    "pkd": "70",
+    "opis_pkd": "POZOSTAŁE DORADZTWO W ZAKRESIE PROWADZENIA DZIAŁALNOŚCI GOSPODARCZEJ I ZARZĄDZANIA"
+  },
+  {
+    "person": "Maciej Masłowski",
+    "party": "Kukiz'15",
+    "pkd": "36",
+    "opis_pkd": "POBÓR, UZDATNIANIE I DOSTARCZANIE WODY"
+  },
+  {
+    "person": "Beata Mazurek",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Jerzy Meysztowicz",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "35",
+    "opis_pkd": "WYTWARZANIE ENERGII ELEKTRYCZNEJ"
+  },
+  {
+    "person": "Jerzy Meysztowicz",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "68",
+    "opis_pkd": "POŚREDNICTWO W OBROCIE NIERUCHOMOŚCIAMI"
+  },
+  {
+    "person": "Jerzy Meysztowicz",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "86",
+    "opis_pkd": "PRAKTYKA LEKARSKA SPECJALISTYCZNA"
+  },
+  {
+    "person": "Antoni Mężydło",
+    "party": "Platforma Obywatelska",
+    "pkd": "81",
+    "opis_pkd": "DZIAŁALNOŚĆ USŁUGOWA ZWIĄZANA Z ZAGOSPODAROWANIEM TERENÓW ZIELENI"
+  },
+  {
+    "person": "Mieczysław Miazga",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "18",
+    "opis_pkd": "POZOSTAŁE DRUKOWANIE"
+  },
+  {
+    "person": "Mieczysław Miazga",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "82",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z ORGANIZACJĄ TARGÓW, WYSTAW I KONGRESÓW"
+  },
+  {
+    "person": "Mieczysław Miazga",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "10",
+    "opis_pkd": "PRZETWARZANIE I KONSERWOWANIE MIĘSA, Z WYŁĄCZENIEM MIĘSA Z DROBIU"
+  },
+  {
+    "person": "Joanna Mihułka",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "85",
+    "opis_pkd": "POZOSTAŁE POZASZKOLNE FORMY EDUKACJI, GDZIE INDZIEJ NIESKLASYFIKOWANE"
+  },
+  {
+    "person": "Joanna Mihułka",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "85",
+    "opis_pkd": "POZOSTAŁE POZASZKOLNE FORMY EDUKACJI, GDZIE INDZIEJ NIESKLASYFIKOWANE"
+  },
+  {
+    "person": "Piotr Müller",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "74",
+    "opis_pkd": "DORADZTWO W ZAKRESIE PROWADZENIA DZIAŁALNOŚCI GOSPODARCZEJ I ZARZĄDZANIA"
+  },
+  {
+    "person": "Killion Munyama",
+    "party": "Platforma Obywatelska",
+    "pkd": "41",
+    "opis_pkd": "ROBOTY BUDOWLANE ZWIĄZANE ZE WZNOSZENIEM BUDYNKÓW MIESZKALNYCH I NIEMIESZKALNYCH"
+  },
+  {
+    "person": "Killion Munyama",
+    "party": "Platforma Obywatelska",
+    "pkd": "64",
+    "opis_pkd": "POZOSTAŁA FINANSOWA DZIAŁALNOŚĆ USŁUGOWA, GDZIE INDZIEJ NIESKLASYFIKOWANA, Z WYŁĄCZENIEM UBEZPIECZEŃ I FUNDUSZÓW EMERYTALNYCH"
+  },
+  {
+    "person": "Killion Munyama",
+    "party": "Platforma Obywatelska",
+    "pkd": "46",
+    "opis_pkd": "SPRZEDAŻ HURTOWA NIEWYSPECJALIZOWANA"
+  },
+  {
+    "person": "Piotr Naimski",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "82",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z ORGANIZACJĄ TARGÓW, WYSTAW I KONGRESÓW"
+  },
+  {
+    "person": "Sławomir Neumann",
+    "party": "Platforma Obywatelska",
+    "pkd": "41",
+    "opis_pkd": "ROBOTY BUDOWLANE ZWIĄZANE ZE WZNOSZENIEM BUDYNKÓW MIESZKALNYCH I NIEMIESZKALNYCH"
+  },
+  {
+    "person": "Sławomir Neumann",
+    "party": "Platforma Obywatelska",
+    "pkd": "70",
+    "opis_pkd": "POZOSTAŁE DORADZTWO W ZAKRESIE PROWADZENIA DZIAŁALNOŚCI GOSPODARCZEJ I ZARZĄDZANIA"
+  },
+  {
+    "person": "Sławomir Neumann",
+    "party": "Platforma Obywatelska",
+    "pkd": "70",
+    "opis_pkd": "POZOSTAŁE DORADZTWO W ZAKRESIE PROWADZENIA DZIAŁALNOŚCI GOSPODARCZEJ I ZARZĄDZANIA"
+  },
+  {
+    "person": "Dorota Niedziela",
+    "party": "Platforma Obywatelska",
+    "pkd": "55",
+    "opis_pkd": "HOTELE I PODOBNE OBIEKTY ZAKWATEROWANIA"
+  },
+  {
+    "person": "Mirosława Nykiel",
+    "party": "Platforma Obywatelska",
+    "pkd": "61",
+    "opis_pkd": "DZIAŁALNOŚĆ W ZAKRESIE TELEKOMUNIKACJI PRZEWODOWEJ"
+  },
+  {
+    "person": "Włodzimierz Nykiel",
+    "party": "Platforma Obywatelska",
+    "pkd": "85",
+    "opis_pkd": "POZASZKOLNE FORMY KSZTAŁCENIA, GDZIE INDZIEJ NIE SKLASYFIKOWANE, W SZCZEGÓLNOŚCI ORGANIZACJA KONFERENCJI I SZKOLEŃ"
+  },
+  {
+    "person": "Norbert Obrycki",
+    "party": "Platforma Obywatelska",
+    "pkd": "35",
+    "opis_pkd": "WYTWARZANIE ENERGII ELEKTRYCZNEJ"
+  },
+  {
+    "person": "Norbert Obrycki",
+    "party": "Platforma Obywatelska",
+    "pkd": "70",
+    "opis_pkd": "POZOSTAŁE DORADZTWO W ZAKRESIE PROWADZENIA DZIAŁALNOŚCI GOSPODARCZEJ I ZARZĄDZANIA"
+  },
+  {
+    "person": "Waldemar Olejniczak",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "25",
+    "opis_pkd": "PRODUKCJA KONSTRUKCJI METALOWYCH I ICH CZĘŚCI"
+  },
+  {
+    "person": "Waldemar Olejniczak",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "22",
+    "opis_pkd": "WYDAWANIE KSIĄŻEK"
+  },
+  {
+    "person": "Piotr Olszówka",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "43",
+    "opis_pkd": "WYKONYWANIE KONSTRUKCJI I POKRYĆ DACHOWYCH"
+  },
+  {
+    "person": "Błażej Parda",
+    "party": "Kukiz'15",
+    "pkd": "90",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z WYSTAWIANIEM PRZEDSTAWIEŃ ARTYSTYCZNYCH"
+  },
+  {
+    "person": "Urszula Pasławska",
+    "party": "Polskie Stronnictwo Ludowe",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI I DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Urszula Pasławska",
+    "party": "Polskie Stronnictwo Ludowe",
+    "pkd": "85",
+    "opis_pkd": "POZOSTAŁE POZASZKOLNE FORMY EDUKACJI, GDZIE INDZIEJ NIESKLASYFIKOWANE"
+  },
+  {
+    "person": "Krzysztof Paszyk",
+    "party": "Polskie Stronnictwo Ludowe",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI I DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Jerzy Paul",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "60",
+    "opis_pkd": "NADAWANIE PROGRAMÓW TELEWIZYJNYCH OGÓLNODOSTĘPNYCH I ABONAMENTOWYCH"
+  },
+  {
+    "person": "Ryszard Petru",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "47",
+    "opis_pkd": "SPRZEDAŻ DETALICZNA PROWADZONA PRZEZ DOMY SPRZEDAŻY WYSYŁKOWEJ LUB INTERNET"
+  },
+  {
+    "person": "Ryszard Petru",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "70",
+    "opis_pkd": "POZOSTAŁE DORADZTWO W ZAKRESIE PROWADZENIA DZIAŁALNOŚCI GOSPODARCZEJ I ZARZĄDZANIA"
+  },
+  {
+    "person": "Ryszard Petru",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "70",
+    "opis_pkd": "POZOSTAŁE DORADZTWO W ZAKRESIE PROWADZENIA DZIAŁALNOŚCI GOSPODARCZEJ I ZARZĄDZANIA"
+  },
+  {
+    "person": "Ryszard Petru",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "73",
+    "opis_pkd": "BADANIE RYNKU I OPINII PUBLICZNEJ"
+  },
+  {
+    "person": "Teresa Piotrowska",
+    "party": "Platforma Obywatelska",
+    "pkd": "73",
+    "opis_pkd": "PRACE BADAWCZO-ROZWOJOWE W DZIEDZINIE NAUK MEDYCZNYCH I FARMACJI"
+  },
+  {
+    "person": "Jarosław Porwich",
+    "party": "Kukiz'15",
+    "pkd": "85",
+    "opis_pkd": "POZASZKOLNE FORMY EDUKACJI SPORTOWEJ ORAZ ZAJĘĆ SPORTOWYCH I REKREACYJNYCH"
+  },
+  {
+    "person": "Jarosław Porwich",
+    "party": "Kukiz'15",
+    "pkd": "70",
+    "opis_pkd": "PROMOCJA POLSKIEJ PRZEDSIĘBIORCZOŚCI I POLSKICH PRODUKTÓW"
+  },
+  {
+    "person": "Jarosław Porwich",
+    "party": "Kukiz'15",
+    "pkd": "02",
+    "opis_pkd": "GOSPODARKA LEŚNA I POZOSTAŁA DZIAŁALNOŚĆ LEŚNA, Z WYŁĄCZENIEM POZYSKIWANIA PRODUKTÓW LEŚNYCH"
+  },
+  {
+    "person": "Paweł Pudłowski",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "82",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z ORGANIZACJĄ TARGÓW, WYSTAW I KONGRESÓW"
+  },
+  {
+    "person": "Paweł Pudłowski",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "62",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z OPROGRAMOWANIEM"
+  },
+  {
+    "person": "Paweł Pudłowski",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "82",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z ORGANIZACJĄ TARGÓW, WYSTAW I KONGRESÓW"
+  },
+  {
+    "person": "Grzegorz Raczak",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "85",
+    "opis_pkd": "DZIAŁALNOŚĆ WSPOMAGAJĄCA EDUKACJĘ"
+  },
+  {
+    "person": "Grzegorz Raniewicz",
+    "party": "Platforma Obywatelska",
+    "pkd": "58",
+    "opis_pkd": "WYDAWANIE GAZET"
+  },
+  {
+    "person": "Grzegorz Raniewicz",
+    "party": "Platforma Obywatelska",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Stefan Romecki",
+    "party": "Kukiz'15",
+    "pkd": "70",
+    "opis_pkd": "PROMOCJA POLSKIEJ PRZEDSIĘBIORCZOŚCI I POLSKICH PRODUKTÓW"
+  },
+  {
+    "person": "Monika Rosa",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "73",
+    "opis_pkd": "BADANIE RYNKU I OPINII PUBLICZNEJ"
+  },
+  {
+    "person": "Leszek Ruszczyk",
+    "party": "Platforma Obywatelska",
+    "pkd": "82",
+    "opis_pkd": "POZOSTAŁA DZIAŁALNOŚĆ WSPOMAGAJĄCA PROWADZENIE DZIAŁALNOŚCI GOSPODARCZEJ, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  },
+  {
+    "person": "Leszek Ruszczyk",
+    "party": "Platforma Obywatelska",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Paweł Rychlik",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "85",
+    "opis_pkd": "POZOSTAŁE POZASZKOLNE FORMY EDUKACJI, GDZIE INDZIEJ NIESKLASYFIKOWANE"
+  },
+  {
+    "person": "Łukasz Rzepecki",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "73",
+    "opis_pkd": "POŚREDNICTWO W SPRZEDAŻY MIEJSCA NA CELE REKLAMOWE W MEDIACH ELEKTRONICZNYCH (INTERNET)"
+  },
+  {
+    "person": "Łukasz Rzepecki",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "62",
+    "opis_pkd": "POZOSTAŁA DZIAŁALNOŚĆ W ZAKRESIE PROGRAMOWANIA"
+  },
+  {
+    "person": "Łukasz Rzepecki",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "41",
+    "opis_pkd": "ROBOTY BUDOWLANE ZWIĄZANE ZE WZNOSZENIEM BUDYNKÓW MIESZKALNYCH I NIEMIESZKALNYCH"
+  },
+  {
+    "person": "Łukasz Rzepecki",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "58",
+    "opis_pkd": "DZIAŁALNOŚĆ WYDAWNICZA W ZAKRESIE GIER KOMPUTEROWYCH"
+  },
+  {
+    "person": "Łukasz Rzepecki",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "43",
+    "opis_pkd": "ROBOTY BUDOWLANE SPECJALISTYCZNE"
+  },
+  {
+    "person": "Łukasz Rzepecki",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "41",
+    "opis_pkd": "ROBOTY BUDOWLANE ZWIĄZANE ZE WZNOSZENIEM BUDYNKÓW"
+  },
+  {
+    "person": "Joanna Scheuring-Wielgus",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "90",
+    "opis_pkd": "ARTYSTYCZNA I LITERACKA DZIAŁALNOŚĆ TWÓRCZA"
+  },
+  {
+    "person": "Edward Siarka",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "14",
+    "opis_pkd": "PRODUKCJA POZOSTAŁEJ ODZIEŻY WIERZCHNIEJ"
+  },
+  {
+    "person": "Krzysztof Sitarski",
+    "party": "Kukiz'15",
+    "pkd": "70",
+    "opis_pkd": "POZOSTAŁE DORADZTWO W ZAKRESIE PROWADZENIA DZIAŁALNOŚCI GOSPODARCZEJ I ZARZĄDZANIA"
+  },
+  {
+    "person": "Krzysztof Sitarski",
+    "party": "Kukiz'15",
+    "pkd": "68",
+    "opis_pkd": "KUPNO I SPRZEDAŻ NIERUCHOMOŚCI NA WŁASNY RACHUNEK"
+  },
+  {
+    "person": "Krystyna Skowrońska",
+    "party": "Platforma Obywatelska",
+    "pkd": "64",
+    "opis_pkd": "POZOSTAŁE POŚREDNICTWO PIENIĘŻNE"
+  },
+  {
+    "person": "Paweł Skutecki",
+    "party": "Kukiz'15",
+    "pkd": "58",
+    "opis_pkd": "WYDAWANIE KSIĄŻEK"
+  },
+  {
+    "person": "Paweł Skutecki",
+    "party": "Kukiz'15",
+    "pkd": "62",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z OPROGRAMOWANIEM"
+  },
+  {
+    "person": "Czesław Sobierajski",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "72",
+    "opis_pkd": "BADANIA NAUKOWE I PRACE ROZWOJOWE W DZIEDZINIE NAUK SPOŁECZNYCH I HUMANISTYCZNYCH"
+  },
+  {
+    "person": "Andrzej Sośnierz",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "72",
+    "opis_pkd": "BADANIA NAUKOWE I PRACE ROZWOJOWE W DZIEDZINIE NAUK SPOŁECZNYCH I HUMANISTYCZNYCH"
+  },
+  {
+    "person": "Dariusz Starzycki",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "86",
+    "opis_pkd": "PRAKTYKA LEKARSKA OGÓLNA"
+  },
+  {
+    "person": "Dariusz Starzycki",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "36",
+    "opis_pkd": "POBÓR, UZDATNIANIE I DOSTARCZANIE WODY"
+  },
+  {
+    "person": "Michał Stasiński",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "43",
+    "opis_pkd": "WYKONYWANIE INSTALACJI ELEKTRYCZNYCH"
+  },
+  {
+    "person": "Michał Stasiński",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "43",
+    "opis_pkd": "WYKONYWANIE POZOSTAŁYCH INSTALACJI BUDOWLANYCH"
+  },
+  {
+    "person": "Elżbieta Stępień",
+    "party": "Nowoczesna Ryszarda Petru",
+    "pkd": "70",
+    "opis_pkd": "POZOSTAŁE DORADZTWO W ZAKRESIE PROWADZENIA DZIAŁALNOŚCI GOSPODARCZEJ I ZARZĄDZANIA"
+  },
+  {
+    "person": "Marek Suski",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "91",
+    "opis_pkd": "DZIAŁALNOŚĆ ARCHIWÓW"
+  },
+  {
+    "person": "Paweł Szramka",
+    "party": "Kukiz'15",
+    "pkd": "73",
+    "opis_pkd": "BADANIE RYNKU I OPINII PUBLICZNEJ"
+  },
+  {
+    "person": "Krzysztof Szulowski",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "72",
+    "opis_pkd": "PROWADZENIE BADAŃ NAUKOWYCH I PRAC ROZWOJOWYCH W ZAKRESIE OCHRONY ZDROWIA ZWIERZĄT, A TAKŻE ZDROWIA PUBLICZNEGO W ZAKRESIE CHORÓB ODZWIERZĘCYCH, BEZPIECZEŃSTWA ŻYWNOŚCI ZWIERZĘCEGO POCHODZENIA I PASZ"
+  },
+  {
+    "person": "Janusz Śniadek",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "90",
+    "opis_pkd": "ARANŻACJA IMPREZ ARTYSTYCZNYCH, MUZYCZNYCH, ESTRADOWYCH I TEATRALNYCH"
+  },
+  {
+    "person": "Marcin Święcicki",
+    "party": "Platforma Obywatelska",
+    "pkd": "73",
+    "opis_pkd": "POŚREDNICTWO W SPRZEDAŻY MIEJSCA NA CELE REKLAMOWE W POZOSTAŁYCH MEDIACH"
+  },
+  {
+    "person": "Ryszard Terlecki",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "82",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z ORGANIZACJĄ TARGÓW, WYSTAW I KONGRESÓW"
+  },
+  {
+    "person": "Ewa Tomaszewska",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Jacek Tomczak",
+    "party": "Platforma Obywatelska",
+    "pkd": "62",
+    "opis_pkd": "POZOSTAŁA DZIAŁALNOŚĆ W ZAKRESIE PROGRAMOWANIA"
+  },
+  {
+    "person": "Robert Tyszkiewicz",
+    "party": "Platforma Obywatelska",
+    "pkd": "58",
+    "opis_pkd": "WYDAWANIE KSIĄŻEK"
+  },
+  {
+    "person": "Piotr Uruski",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "32",
+    "opis_pkd": "PRODUKCJA GIER I ZABAWEK"
+  },
+  {
+    "person": "Piotr Walkowski",
+    "party": "Polskie Stronnictwo Ludowe",
+    "pkd": "49",
+    "opis_pkd": "TRANSPORT DROGOWY TOWARÓW"
+  },
+  {
+    "person": "Wojciech Wilk",
+    "party": "Platforma Obywatelska",
+    "pkd": "68",
+    "opis_pkd": "WYNAJEM I ZARZĄDZANIE NIERUCHOMOŚCIAMI WŁASNYMI LUB DZIERŻAWIONYMI"
+  },
+  {
+    "person": "Robert Winnicki",
+    "party": "Kukiz'15",
+    "pkd": "59",
+    "opis_pkd": "DZIAŁALNOŚĆ ZWIĄZANA Z PRODUKCJĄ FILMÓW, NAGRAŃ WIDEO I PROGRAMÓW TELEWIZYJNYCH"
+  },
+  {
+    "person": "Marek Wójcik",
+    "party": "Platforma Obywatelska",
+    "pkd": "22",
+    "opis_pkd": "WYDAWANIE KSIĄŻEK"
+  },
+  {
+    "person": "Piotr Zgorzelski",
+    "party": "Polskie Stronnictwo Ludowe",
+    "pkd": "58",
+    "opis_pkd": "WYDAWANIE KSIĄŻEK"
+  },
+  {
+    "person": "Wojciech Ziemniak",
+    "party": "Platforma Obywatelska",
+    "pkd": "73",
+    "opis_pkd": "DZIAŁALNOŚĆ AGENCJI REKLAMOWYCH"
+  },
+  {
+    "person": "Maria Zuba",
+    "party": "Prawo i Sprawiedliwość",
+    "pkd": "86",
+    "opis_pkd": "POZOSTAŁA DZIAŁALNOŚĆ W ZAKRESIE OPIEKI ZDROWOTNEJ, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  },
+  {
+    "person": "Małgorzata Zwiercan",
+    "party": "Kukiz'15",
+    "pkd": "94",
+    "opis_pkd": "DZIAŁALNOŚĆ POZOSTAŁYCH ORGANIZACJI CZŁONKOWSKICH, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  },
+  {
+    "person": "Stanisław Żmijan",
+    "party": "Platforma Obywatelska",
+    "pkd": "94",
+    "opis_pkd": "DZIAŁALNOŚĆ POZOSTAŁYCH ORGANIZACJI CZŁONKOWSKICH, GDZIE INDZIEJ NIESKLASYFIKOWANA"
+  }
+]
