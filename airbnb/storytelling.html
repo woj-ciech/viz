@@ -1,0 +1,1437 @@
+<!DOCTYPE html><html lang="pl"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10 047 ofert Airbnb w Warszawie: właściciele, fundusze i ustawa UC135</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<style>
+:root{--ground:#08101d;--ink:#eef4ff;--dim:#a8bdd9;--faint:#6d86aa;--line:rgba(0,225,255,.16);--gold:#ff00cd;--coral:#00E1FF;--blue:#0064d7;--navy:#293f73}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:"Spectral",Georgia,serif;overflow-x:hidden}
+canvas{position:fixed;inset:0;width:100vw;height:100vh;display:block;z-index:0}
+#graphSvg{position:fixed;inset:0;width:100vw;height:100vh;z-index:1;pointer-events:none;display:none}
+#graphSvg.on{display:block}
+#graphSvg .gnode{cursor:default}
+#graphSvg .gnode.quotable{cursor:pointer}
+#graphSvg .gnode-visual{transform-box:fill-box;transform-origin:center;transition:transform .18s cubic-bezier(.2,.8,.3,1.3)}
+#graphSvg .gnode:hover .gnode-visual{transform:scale(1.1)}
+#graphSvg .gnode-icon{pointer-events:none}
+@keyframes gedge-dashflow{to{stroke-dashoffset:-16}}
+#graphSvg .gedge.hover-active .gedge-line{stroke-dasharray:5 4;animation:gedge-dashflow .5s linear infinite}
+@media(prefers-reduced-motion:reduce){#graphSvg .gedge.hover-active .gedge-line{animation:none}#graphSvg .gnode-visual{transition:none}}
+#graphSvg .gedge-label{font-family:"IBM Plex Mono",monospace;font-style:italic;font-weight:600;fill:#eef4ff}
+#graphSvg .gnode-title{font-family:"Spectral",serif;font-weight:600;fill:#eef4ff}
+#graphSvg .gnode-sub{font-family:"IBM Plex Mono",monospace;fill:#c3d2e8}
+#graphSvg .rtile{stroke-opacity:.38;stroke-width:1;transition:stroke-width .1s,stroke-opacity .1s;pointer-events:auto;cursor:default}
+#graphSvg .rtile:hover{stroke-width:2.5;stroke-opacity:1}
+#graphSvg .rtile-label,#graphSvg .rtile-sub,#graphSvg .rtile-count{font-family:"IBM Plex Mono",monospace;font-weight:600;pointer-events:none}
+.dimlayer{position:fixed;inset:0;z-index:1;background:var(--ground);opacity:.86;transition:opacity .25s ease;pointer-events:none}
+#cv{transition:filter .6s ease}
+#cv.blurred{filter:blur(10px)}
+.progress{position:fixed;top:0;left:0;height:2px;background:var(--gold);z-index:41;width:0;opacity:.9}
+main{position:relative;z-index:2;pointer-events:none}
+main>.prose,main>.turn,main>.donutrow,main>.ownersplit,main>.method{pointer-events:auto}
+/* hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:0 8vw;position:relative;pointer-events:none}
+.hero::after{content:"";position:absolute;right:7vw;bottom:8vh;width:clamp(180px,27vw,420px);height:1px;background:rgba(0,225,255,.28)}
+.hero .stand,.hero .cue,.hero h1,.hero .langtoggle{position:relative;z-index:2}
+.hero-logo{position:absolute;top:24px;right:24px;height:110px;width:auto;opacity:.85;z-index:3}
+@media(max-width:760px){.hero-logo{height:64px;top:16px;right:16px}}
+.langtoggle{align-self:flex-start;margin-top:22px;display:inline-flex;gap:0;border:1px solid rgba(0,225,255,.25);border-radius:20px;overflow:hidden;pointer-events:auto;background:rgba(10,18,36,.6)}
+.methodlink{align-self:flex-start;margin-top:10px;pointer-events:auto}
+.methodlink a{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;color:var(--faint);text-decoration:none;border-bottom:1px solid rgba(109,134,170,.35);padding-bottom:1px;transition:color .15s}
+.methodlink a:hover{color:var(--coral)}
+.lang-btn{appearance:none;border:none;background:none;color:var(--faint);font-family:"IBM Plex Mono",monospace;font-size:12px;padding:7px 14px;cursor:pointer;transition:all .15s;display:inline-flex;align-items:center;gap:7px}
+.lang-btn .flag{width:18px;height:12px;border-radius:2px;display:block;flex:none}
+.lang-btn.active{color:#08101d;background:var(--coral);font-weight:600}
+.lang-btn:not(.active):hover{color:var(--ink)}
+@media(max-width:760px){.lang-btn{padding:6px 11px;font-size:11px}.lang-btn .flag{width:16px;height:11px}}
+body:not([data-lang="en"]) .i18n-en{display:none}
+body[data-lang="en"] .i18n-pl{display:none}
+.hero h1{font-family:"Fraunces",Georgia,serif;font-weight:700;font-optical-sizing:auto;font-size:clamp(46px,9vw,116px);line-height:.96;letter-spacing:-.015em;margin:0 0 24px;max-width:12ch}
+.hero h1 .g{color:var(--gold);font-style:italic;font-weight:500}
+.hero .stand{max-width:540px;color:var(--dim);font-size:clamp(17px,2.2vw,22px);line-height:1.5;font-weight:300}
+.hero .cue{margin-top:40px;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.24em;color:var(--faint);text-transform:uppercase;animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0);opacity:.5}50%{transform:translateY(5px);opacity:1}}
+/* prose */
+.prose{max-width:660px;margin:0 auto;padding:14vh 24px}
+.prose.tight-bottom{padding-bottom:3vh}
+.prose.tight-top{padding-top:3vh}
+.prose h2{font-weight:600;font-size:clamp(28px,4vw,44px);line-height:1.1;letter-spacing:-.015em;margin:0 0 28px}
+.prose p{font-size:clamp(18px,2.1vw,21px);line-height:1.72;margin:0 0 26px;color:#dce4e3;font-weight:300}
+.prose p.drop::first-letter{float:left;font-size:3.4em;line-height:.82;padding:6px 12px 0 0;color:var(--gold);font-weight:500}
+.prose em{color:var(--ink);font-style:italic}
+.prose strong{color:var(--gold);font-weight:500}
+.divider{max-width:660px;margin:2vh auto;padding:0 24px}.divider hr{border:none;border-top:1px solid var(--line)}
+/* explore */
+.exwrap{position:absolute;left:0;right:0;bottom:4vh;display:flex;flex-direction:column;gap:11px;align-items:center;pointer-events:none}
+.chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;max-width:min(920px,94vw);pointer-events:auto}
+.chip{appearance:none;-webkit-appearance:none;font-family:"IBM Plex Mono",monospace;font-size:11px;padding:5px 11px;border-radius:20px;border:1px solid var(--line);background:rgba(12,26,32,.72);
+  color:var(--dim);cursor:pointer;transition:all .18s;display:flex;gap:6px;align-items:center}
+.chip:hover{color:var(--ink);border-color:var(--dim)}.chip.active{color:#0a1418;font-weight:500;border-color:transparent}
+.chip .dot{width:8px;height:8px;border-radius:50%}
+.readout{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--dim);min-height:15px;text-align:center}.readout b{color:var(--gold)}
+.exhint{font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--faint);letter-spacing:.06em}
+.exp-panel{position:fixed;right:22px;top:64px;left:auto;transform:none;width:min(430px,calc(100vw - 44px));background:rgba(10,18,36,.97);border:1px solid rgba(0,225,255,.22);border-radius:4px;padding:15px 17px;opacity:0;pointer-events:none;transition:opacity .2s;font-family:"IBM Plex Mono",monospace;display:grid;grid-template-columns:1fr;gap:7px;align-items:start;z-index:46}
+.exp-panel.on{pointer-events:auto}
+.exp-panel h4{grid-column:1/-1;font-family:"Spectral",serif;font-weight:600;font-size:20px;margin:0 0 2px}
+.exp-panel .row{font-size:11.5px;color:#d5e1ef;margin:0;line-height:1.45}.exp-panel .row b{color:var(--ink);font-weight:500}
+.exp-panel a{color:var(--coral);text-decoration:none;border-bottom:1px dotted rgba(0,225,255,.45)}.exp-panel a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+.exp-panel .x{position:absolute;top:11px;right:13px;cursor:pointer;color:var(--faint)}.exp-panel .x:hover{color:var(--ink)}
+.quote-panel{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%) scale(.96);width:min(480px,86vw);background:rgba(10,18,36,.98);border:1px solid rgba(0,225,255,.32);border-radius:6px;padding:22px 24px 18px;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;z-index:90;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.quote-panel.on{opacity:1;pointer-events:auto;transform:translate(-50%,-50%) scale(1)}
+.quote-panel .qp-name{font-family:"Spectral",serif;font-weight:600;font-size:19px;color:var(--ink)}
+.quote-panel .qp-role{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--faint);margin-top:2px;text-transform:uppercase;letter-spacing:.08em}
+.quote-panel blockquote{margin:16px 0 12px;font-family:"Spectral",serif;font-style:italic;font-size:18px;line-height:1.5;color:#f0e6c8;padding-left:0}
+.quote-panel .qp-src{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--faint)}
+.quote-panel .x{position:absolute;top:12px;right:14px;cursor:pointer;color:var(--faint);font-size:14px}.quote-panel .x:hover{color:var(--ink)}
+.explore-readout{position:fixed;top:64px;left:50%;transform:translateX(-50%);z-index:45;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--dim);text-align:left;padding:9px 12px;border:1px solid rgba(0,225,255,.18);background:rgba(10,18,36,.92);border-radius:4px;pointer-events:none;opacity:0;transition:opacity .2s}
+.explore-readout b{color:var(--coral)}
+.step.explorer-step .exwrap{position:fixed;left:18px;right:18px;bottom:12px;gap:8px;z-index:80;opacity:0;transition:opacity .2s;pointer-events:none;isolation:isolate}
+.step.explorer-step .chips{max-width:none;position:relative;z-index:82;pointer-events:auto}
+.step.explorer-step .chip{position:relative;z-index:83;background:#0a1224;border-color:rgba(0,225,255,.22);min-height:32px;pointer-events:auto;touch-action:manipulation;user-select:none}
+.step.explorer-step .exhint{padding:6px 10px;border-radius:999px;background:rgba(10,18,36,.74);border:1px solid rgba(0,225,255,.12)}
+body.explore-on .step.explorer-step .exwrap,body.explore-on .explore-readout{opacity:1}
+body.explore-on .step.explorer-step .exwrap,body.explore-on .step.explorer-step .chips,body.explore-on .step.explorer-step .chip{pointer-events:auto}
+body.explore-on .exp-panel.on{opacity:1;pointer-events:auto}
+@media(max-width:760px){.exp-panel{top:104px;right:10px;left:10px;width:auto}.explore-readout{top:58px;left:50%;transform:translateX(-50%)}.step.explorer-step .exwrap{left:0;right:0;bottom:0;padding:8px 0 10px;background:linear-gradient(rgba(8,16,29,0),rgba(8,16,29,.85) 35%)}
+.step.explorer-step .chips{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;justify-content:flex-start;max-width:100vw;padding:0 12px;mask-image:linear-gradient(90deg,transparent,#000 12px,#000 calc(100% - 12px),transparent)}
+.step.explorer-step .chip{flex:none}}
+/* method */
+.method{max-width:720px;margin:6vh auto;padding:26px;border:1px solid var(--line);border-radius:4px;background:rgba(14,28,34,.6)}
+.method h3{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:0 0 16px}
+.method ul{margin:0;padding-left:18px}.method li{margin-bottom:10px;color:var(--dim);font-size:15px;line-height:1.5;font-weight:300}.method li b{color:var(--ink);font-weight:500}
+.method p{color:var(--dim);font-size:15px;line-height:1.5;font-weight:300;margin:0 0 16px}.method p b{color:var(--ink);font-weight:500}
+.endmark{min-height:25vh;display:flex;align-items:center;justify-content:center;padding:6vh 0}
+.endmark div{text-align:center}
+.endmark img{width:min(240px,50vw);height:auto;opacity:.8}
+.endmark .credit{margin:14px 0 0;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;color:var(--faint)}
+
+/* data-first investigation */
+.prose .data-line{font-family:"IBM Plex Mono",monospace;color:var(--dim);font-size:13px;line-height:1.85;margin:30px 0;background:rgba(255,0,205,.05);border-radius:4px;padding:16px 18px}
+.ownersplit{max-width:660px;margin:0 auto;padding:0 24px}
+.os-legend{display:flex;gap:22px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-bottom:18px}
+.os-legend span{display:inline-flex;align-items:center;gap:6px}
+.os-legend i{width:9px;height:9px;border-radius:2px;display:inline-block}
+.os-group{margin-bottom:16px}
+.os-grouplabel{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-bottom:9px}
+.os-row{display:grid;grid-template-columns:100px 1fr 78px;align-items:center;gap:12px;margin-bottom:9px}
+.os-name{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink)}
+.os-bar{height:10px;background:rgba(0,225,255,.16);border-radius:5px;overflow:hidden}
+.os-priv{height:100%;background:var(--gold)}
+.os-pct{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--dim);text-align:right}
+@media(max-width:760px){.hero{padding:0 7vw}.os-row{grid-template-columns:82px 1fr 62px;gap:8px}}
+
+.donutrow{max-width:760px;margin:0 auto;padding:1vh 24px;display:flex;gap:48px;align-items:center;flex-wrap:wrap;justify-content:center}
+.donutwrap{position:relative;width:190px;height:190px;flex:none}
+.donutwrap svg{width:100%;height:100%}
+.donut-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.donut-center .v{font-family:"Spectral",serif;font-weight:600;font-size:30px;color:var(--gold)}
+.donut-center .l{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-top:2px}
+.donut-stats{display:flex;flex-direction:column;gap:14px;min-width:220px}
+.donut-stat{display:flex;align-items:baseline;gap:12px}
+.donut-stat .v{font-family:"IBM Plex Mono",monospace;color:var(--coral);font-size:19px;min-width:88px}
+.donut-stat .l{font-family:"IBM Plex Mono",monospace;color:var(--dim);font-size:11px;line-height:1.4}
+@media(max-width:640px){.donutrow{gap:24px}}
+
+/* --- scrollytelling v3: one canvas, progressive evidence --- */
+.storyrun{position:relative;z-index:3;padding:1px 0;pointer-events:none}
+.step{min-height:108vh;position:relative;display:flex;align-items:flex-end;padding:0 6vw 15vh;pointer-events:none}
+.step.right{justify-content:flex-end}
+.step.center{justify-content:center;text-align:center}
+.step.long{min-height:138vh}
+.step.xlong{min-height:152vh}
+.step.card-top{align-items:flex-start;padding-top:9vh;padding-bottom:0}
+.step.card-top .stepcard{margin-top:0}
+.step.explorer-step{min-height:124vh;align-items:flex-start;padding-top:10vh;padding-bottom:18vh}
+.stepcard{position:relative;width:min(410px,88vw);padding:18px 20px 19px;background:rgba(10,18,36,.90);border:1px solid rgba(0,225,255,.18);border-radius:4px;transition:opacity .35s ease;}
+.stepcard a{pointer-events:auto;}
+.step.center .stepcard{width:min(590px,90vw)}
+.stepcard h2{font-size:clamp(25px,3.2vw,38px);line-height:1.08;margin:0 0 10px;font-weight:600;letter-spacing:-.015em}
+.stepcard p{font-size:16px;line-height:1.56;color:#d6e2f1;margin:0;font-weight:300}
+.stepcard strong{color:var(--gold);font-weight:500}
+.stepcard .srcs,.prose .srcs{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--faint);margin-top:12px;line-height:1.8}
+.srcs a,.prose p a.src{color:var(--coral);text-decoration:none;border-bottom:1px dotted rgba(0,225,255,.45);padding-bottom:1px}
+.srcs a:hover,.prose p a.src:hover{color:var(--ink);border-bottom-color:var(--ink)}
+.srcs .lbl{color:var(--faint);text-transform:uppercase;letter-spacing:.1em;margin-right:2px}
+.rank-step .stepcard{width:min(360px,86vw)}
+.rank-step{min-height:150vh}
+
+.turn{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:12vh 24px;position:relative;z-index:4;background:rgba(10,20,24,.92)}
+.turnin{max-width:860px;text-align:center}
+.turn h2{font-size:clamp(38px,6.5vw,78px);line-height:1.02;margin:0;letter-spacing:-.025em;font-weight:600}
+.turn h2 span{color:var(--gold);font-style:italic;font-weight:500}
+.turn p{max-width:620px;margin:28px auto 0;color:var(--dim);font-size:19px;line-height:1.6;font-weight:300}
+.turn.terminal{justify-content:flex-start;background:rgba(6,12,22,.96)}
+.turn.terminal .turnin{max-width:760px;text-align:left}
+.turn.terminal .termbox{font-family:"IBM Plex Mono",monospace;font-size:clamp(15px,2.6vw,22px);color:#9dffc8;background:#0a1420;border:1px solid rgba(0,225,255,.25);border-radius:4px;padding:16px 20px;margin-bottom:26px;display:inline-block}
+.turn.terminal .termbox .p{color:var(--faint)}
+.turn.terminal h2{text-align:left}
+.turn.terminal p{margin-left:0}
+@media(max-width:760px){.step{padding:0 5vw 10vh;min-height:102vh}.step.right{justify-content:flex-start}.stepcard{background:rgba(8,18,22,.92)}.step.long,.step.xlong,.step.explorer-step{min-height:118vh}.turn{min-height:82vh}}
+
+</style></head><body>
+<canvas id="cv"></canvas><svg id="graphSvg"></svg><div class="dimlayer" id="dim"></div>
+<div class="progress" id="progress"></div>
+<div class="quote-panel" id="quotePanel"><span class="x" onclick="hideQuotePanel()">✕</span><div class="qp-name"></div><div class="qp-role"></div><blockquote class="qp-text"></blockquote><div class="qp-src"></div></div>
+
+<main>
+  <header class="hero">
+    <img class="hero-logo" src="https://storage.ghost.io/c/b5/22/b52265eb-d44c-4ae8-8456-954cfb01f918/content/images/2020/07/OffensiveOsint-logo-RGB-2.png" alt="OffensiveOSINT">
+    <h1 class="i18n-pl">Rozkład <span class="g">Airbnb</span><br>w Warszawie</h1>
+    <h1 class="i18n-en"><span class="g">Airbnb</span> Ownership<br>in Warsaw</h1>
+    <p class="stand i18n-pl">10 047 ogłoszeń Airbnb w Warszawie. Sprawdzono, kto za nimi stoi, jakie firmy, fundusze i osoby, na podstawie dwóch publicznych rejestrów, KRS i CRBR.</p>
+    <p class="stand i18n-en">10,047 Airbnb listings in Warsaw. Checked who's actually behind them, which companies, funds, and people, using two public registries, KRS (the company register) and CRBR (the register of people who actually control companies).</p>
+    <div class="langtoggle" id="langToggle" role="group" aria-label="Language / Język">
+      <button class="lang-btn active" data-lang="pl" type="button"><svg class="flag" viewBox="0 0 3 2" aria-hidden="true"><rect width="3" height="1" fill="#fff"/><rect y="1" width="3" height="1" fill="#dc143c"/></svg>PL</button>
+      <button class="lang-btn" data-lang="en" type="button"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#00247d"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" stroke-width="4"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#cf142b" stroke-width="1.6"/><path d="M15,0 V20 M0,10 H30" stroke="#fff" stroke-width="6"/><path d="M15,0 V20 M0,10 H30" stroke="#cf142b" stroke-width="3.2"/></svg>EN</button>
+    </div>
+    <div class="methodlink"><a class="i18n-pl" href="https://www.offensiveosint.io/offensive-osint-s06e02-data-driven-investigations-part-2-uc135/" target="_blank" rel="noopener">Metodologia i zbiór danych →</a><a class="i18n-en" href="https://www.offensiveosint.io/offensive-osint-s06e02-data-driven-investigations-part-2-uc135/" target="_blank" rel="noopener">Methodology and dataset →</a></div>
+    <div class="cue i18n-pl">↓ zacznij od danych</div>
+    <div class="cue i18n-en">↓ start with the data</div>
+  </header>
+
+  <section class="storyrun" aria-label="Od 10 047 ofert do operatorów">
+    <article class="step" data-viz="market0">
+      <div class="stepcard"><h2 class="i18n-pl">10 047 ogłoszeń, formalnie niezależnych</h2><h2 class="i18n-en">10,047 listings, formally independent</h2><p class="i18n-pl">Tysiące pozornie osobnych gospodarzy. Dane kontaktowe i rejestrowe części z nich prowadzą do tych samych firm.</p><p class="i18n-en">Thousands of seemingly separate hosts. Contact and registration data for some of them lead back to the same companies.</p></div>
+    </article>
+    <article class="step right" data-viz="market1">
+      <div class="stepcard"><h2 class="i18n-pl">Rozkład na mapie pokazuje nierówną koncentrację</h2><h2 class="i18n-en">The map shows an uneven concentration</h2><p class="i18n-pl">Ogłoszenia skupiają się w garstce centralnych dzielnic, zamiast rozkładać się równomiernie po mieście.</p><p class="i18n-en">Listings cluster in a handful of central districts rather than spreading evenly across the city.</p></div>
+    </article>
+    <article class="step card-top" data-viz="market2">
+      <div class="stepcard"><h2 class="i18n-pl">Trzy na cztery ogłoszenia to działalność komercyjna, nie prywatny wynajem</h2><h2 class="i18n-en">Three in four listings are commercial activity, not private rentals</h2><p class="i18n-pl">Gospodarze prywatni stanowią <strong>23,3%</strong> ofert. Pozostałe <strong>7 710 ogłoszeń</strong> to zorganizowana działalność komercyjna.</p><p class="i18n-en">Private hosts account for <strong>23.3%</strong> of listings. The remaining <strong>7,710 listings</strong> are organized commercial activity.</p></div>
+    </article>
+    <article class="step right long card-top rank-step" data-viz="market3">
+      <div class="stepcard"><h2 class="i18n-pl">Dwadzieścia nazw kontroluje prawie połowę tego rynku</h2><h2 class="i18n-en">Twenty names control nearly half this market</h2><p class="i18n-pl">Ranking według liczby ofert pokazuje, jak wąska jest czołówka.</p><p class="i18n-en">The ranking by listing count shows how narrow the top tier is.</p></div>
+    </article>
+    <article class="step center card-top long" data-viz="market3zoom"></article>
+</section>
+
+  <section class="prose tight-bottom tight-top">
+    <h2 class="i18n-pl">Superhost, oceny i długość działania gospodarzy</h2>
+    <h2 class="i18n-en">Superhost status, ratings, and host tenure</h2>
+    <p class="drop i18n-pl">Zanim pojawi się struktura właścicielska, sam zbiór danych, bez rejestrów, już pokazuje wyraźny wzorzec.</p>
+    <p class="drop i18n-en">Even before ownership structure comes into it, the raw dataset, with no registries at all, already shows a clear pattern.</p>
+  </section>
+  <div class="donutrow">
+    <div class="donutwrap">
+      <svg viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(0,225,255,.16)" stroke-width="22"/>
+        <circle cx="100" cy="100" r="80" fill="none" stroke="#ff00cd" stroke-width="22" stroke-linecap="round" stroke-dasharray="113.5 502.4" transform="rotate(-90 100 100)"/>
+      </svg>
+      <div class="donut-center"><div class="v">22,6%</div><div class="l">superhost</div></div>
+    </div>
+    <div class="donut-stats">
+      <div class="donut-stat"><span class="v">2 267</span><span class="l i18n-pl">gospodarzy ze statusem superhost, z 10 047</span><span class="l i18n-en">hosts with superhost status, out of 10,047</span></div>
+      <div class="donut-stat"><span class="v">4,64</span><span class="l i18n-pl">średnia ocena, mediana 4,73, 628 ofert bez opinii</span><span class="l i18n-en">average rating, median 4.73, 628 listings with no reviews</span></div>
+      <div class="donut-stat"><span class="v">380 234</span><span class="l i18n-pl">opinii łącznie w całym zbiorze, mediana 20 na ofertę</span><span class="l i18n-en">reviews in total across the dataset, median 20 per listing</span></div>
+      <div class="donut-stat"><span class="v">6,5 lat</span><span class="l i18n-pl">średni staż hosta na platformie, maksimum 15 lat</span><span class="l i18n-en">average host tenure on the platform, maximum 15 years</span></div>
+    </div>
+  </div>
+  <section class="prose tight-bottom tight-top">
+    <p class="i18n-pl">Dwie dzielnice, <strong>Śródmieście (3 502 ofert, 34,9%)</strong> i <strong>Wola (2 221, 22,1%)</strong>, skupiają ponad połowę zbioru, razem 57% całego rynku, mimo że to niecałe 15% powierzchni miasta. Wśród ofert komercyjnych ta koncentracja jest jeszcze mocniejsza. Samo Śródmieście odpowiada za 2 778 z 7 710, czyli 36%.</p>
+    <p class="i18n-en">Two districts, <strong>Śródmieście (3,502 listings, 34.9%)</strong> and <strong>Wola (2,221, 22.1%)</strong>, hold over half the dataset, 57% of the whole market, despite being under 15% of the city's area. Among commercial listings this concentration is even stronger. Śródmieście alone accounts for 2,778 of 7,710, or 36%.</p>
+    <p class="i18n-pl">Podział 76,7% komercyjne wobec 23,3% prywatne pokazuje rynek zdominowany przez operatorów, nie okazjonalnych gospodarzy z jednym pokojem.</p>
+    <p class="i18n-en">The 76.7% commercial vs. 23.3% private split shows a market dominated by operators, not occasional hosts with a single room.</p>
+  </section>
+  <div class="ownersplit">
+    <div class="os-legend"><span class="i18n-pl"><i style="background:var(--gold)"></i>prywatny gospodarz</span><span class="i18n-en"><i style="background:var(--gold)"></i>private host</span><span class="i18n-pl"><i style="background:rgba(0,225,255,.4)"></i>komercyjny</span><span class="i18n-en"><i style="background:rgba(0,225,255,.4)"></i>commercial</span></div>
+    <div class="os-group">
+      <div class="os-grouplabel i18n-pl">Wśród ofert komercyjnych: kto jest zarejestrowany jako kto</div>
+      <div class="os-grouplabel i18n-en">Among commercial listings: registered as what</div>
+      <div class="os-row"><span class="os-name i18n-pl">Spółka</span><span class="os-name i18n-en">Company</span><div class="os-bar"><div class="os-priv" style="width:65.8%;background:rgba(0,225,255,.65)"></div></div><span class="os-pct">65,8%</span></div>
+      <div class="os-row"><span class="os-name i18n-pl">Jednoosobowa firma (JDG)</span><span class="os-name i18n-en">Sole proprietorship (JDG)</span><div class="os-bar"><div class="os-priv" style="width:34.2%;background:rgba(0,225,255,.65)"></div></div><span class="os-pct">34,2%</span></div>
+    </div>
+    <div class="os-group">
+      <div class="os-grouplabel i18n-pl">Gdzie prywatny gospodarz trzyma się najmocniej</div>
+      <div class="os-grouplabel i18n-en">Where private hosts hold on strongest</div>
+      <div class="os-row"><span class="os-name">Wawer</span><div class="os-bar"><div class="os-priv" style="width:55.4%"></div></div><span class="os-pct i18n-pl">55% prywatnych</span><span class="os-pct i18n-en">55% private</span></div>
+      <div class="os-row"><span class="os-name">Białołęka</span><div class="os-bar"><div class="os-priv" style="width:46.8%"></div></div><span class="os-pct i18n-pl">47% prywatnych</span><span class="os-pct i18n-en">47% private</span></div>
+      <div class="os-row"><span class="os-name">Bielany</span><div class="os-bar"><div class="os-priv" style="width:38.0%"></div></div><span class="os-pct i18n-pl">38% prywatnych</span><span class="os-pct i18n-en">38% private</span></div>
+    </div>
+    <div class="os-group">
+      <div class="os-grouplabel i18n-pl">Gdzie komercyjny sektor trzyma się najlepiej</div>
+      <div class="os-grouplabel i18n-en">Where the commercial sector holds on best</div>
+      <div class="os-row"><span class="os-name">Śródmieście</span><div class="os-bar"><div class="os-priv" style="width:36.0%;background:rgba(0,225,255,.65)"></div></div><span class="os-pct i18n-pl">2 778 ofert · 36%</span><span class="os-pct i18n-en">2,778 listings · 36%</span></div>
+      <div class="os-row"><span class="os-name">Wola</span><div class="os-bar"><div class="os-priv" style="width:23.3%;background:rgba(0,225,255,.65)"></div></div><span class="os-pct i18n-pl">1 798 ofert · 23%</span><span class="os-pct i18n-en">1,798 listings · 23%</span></div>
+      <div class="os-row"><span class="os-name">Mokotów</span><div class="os-bar"><div class="os-priv" style="width:9.8%;background:rgba(0,225,255,.65)"></div></div><span class="os-pct i18n-pl">757 ofert · 10%</span><span class="os-pct i18n-en">757 listings · 10%</span></div>
+    </div>
+  </div>
+  <section class="prose tight-top">
+    <p class="i18n-pl">Prywatny wynajem trzyma się na obrzeżach miasta (Wawer, Białołęka, Bielany), tam gdzie skali jest najmniej. Zarejestrowane spółki dominują tam, gdzie skali jest najwięcej. Śródmieście i Wola same odpowiadają za 59% wszystkich ofert komercyjnych w mieście, a Mokotów dokłada kolejne 10%.</p>
+    <p class="i18n-en">Private rentals hold on at the edges of the city (Wawer, Białołęka, Bielany), where there's the least scale. Registered companies dominate where there's the most, with Śródmieście and Wola alone accounting for 59% of all commercial listings in the city and Mokotów adding another 10%.</p>
+  </section>
+
+  <section class="turn">
+    <div class="turnin"><h2 class="i18n-pl">Ranking pokazuje liczbę ofert, <span>niektóre mają tego samego właściciela</span></h2><h2 class="i18n-en">The ranking shows listing counts, <span>some have same owner.</span></h2><p class="i18n-pl">Ranking mówi, kto ma dużo ofert. Nie mówi, czy dwa różne profile, marki albo spółki są częścią tej samej struktury, a często są.</p><p class="i18n-en">The ranking tells you who has a lot of listings. It doesn't tell you whether two different profiles, brands, or companies are part of the same structure, and often they are.</p></div>
+  </section>
+
+  <section class="storyrun" aria-label="Identyfikacja operatora mimo niespójnych danych">
+    <article class="step long card-top" data-viz="identity0">
+      <div class="stepcard"><h2 class="i18n-pl">Dlatego ranking liczy firmy po numerze i kontakcie, nie po samej nazwie</h2><h2 class="i18n-en">That's why the ranking counts companies by number and contact, not by name alone</h2><p class="i18n-pl">Każda firma w Polsce ma trzy numery identyfikacyjne (KRS, REGON, NIP); w danych Airbnb bywa zapisana raz jednym, raz innym, jak na przykładzie BookingHost. Ten sam telefon i adres pokazują, że to jedna firma. Licząc tylko po numerze, policzono by ją jako trzy osobne.</p><p class="i18n-en">Every company in Poland has three ID numbers (KRS, REGON, NIP); in Airbnb's data it's sometimes recorded under one, sometimes another, as with BookingHost. The same phone number and address show it's one company. Counting by number alone would have counted it as three separate ones.</p><div class="srcs"><span class="lbl">Trzy formaty, ta sama firma:</span> <a class="src" href="https://www.airbnb.com/rooms/5506133" target="_blank" rel="noopener">airbnb.com, jak KRS 0000606096</a> · <a class="src" href="https://www.airbnb.com/rooms/1704374587695761000" target="_blank" rel="noopener">airbnb.com, jak REGON 363905731</a> · <a class="src" href="https://www.airbnb.com/rooms/1665917191629020772" target="_blank" rel="noopener">airbnb.com, jak NIP 7010556748</a></div></div>
+    </article>
+  </section>
+
+  <section class="turn">
+    <div class="turnin"><h2 class="i18n-pl">Marka, spółka i <span> beneficjenci</span></h2><h2 class="i18n-en">Brand, company and <span>ultimate beneficial owners</span></h2><p class="i18n-pl">KRS pokazuje, kto zarządza firmą i kto jest współwłaścicielem. CRBR pokazuje, kto na niej realnie zarabia, czyli beneficjenta rzeczywistego. Odtąd liczą się trzy poziomy, marka, firma za nią i osoba, która tę firmę kontroluje.</p><p class="i18n-en">KRS shows who runs a company and who co-owns it. CRBR shows who actually profits from it, the beneficial owner. From here on, three levels matter, the brand, the company behind it, and the person who controls that company.</p></div>
+  </section>
+
+  <section class="storyrun" aria-label="Od spółki do ludzi i struktur kontroli">
+    <article class="step" data-viz="chain0">
+      <div class="stepcard"><h2 class="i18n-pl">Renters: 900 ofert, dwa udokumentowane kanały do ustawy</h2><h2 class="i18n-en">Renters: 900 listings, two documented channels to the law</h2><p class="i18n-pl">Renters należy do założycieli, Kamila Krzyżanowskiego i Sebastiana Hejnowskiego. Krzyżanowski, prezes, mówił w prasie: <em>&bdquo;zarówno my, jak i całe Polskie Stowarzyszenie Wynajmu Krótkoterminowego stoimy na stanowisku, że prawo do dysponowania nieruchomością jest zagwarantowane w Konstytucji&rdquo;</em>, wskazując jako wzór chorwacki system eVisitor. Członkini zarządu, <strong>Monika Ziółek</strong>, zasiada też w radzie nadzorczej <strong>PSWK</strong>, stowarzyszenia Grzegorza Żurawskiego. PSWK rozmawiało z Ministerstwem Sportu i Turystyki, zanim 14 lipca 2026 Rada Ministrów przyjęła <strong>ustawę UC135</strong>. Osobna organizacja, <strong>Polskie Stowarzyszenie Najmu Krótkoterminowego</strong>, też ostrzegała przed przeregulowaniem, jej przedstawicielka Anna Dąbrowska: <em>&bdquo;Branża będzie w pewnym momencie przeregulowana, jeżeli te przepisy wejdą w takiej formie&rdquo;</em>. </p><p class="i18n-en">Renters belongs to its founders, Kamil Krzyżanowski and Sebastian Hejnowski. Krzyżanowski, the president, told the press: <em>&bdquo;both we and the entire Polish Short-Term Rental Association hold the position that the right to dispose of one's own property is guaranteed by the Constitution&rdquo;</em>, citing Croatia's eVisitor system as a model. Board member <strong>Monika Ziółek</strong> also sits on the supervisory board of <strong>PSWK</strong>, Grzegorz Żurawski's association. PSWK spoke with the Ministry of Sport and Tourism before the Council of Ministers adopted the <strong>UC135 law</strong> on 14 July 2026. A separate organization, the <strong>Polish Short-Term Letting Association</strong> (Polskie Stowarzyszenie Najmu Krótkoterminowego), also warned against overregulation, its representative Anna Dąbrowska: <em>&bdquo;The industry will at some point become overregulated if these rules go through in this form&rdquo;</em></p><div class="srcs"><span class="lbl">Źródła:</span> <a class="src" href="https://www.rp.pl/nieruchomosci/art43218081-wystarcza-proste-rozwiazania-by-uregulowac-najem-krotkoterminowy-mieszkan" target="_blank" rel="noopener">rp.pl, wywiad</a> · <a class="src" href="https://www.linkedin.com/in/monika-zi%C3%B3%C5%82ek-6bb150101/" target="_blank" rel="noopener">LinkedIn, M. Ziółek</a> · <a class="src" href="https://pswk.pl/o-nas/" target="_blank" rel="noopener">pswk.pl/o-nas</a> · <a class="src" href="https://www.bankier.pl/wiadomosc/Rzad-chce-uregulowac-najem-krotkoterminowy-Branza-ostrzega-przed-skutkami-9104591.html" target="_blank" rel="noopener">bankier.pl, A. Dąbrowska</a> · <a class="src" href="https://rejestr.io/krs/678215/renters" target="_blank" rel="noopener">rejestr.io</a> · <a class="src" href="https://rejestr.io/krs/598008/polish-holiday-rentals" target="_blank" rel="noopener">rejestr.io, Polish Holiday Rentals</a> · <a class="src" href="https://www.airbnb.com/rooms/1660048255979107572" target="_blank" rel="noopener">airbnb.com, przykładowa oferta Renters</a> · <a class="src" href="https://www.ei.com.pl/en/enterprise-investors-backs-the-dynamic-growth-of-renters-pl" target="_blank" rel="noopener">ei.com.pl, inwestycja w Renters</a> · <a class="src" href="https://www.ei.com.pl/en/team/dariusz-pronczuk/" target="_blank" rel="noopener">ei.com.pl, Dariusz Prończuk</a> · <a class="src" href="https://shorttermrentalz.com/news/renters-pl-private-equity-investment-poland/" target="_blank" rel="noopener">shorttermrentalz.com</a></div></div>
+    </article>
+    <article class="step right xlong card-top" data-viz="chain1">
+      <div class="stepcard"><h2 class="i18n-pl">Dwóch operatorów w prasie, spór o ustawę w samym rządzie</h2><h2 class="i18n-en">Two operators in the press, a dispute over the law inside the government itself</h2><p class="i18n-pl">BookingHost należy do założyciela, Andrzeja Steckiego: <em>&bdquo;można przyjąć, że niemal wszystkie obiekty wynajmowane za pośrednictwem Airbnb przez osoby prywatne, które nie zarejestrowały działalności gospodarczej, stanowią szarą strefę&rdquo;</em>. Ten sam artykuł rp.pl cytuje <strong>Paulinę Bendę</strong>, prezeskę <strong>SuperApart</strong> (290 ofert, #4 w rankingu): <em>&bdquo;Nie zgadzam się z tezą, że najem krótkoterminowy jest głównym czynnikiem wzrostu czynszów&rdquo;</em>. Ustawa dzieli też sam rząd. Minister <strong>Katarzyna Pełczyńska-Nałęcz</strong> nazwała ją antyludzką i zapowiedziała poprawki; posłanka <strong>Paulina Matysiak</strong> oskarżyła ministerstwo o uleganie interesom zagranicznej korporacji; minister <strong>Jakub Rutnicki</strong> broni projektu, mówiąc o &bdquo;większej wierze w Polaków&rdquo;.</p><p class="i18n-en">BookingHost belongs to its founder, Andrzej Stecki: <em>&bdquo;one can assume that nearly all properties rented via Airbnb by private individuals who haven't registered a business count as the grey market&rdquo;</em>. That same rp.pl article quotes <strong>Paulina Benda</strong>, president of <strong>SuperApart</strong> (290 listings, #4 in the ranking): <em>&bdquo;I don't agree with the claim that short-term rental is the main driver of rising rents&rdquo;</em>. The law also splits the government itself. Minister <strong>Katarzyna Pełczyńska-Nałęcz</strong> called it anti-human and announced amendments; MP <strong>Paulina Matysiak</strong> accused the ministry of bowing to a foreign corporation's interests; minister <strong>Jakub Rutnicki</strong> defends the bill, talking about &bdquo;more faith in Poles&rdquo;.</p><div class="srcs"><span class="lbl">Źródła:</span> <a class="src" href="https://www.rp.pl/nieruchomosci/art41413341-najem-krotkoterminowy-promil-rynku-do-uporzadkowania" target="_blank" rel="noopener">rp.pl, wywiad</a> · <a class="src" href="https://rejestr.io/osoby/655932/andrzej-stecki" target="_blank" rel="noopener">rejestr.io</a> · <a class="src" href="https://www.airbnb.com/rooms/1665917191629020772" target="_blank" rel="noopener">airbnb.com, BookingHost</a> · SuperApart Sp. z o.o., KRS 0000575621 · <a class="src" href="https://www.airbnb.com/rooms/1721845712589769149" target="_blank" rel="noopener">airbnb.com, SuperApart</a> · <a class="src" href="https://www.bankier.pl/wiadomosc/Bezzebna-ustawa-o-najmie-krotkoterminowym-Pelczynska-Nalecz-Ludzie-maja-prawo-decydowac-czy-chca-miec-burdel-za-sciana-9169921.html" target="_blank" rel="noopener">bankier.pl, Pełczyńska-Nałęcz</a> · <a class="src" href="https://biznes.interia.pl/nieruchomosci/news-zmiany-w-najmie-wywolaly-burze-w-sejmie-oskarzenia-o-wplywy,nId,23515607" target="_blank" rel="noopener">interia.pl, Matysiak</a> · <a class="src" href="https://www.e-hotelarz.pl/artykul/122005/najem-krotkoterminowy-wrocil-do-sejmu-rutnicki-broni-projektu-zandberg-zapowiada-poprawki/" target="_blank" rel="noopener">e-hotelarz.pl, Rutnicki</a></div></div>
+    </article>
+  </section>
+
+  <section class="prose tight-bottom">
+    <h2 class="i18n-pl">Dwie spółki, dwa realne budynki w Warszawie</h2>
+    <h2 class="i18n-en">Two companies, two real buildings in Warsaw</h2>
+    <p class="drop i18n-pl">Mokotów I Propco i Bemowo Propco sfinansowały dwa projekty fińskiego dewelopera YIT, 280 studiów co-livingowych i 578 mieszkań przy ul. Postępu 24 na Mokotowie, dziś pod marką „Noli Studios”, oraz 99 mieszkań na wynajem w projekcie „Nordic Bemowo”, dostarczonym w 2023 roku. Z trzecim projektem tej samej transakcji, Parkur Residence (116 mieszkań), YIT przekazało funduszowi ponad 1000 lokali w Warszawie za około 450 mln zł.</p>
+    <p class="drop i18n-en">Mokotów I Propco and Bemowo Propco financed two real projects by Finnish developer YIT, 280 co-living studios and 578 apartments at ul. Postępu 24 in Mokotów, today under the „Noli Studios”, and 99 rental apartments in the „Nordic Bemowo” project, delivered in 2023. Together with a third project from the same deal, Parkur Residence (116 apartments), YIT handed the fund over 1,000 units in Warsaw for around 450 million zł.</p>
+    <div class="srcs"><span class="lbl">Źródła:</span> <a class="src" href="https://nolistudios.pl/en/warsaw-mokotow/" target="_blank" rel="noopener">nolistudios.pl</a> · <a class="src" href="https://www.yit.pl/aktualnosci/aktualnosci-2021/finalizujemy-z-nrep-kontrakt-na-budowe-ponad-1.000-lokali-na-wynajem-w-warszawie" target="_blank" rel="noopener">yit.pl</a> · <a class="src" href="https://nowawarszawa.pl/wielkie-otwarcie-noli-studios-w-warszawie/" target="_blank" rel="noopener">nowawarszawa.pl</a></div>
+  </section>
+
+  <section class="storyrun" aria-label="Struktura warstwowa klastra NREP, od spółek operacyjnych do funduszu">
+    <article class="step" data-viz="tax0">
+      <div class="stepcard"><h2 class="i18n-pl">Zaczyna się od dwóch spółek</h2><h2 class="i18n-en">It starts with two companies</h2><p class="i18n-pl">Zanim pojawi się fundusz, wchodzą dwie konkretne spółki. <strong>Mokotów I Propco</strong> ma 3 potwierdzone oferty w tym zbiorze, <strong>Bemowo Propco</strong> ma kredyt hipoteczny od <strong>EBRD</strong>, Europejskiego Banku Odbudowy i Rozwoju, międzynarodowej instytucji finansowej ponad 70 państw i UE, pożyczającej na duże inwestycje komercyjne, nie osobom prywatnym. Sam fakt, że taki bank ją finansuje, pokazuje skalę kapitału za nią. Obie spółki mają tego samego właściciela.</p><p class="i18n-en">Before the fund appears, there are two specific companies. <strong>Mokotów I Propco</strong> has 3 confirmed listings in this dataset, <strong>Bemowo Propco</strong> has a mortgage loan from the <strong>EBRD</strong>, the European Bank for Reconstruction and Development, an international financial institution owned by over 70 states and the EU, lending for large commercial investments, not to private individuals. The mere fact that such a bank finances it shows the scale of capital behind it. Both companies have the same owner.</p><div class="srcs"><span class="lbl">Źródła:</span> <a class="src" href="https://www.emis.com/php/company-profile/PL/Bemowo_Propco_Sp_z_oo_en_12001432.html" target="_blank" rel="noopener">emis.com</a> · <a class="src" href="https://rejestr.io/krs/875874/bemowo-propco" target="_blank" rel="noopener">rejestr.io, sprawozdanie finansowe za 2024</a> · <a class="src" href="https://www.airbnb.com/rooms/1028856264885892179" target="_blank" rel="noopener">airbnb.com, Mokotów I Propco</a></div></div>
+    </article>
+    <article class="step right long" data-viz="tax1">
+      <div class="stepcard"><h2 class="i18n-pl">Nad nimi stoi fundusz, widoczny w polskim rejestrze tylko jako oddział</h2><h2 class="i18n-en">Above them stands a fund, visible in the Polish registry only as a branch</h2><p class="i18n-pl">Właścicielem jest <strong>NREP</strong>, duński fundusz inwestycyjny z Kopenhagi, kupujący nieruchomości w całej Europie. W Polsce nie działa pod własną nazwą, widać tylko trzy lokalne „oddziały” zagranicznych spółek, jedna zarejestrowana w Luksemburgu jako <strong>S.à r.l.</strong>, typowy sposób na niższy podatek dla funduszu nieruchomościowego. Realnym beneficjentem jest współzałożyciel funduszu, <strong>Mikkel Bülow-Lehnsby</strong>. Nad polskimi spółkami klastra czuwa zawodowy dyrektor <strong>Christian Guy Gaunt</strong>; nadal zasiada w zarządach spółek z tego klastra, a od sierpnia 2026 doszły mu też kolejne, świeżo zakładane spółki o podobnym wzorcu nazw. Dyrektorem finansowym grupy był wtedy <strong>Bo Holse Rasmussen</strong> (CFO NREP 2018–2022); od czerwca 2022 tę funkcję pełni <strong>Colin Throssell</strong>. W polskim rejestrze nie widać jednak ani funduszu, ani tych nazwisk. Sam fundusz zarządza majątkiem ponad 22 mld euro w Europie i w 2026 roku zmienia nazwę na <strong>Urban Partners</strong>; w Warszawie prowadzi też osobny najem długoterminowy, <strong>Lett</strong>, z ponad 400 mieszkaniami, poza tym, co widać w tym zbiorze.</p><p class="i18n-en">The owner is <strong>NREP</strong>, a Danish investment fund from Copenhagen that buys real estate across Europe. In Poland it doesn't operate under its own name, you only see three local "branches" of foreign companies, one registered in Luxembourg as an <strong>S.à r.l.</strong>, a typical way for a real estate fund to lower its tax bill. The real beneficiary is the fund's co-founder, <strong>Mikkel Bülow-Lehnsby</strong>. The Polish companies in this cluster are overseen by professional director <strong>Christian Guy Gaunt</strong>; he still sits on the boards of the cluster companies, and since August 2026 has also taken on a string of newer, freshly registered companies with a similar naming pattern. The group's CFO at the time was <strong>Bo Holse Rasmussen</strong> (NREP CFO 2018–2022); since June 2022 that role has been held by <strong>Colin Throssell</strong>. Yet the Polish registry shows neither the fund nor any of these names. The fund itself manages over €22 billion in assets across Europe and in 2026 renames itself <strong>Urban Partners</strong>; in Warsaw it also runs a separate long-term rental service, <strong>Lett</strong>, with over 400 apartments, beyond what's visible in this dataset.</p><div class="srcs"><span class="lbl">Źródła:</span> <a class="src" href="https://www.rp.pl/nieruchomosci/art279661-skandynawski-fundusz-przejmuje-biuro-inwestycji-kapitalowych" target="_blank" rel="noopener">rp.pl</a> · <a class="src" href="https://nrep.com/news/nrep-to-operate-as-urban-partners-in-2026/" target="_blank" rel="noopener">nrep.com</a> · <a class="src" href="https://nrep.com/news/colin-throssell-joins-nrep-as-cfo-and-partner/" target="_blank" rel="noopener">nrep.com, zmiana CFO</a> · <a class="src" href="https://www.northdata.com/Gaunt,+Christian+Guy,+PL/q9ae811" target="_blank" rel="noopener">northdata.com, historia funkcji Gaunta</a></div></div>
+    </article>
+    <article class="step long" data-viz="tax2">
+      <div class="stepcard"><h2 class="i18n-pl">Dwie osoby zasiadają w zarządach trzynastu spółek naraz</h2><h2 class="i18n-en">Two people sit on the boards of thirteen companies at once</h2><p class="i18n-pl"><strong>Hanna Świętochowska</strong> i <strong>Maciej Piotrowicz</strong> formalnie reprezentują zagraniczne spółki NREP w Polsce, ale zasiadają też w zarządach polskich spółek stworzonych pod te inwestycje (nazwy zwykle: „Propco”, „Investments”, „Advisory”). Te dwie osoby łączą zagraniczną część struktury z polską, operacyjną częścią z poprzedniego kroku.</p><p class="i18n-en"><strong>Hanna Świętochowska</strong> and <strong>Maciej Piotrowicz</strong> formally represent NREP's foreign companies in Poland, but they also sit on the boards of the Polish companies set up for these investments (usually named "Propco," "Investments," or "Advisory"). These same two people link the foreign side of the structure to the Polish, operating side from the previous step.</p><div class="srcs"><span class="lbl">Źródła:</span> <a class="src" href="https://rejestr.io/krs/876332/mokotow-i-propco" target="_blank" rel="noopener">rejestr.io, Mokotów I Propco</a> · <a class="src" href="https://rejestr.io/krs/879986/mokotow-ii-propco" target="_blank" rel="noopener">Mokotów II Propco</a> · <a class="src" href="https://rejestr.io/krs/878005/parkur-propco" target="_blank" rel="noopener">Parkur Propco</a>, wspólna reprezentacja: Hanna Świętochowska, Maciej Piotrowicz</div></div>
+    </article>
+    <article class="step center card-top long" data-viz="tax3">
+      <div class="stepcard"><h2 class="i18n-pl">Pełnomocnictwa zostają w tym samym gronie</h2><h2 class="i18n-en">The proxies stay within the same circle</h2><p class="i18n-pl">Dwie kolejne osoby, <strong>Edyta Stelmach</strong> i <strong>Marta Karteczka</strong>, dopinają resztę struktury jako pełnomocniczki, czyli osoby upoważnione do podpisywania w imieniu tych spółek. To legalna, pośrednia warstwa własności, typowa dla dużych funduszy nieruchomościowych, pozwalająca płacić mniej podatku od zysków przekazywanych za granicę. W polskim rejestrze nie widać przy tym żadnego nazwiska z Kopenhagi, gdzie mieści się siedziba funduszu.</p><p class="i18n-en">Two more people, <strong>Edyta Stelmach</strong> and <strong>Marta Karteczka</strong>, round out the rest of the structure as proxies, meaning people authorized to sign on behalf of these companies. This is a legal, indirect ownership layer, typical for large real estate funds, letting them pay less tax on profits sent abroad. And through it all, the Polish registry shows no name from Copenhagen, where the fund is actually headquartered.</p><div class="srcs"><span class="lbl">Źródła:</span> rejestr.io, wpisy KRS spółek klastra NREP, pełnomocnictwa: Edyta Stelmach, Marta Karteczka · <a class="src" href="https://rejestr.io/krs/121747/biuro-inwestycji-kapitalowych" target="_blank" rel="noopener">rejestr.io, Biuro Inwestycji Kapitałowych</a></div></div>
+    </article>
+  </section>
+
+  <section class="prose">
+    <h2 class="i18n-pl">Część operatorów w zbiorze ma zagranicznych właścicieli</h2>
+    <h2 class="i18n-en">Some operators in the dataset have foreign owners</h2>
+    <p class="drop i18n-pl">Dwie marki w tym zbiorze prowadzą, wzdłuż struktury właścicielskiej, za granicę, do Berlina i do indyjskiego koncernu OYO. W obu przypadkach warszawski ślad to ułamek globalnej skali.</p>
+    <p class="drop i18n-en">Two brands in this dataset lead, along their ownership structure, abroad, to Berlin and to the Indian conglomerate OYO. In both cases, the Warsaw footprint is a fraction of the global scale.</p>
+  </section>
+
+  <section class="storyrun" aria-label="Kapitał zagraniczny: skala dwóch marek i struktura trzeciej">
+    <article class="step center card-top" data-viz="finding0">
+      <div class="stepcard"><h2 class="i18n-pl">Dwie globalne marki, niewielki udział w warszawskim zbiorze</h2><h2 class="i18n-en">Two global brands, a small share of the Warsaw dataset</h2><p class="i18n-pl"><strong>a&amp;o Hotels and Hostels</strong>, największy prywatny łańcuch hosteli w Europie (Berlin, 2000, Oliver Winter i Michael Kluge, 232 mln euro przychodu w 2024, 43 spółki zależne w 11 krajach), ma w tym zbiorze jedno ogłoszenie. <strong>Belvilla AG</strong>, marka <strong>OYO Vacation Homes</strong> (ponad 40 000 domów wakacyjnych w 20 krajach Europy) (część indyjskiego koncernu <strong>OYO</strong> od 2019 roku, gdy przejął spółkę-matkę Belvilli, @Leisure Group, od Axel Springer za 369 mln euro) ma 62 ogłoszenia. Dwie firmy, ten sam wzorzec, duży globalny podmiot, mały lokalny udział.</p><p class="i18n-en"><strong>a&amp;o Hotels and Hostels</strong>, the largest privately-owned hostel chain in Europe (Berlin, 2000, Oliver Winter and Michael Kluge, €232 million revenue in 2024, 43 subsidiaries in 11 countries), has one listing in this dataset. <strong>Belvilla AG</strong>, a brand of <strong>OYO Vacation Homes</strong> (over 40,000 vacation homes in 20 European countries) (part of the Indian conglomerate <strong>OYO</strong> since 2019, when it acquired Belvilla's parent company, @Leisure Group, from Axel Springer for €369 million) has 62 listings. Two companies, the same pattern, a large global entity, a small local footprint.</p><div class="srcs"><span class="lbl">Źródła:</span> <a class="src" href="https://en.wikipedia.org/wiki/A%26O_Hostels" target="_blank" rel="noopener">wikipedia.org</a> · <a class="src" href="https://www.aohostels.com/en/about-ao/" target="_blank" rel="noopener">aohostels.com</a> · <a class="src" href="https://www.belvilla.com/service/about-belvilla/" target="_blank" rel="noopener">belvilla.com</a> · <a class="src" href="https://www.emerce.nl/nieuws/leisure-belvilla-handen-oyo" target="_blank" rel="noopener">emerce.nl, przejęcie przez OYO</a> · <a class="src" href="https://www.airbnb.com/rooms/1502772013379367732" target="_blank" rel="noopener">airbnb.com, a&amp;o</a> · <a class="src" href="https://www.airbnb.com/rooms/1745211047614680602" target="_blank" rel="noopener">airbnb.com, Belvilla</a></div></div>
+    </article>
+    <article class="step" data-viz="chain2">
+      <div class="stepcard"><h2 class="i18n-pl">Rentujemy: niemiecka spółka konsultingowa wśród wspólników</h2><h2 class="i18n-en">Rentujemy: a German consulting company among the shareholders</h2><p class="i18n-pl"><strong>Rentujemy</strong> (159 ofert w tym zbiorze, #10 w rankingu) ma wśród wspólników prawdziwą niemiecką spółkę, <strong>Ilkimen Consulting GmbH</strong> z Walldorfu (HRB 753409, Sąd Rejonowy w Mannheim), założoną w styczniu 2025 przez Sefę Bayrama Ilkimena. Samą spółką kieruje jednak <strong>Adrian Niżnik Barwicki</strong>, prezes zarządu i potwierdzony beneficjent rzeczywisty, wpisany w CRBR jako rezydent Zjednoczonych Emiratów Arabskich. W zarządzie i wśród wspólników zasiada też <strong>Liya Akhramovich</strong>; drugą beneficjentką jest Teresa Barwicka. Trzecim wspólnikiem jest Vester Fundacja Rodzinna. To rzadki w tym zbiorze przypadek, gdzie kapitał zagraniczny nie idzie przez duży fundusz jak NREP, a sam prezes zarządu figuruje jako rezydent podatkowy poza Polską.</p><p class="i18n-en"><strong>Rentujemy</strong> (159 listings in this dataset, #10 in the ranking) counts a real German company among its shareholders, <strong>Ilkimen Consulting GmbH</strong> of Walldorf (HRB 753409, Mannheim District Court), founded in January 2025 by Sefa Bayram Ilkimen. The company itself, however, is run by <strong>Adrian Niżnik Barwicki</strong>, its board president and a confirmed beneficial owner, listed in the CRBR as a resident of the United Arab Emirates. Also on the board and among the shareholders is <strong>Liya Akhramovich</strong>; the second beneficiary is Teresa Barwicka. The third shareholder is Vester Fundacja Rodzinna, a Polish family foundation. This is a rare case in the dataset where foreign capital doesn't arrive through a large fund like NREP, and where the company's own board president is listed as a tax resident outside Poland.</p><div class="srcs"><span class="lbl">Źródła:</span> rejestr.io, KRS 0001003921 · CRBR · <a class="src" href="https://www.online-handelsregister.de/handelsregisterauszug/bw/Mannheim/HRB/753409/Ilkimen-Consulting-GmbH" target="_blank" rel="noopener">online-handelsregister.de, Ilkimen Consulting GmbH</a> · <a class="src" href="https://www.airbnb.com/rooms/1634048227941510519" target="_blank" rel="noopener">airbnb.com, Rentujemy</a></div></div>
+    </article>
+  </section>
+
+  <section class="storyrun" aria-label="EstEur Investment LTD: prywatny host, który jest spółką z realnym udziałowcem">
+    <article class="step right" data-viz="chain3">
+      <div class="stepcard"><h2 class="i18n-pl">Prywatny host, który jest spółką z realnym udziałowcem</h2><h2 class="i18n-en">A private host that's actually a company with a real shareholder</h2><p class="i18n-pl">W tym samym wątku pojawia się jeszcze jeden przypadek. Gospodarz <strong>EstEur Investment LTD</strong> ma na Airbnb 9 ofert w Mokotowie, oznaczonych jako <strong>prywatne</strong>, nie firmowe, mimo że nazwą hosta jest nazwa spółki. Za nią stoi realna firma, <strong>ESTEUR INVESTMENT LTD</strong>, zarejestrowana w Wielkiej Brytanii (nr 11245525, Rotherham, od 9 marca 2018). Ponad 25% udziałów, potwierdzone w brytyjskim rejestrze osób ze znaczącą kontrolą (PSC), należy do <strong>Pawła Jana Tanajno</strong> i jego żony, <strong>Agnieszki Elżbiety Pabich-Tanajno</strong>, oboje zasiadają też w zarządzie. Dane nie mówią, czy oznaczenie oferty jako prywatnej to celowy wybór, czy zwykła pomyłka w formularzu Airbnb.</p><p class="i18n-en">Another case surfaces from the same thread. The host <strong>EstEur Investment LTD</strong> has 9 Airbnb listings in Mokotów, marked as <strong>private</strong>, not business, even though the host name is itself a company name. Behind it stands a real company, <strong>ESTEUR INVESTMENT LTD</strong>, registered in the United Kingdom (company no. 11245525, Rotherham, since 9 March 2018). More than 25% of its shares, confirmed in the UK register of people with significant control (PSC), belong to <strong>Paweł Jan Tanajno</strong> and his wife, <strong>Agnieszka Elżbieta Pabich-Tanajno</strong>, both also serving as directors. The data doesn't say whether the private label is a deliberate choice or just a mistake on Airbnb's listing form.</p><div class="srcs"><span class="lbl">Źródła:</span> <a class="src" href="https://www.airbnb.com/rooms/20356167" target="_blank" rel="noopener">airbnb.com, przykładowa oferta</a> · <a class="src" href="https://find-and-update.company-information.service.gov.uk/company/11245525" target="_blank" rel="noopener">Companies House, ESTEUR INVESTMENT LTD</a> · <a class="src" href="https://find-and-update.company-information.service.gov.uk/company/11245525/officers" target="_blank" rel="noopener">Companies House, zarząd</a> · <a class="src" href="https://find-and-update.company-information.service.gov.uk/company/11245525/persons-with-significant-control" target="_blank" rel="noopener">Companies House, PSC</a> · <a class="src" href="https://pl.wikipedia.org/wiki/Pawe%C5%82_Tanajno" target="_blank" rel="noopener">pl.wikipedia.org, Paweł Tanajno</a></div></div>
+    </article>
+  </section>
+
+  <section class="prose">
+    <p class="i18n-pl">Mógłbym tak jeszcze godzinami, bo dodatkowych wątków w tym zbiorze jest naprawdę mnóstwo, tu tylko kilka, które za drobne na osobny slajd, ale za ciekawe, żeby je pominąć.</p>
+    <p class="i18n-pl"><strong>Nadlan Polin Sp. z o.o.</strong>, dosłownie „Nieruchomości Polska” po hebrajsku, to izraelski kapitał w tym zbiorze, własność <strong>Alona</strong> i <strong>Joanny Zohar</strong>, działający pod marką Chill Apartments.</p>
+    <p class="i18n-pl">Willa z basenem w Magdalence za 4191 zł za dobę należy do <strong>Actinidia Sp. z o.o.</strong> Beneficjentem rzeczywistym w CRBR jest <strong>Ronald Derrickson</strong>, wieloletni wódz Westbank First Nation i Grand Chief w Kolumbii Brytyjskiej, a prezesem <strong>Richard Spinks</strong>, były dyrektor generalny notowanej w Londynie spółki Landkom International.</p>
+    <p class="i18n-pl"><strong>Vermouth Sp. z o.o.</strong>, ta sama grupa inwestorów co Actinidia, ma pięcioro zagranicznych beneficjentów, z Liechtensteinu, Szwajcarii i Francji.</p>
+    <p class="i18n-pl">Za 14 803 zł za dobę wynajmiesz też loft „Amfilada Bagatela” w Śródmieściu, należący do <strong>PHB Immobilienverwertungsgesellschaft m.b.H.</strong>, wiedeńskiej spółki działającej od 1987 roku (numer w austriackim rejestrze firm FN 74795v). </p>
+    <p class="i18n-pl"><strong>Loft Affair Warsaw</strong> (63 oferty, #20 w rankingu) w ostatnich tygodniach zmieniła nazwę na <strong>Stay Lab</strong>, a jej założyciele, <strong>Iwona Kopeć</strong> i <strong>Gérard Bonvicini</strong>, sprzedali 90% udziałów portugalskiemu inwestorowi <strong>Luisowi Quinie</strong>, który dał im pełnomocnictwa do reprezentowania go na zgromadzeniach wspólników.</p>
+    <p class="i18n-en">I could keep going for hours, because there are that many more threads buried in this dataset, just a few here that were too small for their own slide, but too interesting to skip.</p>
+    <p class="i18n-en"><strong>Nadlan Polin Sp. z o.o.</strong>, literally "Real Estate Poland" in Hebrew, brings Israeli capital into the dataset, owned by <strong>Alon</strong> and <strong>Joanna Zohar</strong> and operating under the Chill Apartments brand.</p>
+    <p class="i18n-en">A villa with a pool in Magdalenka, PLN 4,191 a night, belongs to <strong>Actinidia Sp. z o.o.</strong> Its confirmed beneficial owner in the CRBR register is <strong>Ronald Derrickson</strong>, longtime chief of the Westbank First Nation and Grand Chief in British Columbia, while its president is <strong>Richard Spinks</strong>, former CEO of London-listed Landkom International.</p>
+    <p class="i18n-en"><strong>Vermouth Sp. z o.o.</strong>, the same investor group as Actinidia, has five foreign beneficiaries, from Liechtenstein, Switzerland and France.</p>
+    <p class="i18n-en">For PLN 14,803 a night, there's also the "Amfilada Bagatela" loft in the City Centre, owned by <strong>PHB Immobilienverwertungsgesellschaft m.b.H.</strong>, a Vienna company operating since 1987 (Austrian company register no. FN 74795v).</p>
+    <p class="i18n-en"><strong>Loft Affair Warsaw</strong> (63 listings, #20 in the ranking) recently renamed itself <strong>Stay Lab</strong>, and its founders, <strong>Iwona Kopeć</strong> and <strong>Gérard Bonvicini</strong>, sold 90% of it to Portuguese investor <strong>Luis Quina</strong>, who granted them power of attorney to represent him at shareholder meetings.</p>
+    <div class="srcs"><span class="lbl">Źródła:</span> <a class="src" href="https://rejestr.io/krs/803025/nadlan-polin" target="_blank" rel="noopener">rejestr.io, Nadlan Polin</a> · <a class="src" href="https://rejestr.io/krs/933324/actinidia" target="_blank" rel="noopener">rejestr.io, Actinidia</a> · CRBR (Centralny Rejestr Beneficjentów Rzeczywistych) · <a class="src" href="https://moneyweek.com/381831/richard-spinks-prospering-on-the-lawless-russian-frontier" target="_blank" rel="noopener">moneyweek.com, Richard Spinks</a> · <a class="src" href="https://www.pentictonherald.ca/news/article_8c3f61a6-31ee-11ec-ade9-1307829da2ce.html" target="_blank" rel="noopener">pentictonherald.ca, Ronald Derrickson</a> · <a class="src" href="https://www.airbnb.com/rooms/966457548672219761" target="_blank" rel="noopener">airbnb.com, willa Actinidia</a> · <a class="src" href="https://rejestr.io/krs/923537/vermouth" target="_blank" rel="noopener">rejestr.io, Vermouth</a> · <a class="src" href="https://www.firmenbuchgrundbuch.at/abfrageservices/firmenbuch/fn/74795v" target="_blank" rel="noopener">firmenbuchgrundbuch.at, PHB Immobilienverwertungsgesellschaft, FN 74795v</a> · <a class="src" href="https://www.airbnb.com/rooms/6268825" target="_blank" rel="noopener">airbnb.com, Amfilada Bagatela</a> · <a class="src" href="https://www.e-hotelarz.pl/artykul/116883/loft-affair-zlozyl-wniosek-o-upadlosc-zmienil-nazwe-i-wlasciciela/" target="_blank" rel="noopener">e-hotelarz.pl, Loft Affair / Stay Lab</a> · <a class="src" href="https://krs-pobierz.pl/stay-lab-spolka-z-ograniczona-odpowiedzialnoscia-i0001150881" target="_blank" rel="noopener">krs-pobierz.pl, KRS 0001150881</a> · <a class="src" href="https://www.airbnb.com/rooms/1075314329328345840" target="_blank" rel="noopener">airbnb.com, Loft Affair Warsaw</a></div>
+  </section>
+
+  <section class="turn terminal">
+    <div class="turnin"><h2 class="i18n-pl">Ten sam adres i telefon, <span>a wspólny e-mail łączy więcej podmiotów.</span></h2><h2 class="i18n-en">The same address and phone, <span>and a shared email links more entities.</span></h2><p class="i18n-pl">Ten sam numer telefonu i ta sama skrzynka e-mail pojawiają się przy nazwach, które na pierwszy rzut oka nie mają ze sobą nic wspólnego.</p><p class="i18n-en">The same phone number and the same mailbox show up next to names that, at first glance, have nothing to do with each other.</p></div>
+  </section>
+
+  <section class="storyrun" aria-label="Klaster Stay in Warsaw: wspólny kontakt pod pięcioma nazwami">
+    <article class="step right" data-viz="siw0">
+      <div class="stepcard"><h2 class="i18n-pl">Jeden telefon, jeden e-mail, pięć zupełnie różnych nazw</h2><h2 class="i18n-en">One phone, one email, five completely different names</h2><p class="i18n-pl"><strong>h•••o@stayinwarsaw.com</strong> i <strong>+48 666 666 •••</strong> pojawiają się w zbiorze przy pięciu formalnie niezależnych podmiotach, marce „Stay in Warsaw", spółce Cool Estates SPV, dwóch fundacjach rodzinnych i jednoosobowej działalności gospodarczej.</p><p class="i18n-en"><strong>h•••o@stayinwarsaw.com</strong> and <strong>+48 666 666 •••</strong> show up in the dataset next to five formally independent entities, the "Stay in Warsaw" brand, Cool Estates SPV, two family foundations, and a sole proprietorship.</p><div class="srcs"><span class="lbl">Oferty:</span> <a class="src" href="https://www.airbnb.com/rooms/628065525496266039" target="_blank" rel="noopener">airbnb.com, Stay in Warsaw</a> · <a class="src" href="https://www.airbnb.com/rooms/1662122354960388273" target="_blank" rel="noopener">airbnb.com, Cool Estates SPV</a></div></div>
+    </article>
+    <article class="step long card-top" data-viz="siw1">
+      <div class="stepcard"><h2 class="i18n-pl">Ten sam email i numer telefonu w wielu przypadkach</h2><h2 class="i18n-en">Same email and phone number in many cases</h2><p class="i18n-pl">Jedną z pięciu nazw jest <strong>BEHEMOTH Adam Darski</strong>. Wokalista Behemoth ma jednoosobową firmę w Gdańsku (NIP 5842428801, potwierdzony w CEIDG) i 3 własne oferty w zbiorze. Tym samym kontaktem posługuje się też <strong>BCH Fundacja Rodzinna</strong>. W oficjalnym rejestrze fundacji rodzinnych brak wyniku pod tą nazwą. Ma za to realny adres i numer rejestracyjny, namierzone przez ten wspólny kontakt.</p><p class="i18n-en">One of the five names is <strong>BEHEMOTH Adam Darski</strong>. The Behemoth frontman has a sole proprietorship in Gdańsk (NIP 5842428801, confirmed in the CEIDG registry) and 3 of his own listings in the dataset. The same contact is used by <strong>BCH Fundacja Rodzinna</strong>. The official register of family foundations returns no result under that name. It does, however, have a real address and registration number, tracked down through this shared contact.</p><div class="srcs"><span class="lbl">Oferty:</span> <a class="src" href="https://www.airbnb.com/rooms/804324018810235688" target="_blank" rel="noopener">Behemoth #1</a> · <a class="src" href="https://www.airbnb.com/rooms/804316445924096770" target="_blank" rel="noopener">#2</a> · <a class="src" href="https://www.airbnb.com/rooms/1374763523763758158" target="_blank" rel="noopener">#3</a> · <a class="src" href="https://www.airbnb.com/rooms/1430348360374471330" target="_blank" rel="noopener">BCH Fundacja Rodzinna</a></div></div>
+    </article>
+  </section>
+
+  <section class="prose">
+    <h2 class="i18n-pl">Ten rynek właśnie przestaje być nieuregulowany</h2>
+    <h2 class="i18n-en">This market is about to stop being unregulated</h2>
+    <p class="drop i18n-pl">14 lipca 2026 roku Rada Ministrów przyjęła projekt ustawy <strong>UC135</strong>, nowelizację ustawy o usługach hotelarskich z 1997 roku, przygotowaną przez Ministerstwo Sportu i Turystyki, pierwszą kompleksową próbę uregulowania najmu krótkoterminowego w Polsce po latach szarej strefy.</p>
+    <p class="drop i18n-en">On 14 July 2026 the Council of Ministers adopted the draft <strong>UC135</strong> law, an amendment to the 1997 hospitality services act, prepared by the Ministry of Sport and Tourism, the first comprehensive attempt to regulate short-term rental in Poland after years in the grey market.</p>
+    <p class="i18n-pl">Droga do ustawy objęła szerokie konsultacje publiczne, konkurencyjny projekt poselski Polska 2050 skierowany do komisji w połowie kwietnia 2026, i przyjęcie rządowej wersji w lipcu. Eksperci spodziewają się, że wersja rządowa wchłonie projekt poselski, żeby uniknąć chaosu prawnego.</p>
+    <p class="i18n-en">The road to the law included broad public consultations, a competing MP-sponsored bill from Polska 2050 sent to committee in mid-April 2026, and adoption of the government version in July. Experts expect the government version to absorb the MP bill to avoid legal chaos.</p>
+    <div class="data-line i18n-pl">Co zmienia UC135:<br>→ najem do 30 dni staje się formalnie <strong>usługą hotelarską</strong><br>→ powstaje <strong>CWTON</strong>, centralny rejestr obiektów turystycznych: każdy lokal potrzebuje numeru, planowany start rejestru to ok. października 2026<br>→ próg <strong>6 lokali na budynek</strong> (max 30 miejsc noclegowych) do uproszczonych wymogów ppoż., powyżej progu obowiązują pełne normy przeciwpożarowe jak w hotelach, praktycznie niemożliwe do spełnienia bez przebudowy budynku<br>→ kary do <strong>50 000 zł</strong>, wykreślenie z rejestru, 12-miesięczny zakaz ponownej rejestracji<br>→ mieszkańcy i wspólnoty mieszkaniowe mogą wnioskować o kontrolę<br>→ wejście w życie stopniowe: gminy mogą wyznaczać strefy ograniczeń od <strong>1 stycznia 2029</strong>, pełne wymogi przeciwpożarowe dopiero od <strong>1 stycznia 2031</strong></div>
+    <div class="data-line i18n-en">What UC135 changes:<br>→ rentals up to 30 days formally become a <strong>hospitality service</strong><br>→ creation of <strong>CWTON</strong>, a central register of tourist accommodation: every unit needs a number, with the registry itself planned to launch around October 2026<br>→ a threshold of <strong>6 units per building</strong> (max 30 beds) for simplified fire-safety requirements; above the threshold, full hotel-grade fire codes apply, practically impossible to meet without rebuilding<br>→ fines up to <strong>50,000 zł</strong>, removal from the register, a 12-month ban on re-registering<br>→ residents and homeowner associations can request an inspection<br>→ staggered rollout: municipalities can start designating restricted zones from <strong>1 January 2029</strong>, full fire-safety requirements only kick in from <strong>1 January 2031</strong></div>
+    <p class="i18n-pl">Rządowa wersja <em>nie</em> daje gminom ani wspólnotom mieszkaniowym prawa blokowania najmu w budynku. To główny punkt sporu z projektem poselskim, kierunek zmian to formalizacja i rejestracja, nie zakaz.</p>
+    <p class="i18n-en">The government version does <em>not</em> give municipalities or homeowner associations the right to block rentals in a building. That's the main point of dispute with the MP bill, the direction of change is formalization and registration, not a ban.</p>
+    <div class="srcs"><span class="lbl">Źródła:</span> Wykaz prac legislacyjnych Rady Ministrów, projekt UC135 (bez bezpośredniego linku, treść projektu zmienia się między czytaniami) · <a class="src" href="https://www.rp.pl/nieruchomosci/art43565271-idzie-rewolucja-rzad-przepisami-przeciwpozarowymi-uderza-w-krotki-najem" target="_blank" rel="noopener">rp.pl, terminy wejścia w życie</a> · <a class="src" href="https://www.infor.pl/prawo/7622884,najem-na-okres-nie-dluzszy-niz-30-dni-ma-byc-usluga-hotelarska.html" target="_blank" rel="noopener">infor.pl, start rejestru CWTON</a></div>
+  </section>
+
+  <section class="storyrun" aria-label="Oś czasu: od pierwszej spółki do ustawy">
+    <article class="step center xlong card-top" data-viz="timeline">
+      <div class="stepcard"><h2 class="i18n-pl">Dziewięć lat między pierwszym wpisem a ustawą</h2><h2 class="i18n-en">Nine years between the first registration and the law</h2><p class="i18n-pl">Renters powstaje w 2017 roku. Dwa lata później rejestruje się PSWK. Siedem lat po tym stowarzyszenie siada do stołu z Ministerstwem. Pięć miesięcy później rynek, który przez dekadę działał bez centralnej regulacji, dostaje pierwszą.</p><p class="i18n-en">Renters is founded in 2017. Two years later, PSWK registers. Seven years after that, the association sits down with the Ministry. Five months later, a market that had operated for a decade without central regulation gets its first.</p><div class="srcs"><span class="lbl">Źródła:</span> <a class="src" href="https://rejestr.io/krs/678215/renters" target="_blank" rel="noopener">rejestr.io, Renters (2017)</a> · <a class="src" href="https://pswk.pl/o-nas/" target="_blank" rel="noopener">pswk.pl, PSWK (2019)</a> · Wykaz prac legislacyjnych Rady Ministrów, projekt UC135</div></div>
+    </article>
+  </section>
+
+  <section class="prose">
+    <div class="divider"><hr></div>
+    <p class="i18n-pl">Uzupełnienie wątku Rentersu z sekcji 10. Prezes PSWK, <strong>Grzegorz Żurawski</strong>, spotkał się z <strong>Dominikiem Borkiem</strong>, dyrektorem departamentu turystyki w Ministerstwie Sportu i Turystyki, 6 lutego 2026. Ministerstwo złagodziło po tym spotkaniu m.in. wymogi przeciwpożarowe i wycofało obowiązek przekształcania lokali w hotele. Żurawski nazwał później propozycję przepisów przeciwpożarowych &bdquo;populistyczną&rdquo;. W radzie nadzorczej PSWK, obok Żurawskiego, zasiada Monika Ziółek, członkini zarządu Renters, największego operatora w zbiorze. Renters ma w tej sprawie oficjalne stanowisko, a jego prezes udzielił wywiadu; oba cytowane w sekcji 10.</p>
+    <p class="i18n-en">A follow-up on the Renters thread from section 10. PSWK's president, <strong>Grzegorz Żurawski</strong>, met with <strong>Dominik Borek</strong>, director of the tourism department at the Ministry of Sport and Tourism, on 6 February 2026. After that meeting the ministry softened, among other things, the fire-safety requirements and dropped the requirement to convert units into hotels. Żurawski later called the proposed fire-safety rules &bdquo;populist&rdquo;. On PSWK's supervisory board, alongside Żurawski, sits Monika Ziółek, a board member of Renters, the largest operator in the dataset. Renters has an official position on the matter, and its president gave an interview; both quoted in section 10.</p>
+    <p class="i18n-pl">Dane nie mówią, czy to konflikt interesów, czy normalna praktyka konsultacji branżowych. Mówią tylko tyle, ile pokazuje graf. Kilku największych operatorów ma udokumentowane miejsce w debacie o zasadach dla branży, a finalna ustawa poszła w stronę rejestracji, nie zakazu.</p>
+    <p class="i18n-en">The data doesn't say whether this is a conflict of interest or standard industry-consultation practice. It says only as much as the graph shows. Several of the largest operators had a documented place in the debate over the rules for the industry, and the final law leaned toward registration, not a ban.</p>
+    <div class="srcs"><span class="lbl">Źródła:</span> <a class="src" href="https://www.propertynews.pl/mieszkania/wazne-zmiany-w-przepisach-o-najmie-operatorzy-dopieli-swego,196283.html" target="_blank" rel="noopener">propertynews.pl</a> · <a class="src" href="https://www.money.pl/gospodarka/ministerstwo-ustepuje-branzy-wazne-zmiany-w-przepisach-o-najmie-7253856256661888a.html" target="_blank" rel="noopener">money.pl, spotkanie 06.02.2026</a> · <a class="src" href="https://www.rp.pl/nieruchomosci/art43579151-krotki-najem-mieszkan-i-przeciwpozarowa-furtka" target="_blank" rel="noopener">rp.pl, „populistyczna”</a> · <a class="src" href="https://localtrends.pl/osoby/zurawski/" target="_blank" rel="noopener">localtrends.pl</a> · <a class="src" href="https://fairyflats.com/2026/02/01/najem-krotkoterminowy-regulacje-ustawa/" target="_blank" rel="noopener">fairyflats.com</a> · <a class="src" href="https://www.airbnb.com/rooms/1734020578650049779" target="_blank" rel="noopener">airbnb.com, Fairy Flats</a></div>
+  </section>
+
+  <section class="storyrun" aria-label="Eksploracja wyniku">
+    <article class="step explorer-step" data-viz="explore">
+      <div class="stepcard"><h2 class="i18n-pl">Kolor kropki odpowiada nazwie operatora</h2><h2 class="i18n-en">Dot color corresponds to the operator's name</h2><p class="i18n-pl">Kliknięcie prowadzi do danych rejestrowych operatora i dzielnic, w których zostawił ślad. Punkty poza top 20 mają trzy kolory, prywatny gospodarz, mniejsza spółka, działalność indywidualna. Każdy z top 20 sprawdzono pod kątem prasy, lobbingu i ukrytych powiązań, a 7 z 20 ma udokumentowane ustalenie ze źródłami, widoczne po kliknięciu.</p><p class="i18n-en">Clicking leads to the operator's registry data and the districts where it left a trace. Points outside the top 20 have three colors, private host, smaller company, sole proprietorship. Each of the top 20 was checked for press coverage, lobbying, and hidden connections, and 7 of 20 have a documented, sourced finding, visible on click.</p></div>
+      <div class="explore-readout" id="readout">Cały rynek · 10 047 ofert</div><div class="exp-panel" id="expPanel"></div>
+      <div class="exwrap"><div class="chips" id="chips"></div><div class="exhint i18n-pl">kliknij operatora → mapa + dane rejestrowe</div><div class="exhint i18n-en">click an operator → map + registry data</div></div>
+    </article>
+  </section>
+
+  <section class="prose">
+    <h2 class="i18n-pl">Trzy warstwy jednego rynku</h2>
+    <h2 class="i18n-en">Three layers of one market</h2>
+    <p class="drop i18n-pl">10 047 ofert Airbnb w Warszawie rozkłada się na trzy warstwy własności, każda z innym poziomem złożoności.</p>
+    <p class="drop i18n-en">10,047 Airbnb listings in Warsaw break down into three layers of ownership, each with a different level of complexity.</p>
+    <p class="i18n-pl"><strong>Pierwsza warstwa</strong> to 23,3% prywatnych gospodarzy, głównie na obrzeżach miasta (Wawer, Białołęka). <strong>Druga</strong> to 76,7% ofert komercyjnych, dwie trzecie to zarejestrowane spółki, jedna trzecia jednoosobowe firmy (JDG), skoncentrowane w centrum (Śródmieście, Wola). <strong>Trzecia</strong>, najmniejsza liczbowo (20 operatorów kontroluje ponad połowę rynku komercyjnego), ale najbardziej złożona, obejmuje wszystko od rodzinnych firm (BookingHost) przez globalne marki z niewielkim udziałem lokalnym (a&amp;o Hostels, Belvilla/OYO) po duży zagraniczny fundusz działający przez spółki w Luksemburgu (NREP), mniejszych operatorów ze wspólnikami z zagranicy (Rentujemy) i firmy połączone tylko wspólnym telefonem czy e-mailem (Stay in Warsaw, BCH Fundacja Rodzinna).</p>
+    <p class="i18n-en"><strong>The first layer</strong> is 23.3% private hosts, mostly on the city's outskirts (Wawer, Białołęka). <strong>The second</strong> is 76.7% commercial listings, two-thirds registered companies, one-third sole proprietorships (JDG), concentrated in the center (Śródmieście, Wola). <strong>The third</strong>, smallest by count (20 operators control more than half the commercial market) but the most complex, runs the gamut from family firms (BookingHost) through global brands with a small local footprint (a&amp;o Hostels, Belvilla/OYO) to a large foreign fund operating through companies in Luxembourg (NREP), smaller operators with foreign shareholders (Rentujemy), and companies linked only by a shared phone number or email (Stay in Warsaw, BCH Fundacja Rodzinna).</p>
+    <p class="i18n-pl">Trzej operatorzy z tego zbioru (Renters, BookingHost, SuperApart) mają udokumentowane kanały do ustawy UC135, udział w radzie nadzorczej branżowego stowarzyszenia w jednym przypadku, komentarze w prasie w pozostałych dwóch. Ustawa, przyjęta 14 lipca 2026, wchodzi w życie stopniowo do 1 stycznia 2031 i idzie w stronę rejestracji, nie zakazu.</p>
+    <p class="i18n-en">Three operators from this dataset (Renters, BookingHost, SuperApart) have documented channels to the UC135 law, a seat on the industry association's supervisory board in one case, press comments in the other two. The law, adopted on 14 July 2026, phases in gradually through 1 January 2031 and leans toward registration, not a ban.</p>
+    <p class="i18n-pl">Zbiór danych stojący za tym artykułem mogę udostępnić na żądanie. Na żądanie mogę też przeprowadzić analogiczne badanie dla całej Polski, nie tylko Warszawy.</p>
+    <p class="i18n-en">I can share the dataset behind this article on request. On request, I can also run an equivalent investigation for all of Poland, not just Warsaw.</p>
+    <p class="credit i18n-pl">Sztuczna inteligencja (Claude) została użyta do pomocy w wizualizacji.</p>
+    <p class="credit i18n-en">Artificial intelligence (Claude) was used to help build the visualizations.</p>
+  </section>
+
+  <div class="method">
+    <h3 class="i18n-pl">Czego szukano i czego nie znaleziono</h3>
+    <h3 class="i18n-en">What was checked and what wasn't found</h3>
+    <p class="i18n-pl">Zbiór obejmuje 10 047 aktywnych ofert Airbnb w Warszawie, zebranych bezpośrednio ze strony na początku sierpnia 2026. Każda oferta zawiera dane hosta, cenę, oceny, współrzędne oraz, tam gdzie host je podał, nazwa firmy, adres, telefon, e-mail i numer rejestrowy (KRS, REGON lub NIP, stąd rozjazd formatów opisany w kroku o BookingHost). Na tej podstawie zidentyfikowano 684 odrębne podmioty; 207 z nich, odpowiadających za większość ofert komercyjnych, sprawdzono krzyżowo w rejestrach niżej.</p>
+    <p class="i18n-en">The dataset comprises 10,047 active Airbnb listings in Warsaw, collected directly from the site in early August 2026. Each listing includes host data, price, ratings, coordinates and, where the host provided it, company name, address, phone, email, and registration number (KRS, REGON, or NIP, hence the format mismatch described in the BookingHost step). On this basis, 684 distinct entities were identified; 207 of them, accounting for most commercial listings, were cross-checked against the registries below.</p>
+    <ul class="i18n-pl">
+      <li><b>Fictitious VAT invoices:</b> sprawdzono status VAT wszystkich 207 spółek w oficjalnym Wykazie Podatników (Ministerstwo Finansów). 36 miało flagi administracyjne (zawieszona działalność, brak deklaracji), zero pod podstawą prawną wskazującą na oszustwo.</li>
+      <li><b>Sankcje UE:</b> dopasowano 439 wspólników/członków zarządu do unijnej listy sankcyjnej (4 402 osób). Zero potwierdzonych trafień, wszystkie 35 zbieżności nazwisk to różne osoby.</li>
+      <li><b>Wyroki sądowe:</b> sprawdzono 207 spółek w SAOS (System Analizy Orzeczeń Sądowych). 24 pozornych trafień, wszystkie zweryfikowane ręcznie i odrzucone jako przypadkowe zbieżności słów.</li>
+      <li><b>Darowizny na partie polityczne:</b> sprawdzono wszystkich 439 nazwisk w jawnepartie.pl. Żadna osoba ze zbioru nie widnieje jako darczyńca powyżej progu 10 000 zł/rok.</li>
+      <li><b>Przetargi publiczne:</b> sprawdzono 24 operatory w bazie przetargi.egospodarka.pl. Jedno potwierdzone trafienie w całym śledztwie (mały, indywidualny operator, 390 817 zł w gminnych przetargach), nic wśród głównych operatorów w zbiorze.</li>
+      <li><b>Wycieki offshore (ICIJ):</b> dopasowano wszystkich 439 wspólników/członków zarządu do pełnej bazy ICIJ Offshore Leaks (771 315 rekordów: Panama Papers, Paradise Papers, Pandora Papers). 3 trafienia po pełnym imieniu i nazwisku, 2 odrzucone po weryfikacji jako inne osoby (niezgodna lokalizacja), jedno prawdopodobne, ale to legalna, jawna struktura offshore wokół spółki notowanej na giełdzie w Londynie, nie dowód nadużycia.</li>
+      <li><b>Beneficjenci rzeczywiści (CRBR):</b> sprawdzono rzeczywistych beneficjentów wszystkich 207 spółek w Centralnym Rejestrze Beneficjentów Rzeczywistych. Poza już opisanymi ustaleniami (struktura NREP) i RentPlanet Apartments (beneficjentka Grażyna Piotrowska-Oliwa, była prezes PGNiG i Orange Polska, widoczna po kliknięciu w rankingu operatorów) reszta pokazuje zwyczajną, jawną własność: głównie polscy, ukraińscy, białoruscy i wietnamscy właściciele indywidualni, zgodni z danymi z KRS.</li>
+      <li><b>Fundacja &bdquo;BCH&rdquo; (Behemoth):</b> sprawdzono w oficjalnym Rejestrze Fundacji Rodzinnych (stan na 7.08.2026): brak wpisu. Fundacja widoczna tylko jako dane kontaktowe w ofercie Airbnb, formalnie nie istnieje ani w KRS, ani w RFR.</li>
+    </ul>
+    <ul class="i18n-en">
+      <li><b>Fictitious VAT invoices:</b> checked VAT status for all 207 companies in the official Taxpayer Register (Ministry of Finance). 36 had administrative flags (suspended activity, missing filings), zero on a legal basis indicating fraud.</li>
+      <li><b>EU sanctions:</b> matched 439 shareholders/board members against the EU sanctions list (4,402 people). Zero confirmed matches; all 35 name coincidences were different people.</li>
+      <li><b>Court rulings:</b> checked 207 companies in SAOS (the Court Ruling Analysis System). 24 apparent matches, all manually verified and dismissed as coincidental word matches.</li>
+      <li><b>Political party donations:</b> checked all 439 names in jawnepartie.pl. No person in the dataset appears as a donor above the 10,000 zł/year threshold.</li>
+      <li><b>Public tenders:</b> checked 24 operators in the przetargi.egospodarka.pl database. One confirmed match in the whole investigation (a small, individual operator, 390,817 zł in municipal tenders), nothing among the main operators in the dataset.</li>
+      <li><b>Offshore leaks (ICIJ):</b> matched all 439 shareholders/board members against the full ICIJ Offshore Leaks database (771,315 records: Panama Papers, Paradise Papers, Pandora Papers). 3 full name-and-surname matches, 2 dismissed after verification as different people (mismatched location), one likely, but it's a legal, disclosed offshore structure around a company listed on the London Stock Exchange, not evidence of wrongdoing.</li>
+      <li><b>Beneficial owners (CRBR):</b> checked the beneficial owners of all 207 companies in the Central Register of Beneficial Owners. Beyond the findings already described (the NREP structure) and RentPlanet Apartments (beneficiary Grażyna Piotrowska-Oliwa, former president of PGNiG and Orange Polska, visible on click in the operator ranking), the rest shows ordinary, disclosed ownership: mostly individual Polish, Ukrainian, Belarusian, and Vietnamese owners, consistent with KRS data.</li>
+      <li><b>The &bdquo;BCH&rdquo; foundation (Behemoth):</b> checked in the official Register of Family Foundations (as of 7 Aug 2026): no entry found. The foundation is visible only as contact details on an Airbnb listing; it formally exists in neither the KRS nor the RFR.</li>
+    </ul>
+
+  </div>
+
+  <section class="endmark">
+    <div>
+      <img src="https://storage.ghost.io/c/b5/22/b52265eb-d44c-4ae8-8456-954cfb01f918/content/images/2020/07/OffensiveOsint-logo-RGB-2.png" alt="OffensiveOSINT">
+    </div>
+  </section>
+</main>
+
+<script src="data-geo.js"></script>
+<script src="data-market.js"></script>
+<script src="data-graphs.js"></script>
+<script>
+"use strict";
+const GEO=GEO_DATA;
+const TOP20=TOP20_DATA;
+const TOP20_COLORS=["#ff00cd","#00E1FF","#0064d7","#7b61ff","#00ffb0","#ff5f7e","#94a3b8","#00a3ff","#ff8a00","#b967ff","#37e5a8","#ff3d81","#4fd1ff","#ffa8e8","#6d8bff","#d1ff4f","#ff6b4a","#00c2a8","#9d7bff","#c2410c"];
+TOP20.forEach((o,i)=>o.hex=TOP20_COLORS[i]);
+const TOP20_SAMPLE=[["1660048255979107572","1696267878437684527"],["1665917191629020772","1721682742847561989"],["1424663831723129051","5601046"],["599175179533513585","599207071417719632"],["1212882471596874290","1065701837273387122"],["839536599388993051","1467465265359873737"],["1523057774914217517","1523068530732249481"],["1734020578650049779","1334717982054922762"],["53712991","1299230488090458512"],["1634048227941510519","1523974094087276728"],["641250548888722633","53203231"],["686612353110557355"],["1112855217282242704","1345387632368140307"],["1203396022150281679","1644830891258711508"],["1529131482824277844","1529127405617288948"],["45359385","1304447999750505170"],["1305781285706010455","940559917175894636"],["970840531838251792","1036141082444415686"],["1157098342209598540","1246581845156093672"],["1075314329328345840","1051305987043870803"]];
+const TOP20_TILES=(()=>{
+  const root=d3.hierarchy({children:TOP20}).sum(d=>d.n||0);
+  d3.treemap().size([1,1]).paddingInner(0)(root);
+  return root.leaves().map(leaf=>({x:leaf.x0,y:leaf.y0,w:leaf.x1-leaf.x0,h:leaf.y1-leaf.y0}));
+})();
+const BIZ_N=7710;const SPOLKA_HEX="#2f5570",JDG_HEX="#5a3f6b",PRIVATE_HEX="#6b5a3a";
+const SPOLKA_BRIGHT="#6fb3ec",JDG_BRIGHT="#d69bf0",PRIVATE_BRIGHT="#e8c877";
+const FACTS=FACTS_DATA;
+function hexRgb(h){h=h.replace("#","");return[parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)];}
+const OP_RGB=TOP20.map(o=>hexRgb(o.hex)),PRIV_RGB=hexRgb(PRIVATE_HEX),SPOLKA_RGB=hexRgb(SPOLKA_HEX),JDG_RGB=hexRgb(JDG_HEX);
+GEO.features.forEach(f=>{let sx=0,sy=0,nn=0;
+  f.geometry.coordinates.forEach(poly=>poly[0].forEach(p=>{sx+=p[0];sy+=p[1];nn++;}));f._cl=[sx/nn,sy/nn];});
+function whichDistrict(lon,lat){for(const f of GEO.features){if(d3.geoContains(f,[lon,lat]))return f;}return null;}
+// ---- REAL listing coordinates (Warsaw Airbnb dataset, 10 047 records) ----
+// format per point: lon,lat,op  (op: -1 private host, -2 unranked commercial, 0..19 = TOP20 index)
+const PTS_RAW=PTS_RAW_DATA;
+const P=PTS_RAW.split(";").map(s=>{const a=s.split(",");return{lon:+a[0],lat:+a[1],op:+a[2],seed:Math.random()};});
+const N=P.length;
+P.forEach(p=>{const f=whichDistrict(p.lon,p.lat);p.di=f?f.properties.name:"Warszawa";});
+
+const cv=document.getElementById("cv"),ctx=cv.getContext("2d");
+const zoomBlurCanvas=document.createElement("canvas"),zbCtx=zoomBlurCanvas.getContext("2d");
+let W=0,H=0,DPR=Math.min(2,window.devicePixelRatio||1);
+const geoProjection=d3.geoMercator();
+const boundaryCanvas=document.createElement("canvas"),boundaryCtx=boundaryCanvas.getContext("2d");
+function renderBoundaryCache(){
+  boundaryCanvas.width=W*DPR;boundaryCanvas.height=H*DPR;
+  boundaryCtx.setTransform(DPR,0,0,DPR,0,0);boundaryCtx.clearRect(0,0,W,H);
+  boundaryCtx.strokeStyle="rgba(159,177,178,.55)";boundaryCtx.lineWidth=1;
+  boundaryCtx.beginPath();d3.geoPath(geoProjection,boundaryCtx)(GEO);boundaryCtx.stroke();
+}
+function drawBoundary(alpha=1){ctx.globalAlpha=alpha*.52;ctx.drawImage(boundaryCanvas,0,0,W,H);ctx.globalAlpha=1;}
+function setupProjection(){
+  const pad=Math.min(W,H)*0.05;geoProjection.fitExtent([[pad,pad+12],[W-pad,H-pad-18]],GEO);
+  for(let i=0;i<P.length;i++){const q=geoProjection([P[i].lon,P[i].lat]);P[i].px=q[0];P[i].py=q[1];}
+  renderBoundaryCache();
+}
+function project(lon,lat){return geoProjection([lon,lat]);}
+function projP(p){return[p.px,p.py];}
+let exploreFrozen=null;
+function resize(){const r=cv.getBoundingClientRect();W=r.width;H=r.height;cv.width=W*DPR;cv.height=H*DPR;ctx.setTransform(DPR,0,0,DPR,0,0);
+  zoomBlurCanvas.width=W*DPR;zoomBlurCanvas.height=H*DPR;zbCtx.setTransform(DPR,0,0,DPR,0,0);
+  setupProjection();exploreFrozen=null;}
+window.addEventListener("resize",resize);resize();
+
+// ---- scrolly step detection ----
+const actEls=[...document.querySelectorAll(".act,.step")],dim=document.getElementById("dim"),hero=document.querySelector(".hero"),progressBar=document.getElementById("progress");
+const TIMELINE=[
+{d:"18.05.2017",t:"Renters wpisany do KRS",t_en:"Renters registered in the KRS",c:"#ff00cd"},
+{d:"03.07.2019",t:"Powstaje PSWK",t_en:"PSWK is founded",c:"#00E1FF"},
+{d:"21.01.2026",t:"PSWK składa formalne uwagi do projektu",t_en:"PSWK submits formal comments on the bill",c:"#7b61ff"},
+{d:"06.02.2026",t:"Żurawski spotyka się z Ministerstwem",t_en:"Żurawski meets with the Ministry",c:"#0064d7"},
+{d:"kwiecień 2026",d_en:"April 2026",t:"Projekt poselski Polska 2050 do komisji",t_en:"Polska 2050's parliamentary bill goes to committee",c:"#8aa0c9"},
+{d:"14.07.2026",t:"Rada Ministrów przyjmuje UC135",t_en:"Council of Ministers adopts UC135",c:"#ff5f7e"},
+{d:"22.07.2026",t:"Projekt trafia do Sejmu",t_en:"The bill reaches the Sejm",c:"#37e5a8"},
+{d:"październik 2026",d_en:"October 2026",t:"Planowany start rejestru CWTON",t_en:"CWTON registry planned to launch",c:"#0064d7"},
+{d:"01.01.2029",t:"Gminy mogą wyznaczać strefy ograniczeń najmu",t_en:"Municipalities can start designating rental-restricted zones",c:"#0064d7"},
+{d:"01.01.2031",t:"UC135: pełne wymogi ppoż. wchodzą w życie",t_en:"UC135: full fire-safety rules take effect",c:"#0064d7"}];
+let targetViz="market0",actProg=0,exploreActive=false,heroActive=true,heroT=1,cardRect=null,sceneActive=false;
+let LANG="pl";
+function tr(pl,en){return LANG==="en"?en:pl;}
+function trs(s){return LANG==="en"?(I18N_SUB[s]||s):s;}
+const I18N_SUB={
+  "prezes":"president","wspólnik":"shareholder","zarząd":"board","stowarzyszenie branżowe":"industry association",
+  "prezes PSWK":"PSWK president","założyciel, prezes":"founder, president","rodzina":"family","prezeska":"president",
+  "minister funduszy (Polska 2050)":"minister of funds (Polska 2050)","posłanka niezrzeszona":"independent MP",
+  "minister sportu i turystyki":"minister of sport and tourism","komisja rewizyjna":"audit committee",
+  "lobbing / konsultacje":"lobbying / consultations","wywiad + stanowisko":"interview + position statement",
+  "komentarz w prasie":"press comment","założyciel":"founder","rodzina · CRBR":"family · CRBR",
+  "krytyka w rządzie":"criticism within government","zarzut o wpływy Airbnb":"accusation of Airbnb influence",
+  "broni projektu":"defends the bill","zarząd / wspólniczka":"board / shareholder",
+  "Walldorf, Niemcy · wspólnik":"Walldorf, Germany · shareholder","zarząd, wspólniczka":"board, shareholder",
+  "Kopenhaga · beneficjent Bülow-Lehnsby":"Copenhagen · beneficiary Bülow-Lehnsby",
+  "Luksemburg → oddział w Warszawie":"Luxembourg → Warsaw branch",
+  "zagraniczny podmiot → oddział w Warszawie":"foreign entity → Warsaw branch",
+  "zarząd w 12 spółkach klastra":"board member in 12 cluster companies",
+  "KRS 0000876332 · 3 oferty w zbiorze":"KRS 0000876332 · 3 listings in the dataset",
+  "KRS 0000875874 · Lessors of Real Estate (EMIS)":"KRS 0000875874 · Lessors of Real Estate (EMIS)",
+  "kredyt hipoteczny na aktywach Bemowo Propco":"mortgage loan on Bemowo Propco's assets",
+  "w likwidacji":"in liquidation","klaster NREP":"NREP cluster",
+  "pełnomocnik w 7 spółkach":"proxy in 7 companies","pełnomocnik w 6 spółkach":"proxy in 6 companies",
+  "Kraków · GPW → wykreślona":"Kraków · delisted from the Warsaw Stock Exchange",
+  "współzałożyciel NREP, beneficjent":"NREP co-founder, beneficiary",
+  "b. dyrektor spółek klastra":"former director of cluster companies",
+  "b. CFO grupy NREP (2018–2022)":"former NREP group CFO (2018–2022)","b. CFO grupy":"former group CFO",
+  "kredyt hipoteczny":"mortgage loan","fundusz-matka":"parent fund","beneficjent":"beneficiary",
+  "zarząd zawodowy":"professional director","reprezentant":"representative","pełnomocnik":"proxy",
+  "rada nadzorcza":"supervisory board","twarz marki, 3 oferty":"the brand's public face, 3 listings",
+  "KRS 0000948578 · Zbigniew Owsiewski, 2 oferty":"KRS 0000948578 · Zbigniew Owsiewski, 2 listings",
+  "NIP 5842428801 · Gdańsk, CEIDG, 3 oferty":"NIP 5842428801 · Gdańsk, CEIDG, 3 listings",
+  "1 oferta":"1 listing","Milanówek, 1 oferta, nadal nie w KRS/RFR":"Milanówek, 1 listing, still not in KRS/RFR",
+  "UK nr 11245525 · 9 ofert w Mokotowie, Airbnb: prywatne":"UK no. 11245525 · 9 listings in Mokotów, Airbnb: private",
+  "ponad 25% udziałów, dyrektor · kandydat na prezydenta RP":"over 25% of shares, director · Polish presidential candidate",
+  "ponad 25% udziałów, dyrektorka":"over 25% of shares, director",
+  "wspólnik, dyrektor":"shareholder, director","wspólniczka, dyrektorka":"shareholder, director",
+  "oferta Airbnb w Mokotowie · oznaczona jako prywatna":"an Airbnb listing in Mokotów · marked as private",
+  "przykładowa oferta":"example listing",
+  "jeden z największych funduszy PE w Europie Środkowej":"one of the largest PE funds in Central Europe",
+  "partner EI · rada nadzorcza Renters":"EI partner · Renters supervisory board",
+  "do 80% udziałów · 90 mln zł":"up to 80% of shares · PLN 90m",
+  "partner":"partner",
+  "wspólny kontakt":"shared contact","Rada Ministrów · 14.07.2026":"Council of Ministers · 14.07.2026",
+  "prezes zarządu, beneficjent":"board president, beneficiary","prezes / beneficjent":"president / beneficiary","beneficjentka":"beneficiary"
+};
+const GRAPH_SCENES=new Set(["market3","market3zoom","chain0","chain1","chain2","chain3","tax0","tax1","tax2","siw0","siw1"]);
+const CARD_FADE={chain1:[.55,.15],market3:[.68,.12]};
+function detect(){const mid=window.innerHeight*0.56;let found=null,prog=0;
+  for(const sec of actEls){const r=sec.getBoundingClientRect();if(r.top<mid&&r.bottom>mid){found=sec;prog=Math.max(0,Math.min(1,(mid-r.top)/r.height));break;}}
+  const hr=hero.getBoundingClientRect(),heroIn=hr.bottom>mid;heroActive=heroIn&&!found;
+  const heroTrans=Math.max(200,window.innerHeight*1.3);heroT=Math.max(0,Math.min(1,1+hr.top/heroTrans));
+  sceneActive=!!found;
+  if(found){if(found.dataset.viz!==targetViz){hideQuotePanel();SVG_HOVER_ID=null;graphSvg.classed("on",SVG_GRAPH_SCENES.has(found.dataset.viz));rankRoot.style("filter",null);}targetViz=found.dataset.viz;actProg=prog;dim.style.opacity="0";cv.classList.remove("blurred");
+    const cardEl=found.querySelector(".stepcard");
+    const fadeWin=CARD_FADE[found.dataset.viz];
+    if(cardEl&&fadeWin){
+      const fade=1-Math.max(0,Math.min(1,(prog-fadeWin[0])/fadeWin[1]));
+      cardEl.style.opacity=fade;cardEl.style.pointerEvents=fade<1?"none":"";
+    }else if(cardEl){cardEl.style.opacity="";cardEl.style.pointerEvents="";}
+    const cr=(cardEl&&cardEl.style.opacity!=="0")?cardEl.getBoundingClientRect():null;
+    cardRect=(cr&&cr.bottom>0&&cr.top<window.innerHeight)?cr:null;
+}
+  else if(targetViz==="explore"){dim.style.opacity="0.55";cv.classList.add("blurred");cardRect=null;hideQuotePanel();graphSvg.classed("on",false);}
+  else{dim.style.opacity=heroIn?"0.16":"0.88";cv.classList.remove("blurred");cardRect=null;hideQuotePanel();graphSvg.classed("on",false);}
+  exploreActive=(!!found&&found.dataset.viz==="explore");document.body.classList.toggle("explore-on",exploreActive);if(panel)panel.style.pointerEvents=exploreActive?"auto":"none";if(!exploreActive)hidePanel();
+  mouse.active=exploreActive||(!!found&&GRAPH_SCENES.has(found.dataset.viz));
+  const sc=document.documentElement.scrollHeight-window.innerHeight;progressBar.style.width=(sc>0?window.scrollY/sc*100:0)+"%";}
+function mobileSR(sr){
+  if(!sr||W>=640)return sr;
+  const pad=Math.max(10,W*.025);
+  return{x:pad,y:sr.y,w:W-2*pad,h:sr.h};
+}
+let lastSR=null;
+function safeRect(forceTarget){
+  let target;
+  if(forceTarget){target=forceTarget;}
+  else if(!cardRect||cardRect.width<=0){target={x:0,y:0,w:W,h:H};}
+  else{
+    const strips=[
+      {x:0,y:0,w:Math.max(0,cardRect.left),h:H},
+      {x:cardRect.right,y:0,w:Math.max(0,W-cardRect.right),h:H},
+      {x:0,y:0,w:W,h:Math.max(0,cardRect.top)},
+      {x:0,y:cardRect.bottom,w:W,h:Math.max(0,H-cardRect.bottom)}
+    ];
+    strips.sort((a,b)=>(b.w*b.h)-(a.w*a.h));
+    const best=strips[0];
+    target=(best.w<W*.33||best.h<H*.33)?{x:0,y:0,w:W,h:H}:best;
+  }
+  if(!lastSR)lastSR=target;
+  const k=.16;
+  lastSR={x:mix(lastSR.x,target.x,k),y:mix(lastSR.y,target.y,k),w:mix(lastSR.w,target.w,k),h:mix(lastSR.h,target.h,k)};
+  return lastSR;
+}
+
+// ---- shared map draw ----
+let filterOp=null,mouse={x:-1,y:-1,active:false};
+function drawColoredMap(cam,interactive,ga){
+  ctx.globalAlpha=ga*0.4;ctx.strokeStyle="rgba(159,177,178,.5)";ctx.lineWidth=1;
+  GEO.features.forEach(f=>{ctx.beginPath();f.geometry.coordinates.forEach(poly=>poly.forEach(r=>{r.forEach((p,idx)=>{const q=project(p[0],p[1]),x=W/2+(q[0]-cam.cx)*cam.s,y=H/2+(q[1]-cam.cy)*cam.s;idx?ctx.lineTo(x,y):ctx.moveTo(x,y);});ctx.closePath();}));ctx.stroke();});
+  if(cam.s<1.4){ctx.globalAlpha=ga*0.4;ctx.fillStyle="#6b8286";ctx.font="9.5px 'IBM Plex Mono',monospace";ctx.textAlign="center";
+    GEO.features.forEach(f=>{if(f._w<1)return;const q=project(f._cl[0],f._cl[1]);ctx.fillText(f.properties.name.toUpperCase(),W/2+(q[0]-cam.cx)*cam.s,H/2+(q[1]-cam.cy)*cam.s);});}
+  ctx.globalAlpha=1;const rb=0.55+0.48*Math.min(cam.s,2.4);
+  // pass 1: background noise (private, JDG, other spółka), signal drawn on top afterwards
+  {
+    const priv=[],jdg=[],spolka=[];
+    for(let i=0;i<N;i++){const op=P[i].op;if(op>=0)continue;const q=projP(P[i]),x=W/2+(q[0]-cam.cx)*cam.s,y=H/2+(q[1]-cam.cy)*cam.s;
+      P[i]._x=x;P[i]._y=y;(op===-1?priv:op===-3?jdg:spolka).push(x,y);}
+    [[priv,1.05,.28,PRIV_RGB],[jdg,1.3,.32,JDG_RGB],[spolka,1.3,.32,SPOLKA_RGB]].forEach(([pts,rMul,aBase,c])=>{
+      if(!pts.length)return;
+      let a=aBase*ga;if(interactive&&filterOp!==null)a*=.05;
+      const r=rMul*rb;
+      ctx.globalAlpha=Math.max(0,Math.min(1,a));ctx.fillStyle="rgb("+c[0]+","+c[1]+","+c[2]+")";ctx.beginPath();
+      for(let k=0;k<pts.length;k+=2){const x=pts[k],y=pts[k+1];ctx.moveTo(x+r,y);ctx.arc(x,y,r,0,6.283);}
+      ctx.fill();
+    });
+  }
+  // pass 2: the 20 tracked operators, drawn last so their colour always reads through the noise
+  {
+    const byOp=new Array(TOP20.length);
+    for(let i=0;i<N;i++){const op=P[i].op;if(op<0)continue;const q=projP(P[i]),x=W/2+(q[0]-cam.cx)*cam.s,y=H/2+(q[1]-cam.cy)*cam.s;
+      P[i]._x=x;P[i]._y=y;(byOp[op]||(byOp[op]=[])).push(x,y);}
+    for(let op=0;op<byOp.length;op++){
+      const pts=byOp[op];if(!pts)continue;
+      let r=1.65*rb,a=.88*ga;
+      if(interactive&&filterOp!==null){if(op===filterOp){a=1*ga;r*=1.7;}else a*=.10;}
+      const c=OP_RGB[op];
+      ctx.globalAlpha=Math.max(0,Math.min(1,a));ctx.fillStyle="rgb("+c[0]+","+c[1]+","+c[2]+")";ctx.beginPath();
+      for(let k=0;k<pts.length;k+=2){const x=pts[k],y=pts[k+1];ctx.moveTo(x+r,y);ctx.arc(x,y,r,0,6.283);}
+      ctx.fill();
+    }
+  }
+  ctx.globalAlpha=1;
+}
+function rrect(x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();}
+function txt(t,x,y,size,col,align="left",weight="400",family="'IBM Plex Mono',monospace"){ctx.fillStyle=col||"#eceeec";ctx.font=weight+" "+size+"px "+family;ctx.textAlign=align;ctx.fillText(t,x,y);}
+
+function ease(t){t=Math.max(0,Math.min(1,t));return t*t*(3-2*t);}
+function mix(a,b,t){return a+(b-a)*t;}
+function revealEnv(p,inW,outW){inW=inW||.15;outW=outW||.15;if(p<inW)return ease(p/inW);if(p>1-outW)return ease((1-p)/outW);return 1;}
+let _gridCache=null,_gridSigW=null;
+function sampleGrid(i){
+  if(_gridSigW!==W){
+    const cols=Math.max(28,Math.floor(Math.sqrt(N*1.75))), rows=Math.ceil(N/cols);
+    const gap=Math.min(8.2,(W*.72)/cols), gw=(cols-1)*gap, gh=(rows-1)*gap;
+    _gridCache={cols,gap,gw,gh};
+    _gridSigW=W;
+  }
+  const{cols,gap,gw,gh}=_gridCache;
+  return [W/2-gw/2+(i%cols)*gap,H/2-gh/2+Math.floor(i/cols)*gap+18];
+}
+function renderHeroAmbient(ga=1){
+  // Subtle opening background: data first, map only hinted at on the right.
+  const cx=W*.73, cy=H*.51, s=.72;
+  ctx.save();
+  ctx.globalAlpha=.16*ga;
+  ctx.strokeStyle="#00E1FF";ctx.lineWidth=.7;
+  GEO.features.forEach(f=>{ctx.beginPath();f.geometry.coordinates.forEach(poly=>poly.forEach(r=>{r.forEach((pt,i)=>{const q=project(pt[0],pt[1]);const x=cx+(q[0]-W/2)*s,y=cy+(q[1]-H/2)*s;i?ctx.lineTo(x,y):ctx.moveTo(x,y);});ctx.closePath();}));ctx.stroke();});
+  {
+    const buckets=new Map();
+    for(let i=0;i<N;i+=3){
+      const q=projP(P[i]);const x=cx+(q[0]-W/2)*s,y=cy+(q[1]-H/2)*s;
+      const op=P[i].op;const col=op>=0?TOP20[op].hex:op===-1?PRIVATE_HEX:op===-3?JDG_HEX:SPOLKA_HEX;
+      const alpha=(.12+.16*P[i].seed)*ga;
+      let b=buckets.get(col);if(!b){b=[];buckets.set(col,b);}
+      b.push(x,y,alpha);
+    }
+    buckets.forEach((pts,col)=>{
+      ctx.fillStyle=col;
+      const abuckets=new Map();
+      for(let k=0;k<pts.length;k+=3){
+        const bk=Math.round(pts[k+2]*32);
+        let ab=abuckets.get(bk);if(!ab){ab=[];abuckets.set(bk,ab);}
+        ab.push(pts[k],pts[k+1]);
+      }
+      abuckets.forEach((apts,bk)=>{
+        ctx.globalAlpha=bk/32;ctx.beginPath();
+        for(let k=0;k<apts.length;k+=2){const x=apts[k],y=apts[k+1];ctx.moveTo(x+1.05,y);ctx.arc(x,y,1.05,0,6.283);}
+        ctx.fill();
+      });
+    });
+    ctx.globalAlpha=1;
+  }
+   // A few raw-data ticks to keep it investigative rather than decorative.
+  ctx.globalAlpha=.28*ga;ctx.strokeStyle="#293f73";ctx.lineWidth=1;
+  for(let i=0;i<5;i++){const y=H*(.27+i*.075);ctx.beginPath();ctx.moveTo(W*.60,y);ctx.lineTo(W*.63,y);ctx.stroke();}
+  ctx.restore();ctx.globalAlpha=1;
+}
+const ALPHA_STEPS=48;
+function renderMarket0(p){
+  const buckets=new Array(ALPHA_STEPS+1);
+  for(let i=0;i<N;i++){
+    const g=sampleGrid(i),delay=P[i].seed*.5;
+    const a=ease(Math.max(0,Math.min(1,(p-delay)/.45)));
+    const alpha=a*(.28+.56*P[i].seed);
+    if(alpha<=.004)continue;
+    const bk=Math.round(alpha*ALPHA_STEPS);
+    (buckets[bk]||(buckets[bk]=[])).push(g[0],g[1]);
+  }
+  ctx.fillStyle="#b9c8c8";
+  for(let bk=0;bk<=ALPHA_STEPS;bk++){
+    const pts=buckets[bk];if(!pts)continue;
+    ctx.globalAlpha=bk/ALPHA_STEPS;ctx.beginPath();
+    for(let k=0;k<pts.length;k+=2){const x=pts[k],y=pts[k+1];ctx.moveTo(x+1.05,y);ctx.arc(x,y,1.05,0,6.283);}
+    ctx.fill();
+  }
+  ctx.globalAlpha=1;
+}
+function renderMarket1(p){
+  const t=ease(Math.min(1,p*1.12));drawBoundary(t);
+  const buckets=new Array(ALPHA_STEPS+1);
+  for(let i=0;i<N;i++){
+    const g=sampleGrid(i),q=projP(P[i]),x=mix(g[0],q[0],t),y=mix(g[1],q[1],t);
+    const alpha=.28+.62*P[i].seed;
+    const bk=Math.round(alpha*ALPHA_STEPS);
+    (buckets[bk]||(buckets[bk]=[])).push(x,y);
+  }
+  ctx.fillStyle="#c1cece";
+  for(let bk=0;bk<=ALPHA_STEPS;bk++){
+    const pts=buckets[bk];if(!pts)continue;
+    ctx.globalAlpha=bk/ALPHA_STEPS;ctx.beginPath();
+    for(let k=0;k<pts.length;k+=2){const x=pts[k],y=pts[k+1];ctx.moveTo(x+1.1,y);ctx.arc(x,y,1.1,0,6.283);}
+    ctx.fill();
+  }
+  ctx.globalAlpha=1;
+}
+function renderMarket2(p){
+  const t=ease(Math.min(1,p*1.35));drawBoundary(mix(.4,.65,t));
+  const buckets=new Map();
+  for(let i=0;i<N;i++){
+    const q=projP(P[i]),op=P[i].op,priv=op===-1;
+    const alpha=priv?mix(.55,0,t):mix(.55,.88,t);
+    const col=priv?PRIVATE_HEX:(op>=0?TOP20[op].hex:op===-3?JDG_HEX:SPOLKA_HEX);
+    const r=priv?mix(1.3,.35,t):1.18;
+    let b=buckets.get(col);
+    if(!b){b={alpha,pts:[]};buckets.set(col,b);}
+    b.pts.push(q[0],q[1],r);
+  }
+  buckets.forEach(({alpha,pts},col)=>{
+    ctx.globalAlpha=alpha;ctx.fillStyle=col;ctx.beginPath();
+    for(let k=0;k<pts.length;k+=3){const x=pts[k],y=pts[k+1],r=pts[k+2];ctx.moveTo(x+r,y);ctx.arc(x,y,r,0,6.283);}
+    ctx.fill();
+  });
+  ctx.globalAlpha=1;
+  drawFilterStats(ease(Math.min(1,p*4)),p);
+}
+function drawFilterStats(alpha,revealP){
+  if(alpha<=.004)return;
+  const rp=revealP===undefined?1:revealP;
+  const items=[
+    [tr("7 710","7,710"),W*.32,H*.135,"#ff00cd",tr("OFERT KOMERCYJNYCH · 76,7%","COMMERCIAL LISTINGS · 76.7%")],
+    [tr("2 337","2,337"),W*.68,H*.135,PRIVATE_BRIGHT,tr("OFERT PRYWATNYCH · 23,3%","PRIVATE LISTINGS · 23.3%")],
+    ["218",W*.32,H*.135+70,SPOLKA_BRIGHT,tr("SPÓŁKI (FIRM) · 31,9%","COMPANIES (LLCs) · 31.9%")],
+    [tr("5 070","5,070"),W*.68,H*.135+70,SPOLKA_BRIGHT,tr("OFERT OD SPÓŁEK","LISTINGS FROM COMPANIES")],
+    ["466",W*.32,H*.135+140,JDG_BRIGHT,tr("JDG (FIRM) · 68,1%","SOLE PROPRIETORS · 68.1%")],
+    [tr("2 640","2,640"),W*.68,H*.135+140,JDG_BRIGHT,tr("OFERT OD JDG","LISTINGS FROM SOLE PROPRIETORS")]
+  ];
+  items.forEach((it,idx)=>{
+    const local=ease(Math.max(0,Math.min(1,rp*9-idx*1.2)));
+    const a=alpha*local;
+    if(a<=.004)return;
+    ctx.globalAlpha=a;
+    txt(it[0],it[1],it[2],Math.min(46,W*.04),it[3],"center","600","Spectral,serif");
+    txt(it[4],it[1],it[2]+24,12,"#a8bdd9","center","600");
+  });
+  ctx.globalAlpha=1;
+}
+const RANK_MEMBERS=TOP20.map(()=>[]);
+for(let i=0;i<N;i++){if(P[i].op>=0)RANK_MEMBERS[P[i].op].push(i);}
+const RANK_INDEX={};RANK_MEMBERS.forEach(arr=>arr.forEach((idx,j)=>RANK_INDEX[idx]=j));
+let _packingCache=null,_packingSig=null;
+function getPacking(mx,areaW,top,areaH){
+  const sig=mx+"|"+areaW+"|"+top+"|"+areaH;
+  if(_packingSig===sig)return _packingCache;
+  _packingSig=sig;
+  _packingCache=TOP20_TILES.map((tile,op)=>{const cc=Math.max(1,Math.ceil(Math.sqrt(RANK_MEMBERS[op].length)));
+    return{cc,cellW:(tile.w*areaW-6)/cc,cellH:(tile.h*areaH-6)/cc,baseX:mx+tile.x*areaW+3,baseY:top+tile.y*areaH+3};});
+  return _packingCache;
+}
+function renderMarket3(p){
+  const t=ease(Math.max(0,Math.min(1,p)));
+  const fadeT=ease(Math.max(0,Math.min(1,(t-.28)/.08)));
+  const swarmT=ease(Math.max(0,Math.min(1,(t-.36)/.34)));
+  const rankIn=ease(Math.max(0,Math.min(1,(t-.70)/.06)));
+  const SR={x:W*.02,y:H*.04,w:W*.96,h:H*.92};
+  const mx=SR.x+Math.max(20,SR.w*.03), areaW=SR.w-2*Math.max(20,SR.w*.03), areaH=SR.h*.82, top=SR.y+(SR.h-areaH)/2;
+
+  // Continues straight from market2's "commercial only" view: the same readout stays up and only fades
+  // once spółki/dział. indywidualna start dropping out, so nothing disappears at the section cut.
+  drawFilterStats(1-fadeT);
+  drawBoundary(.7*(1-swarmT));
+  const packing=getPacking(mx,areaW,top,areaH);
+  const buckets=new Map();
+  for(let i=0;i<N;i++){
+    const op=P[i].op,q=projP(P[i]);
+    let x=q[0],y=q[1],a,col,sizeMul=1.0;
+    if(op>=0){
+      const pk=packing[op],j=RANK_INDEX[i]||0;
+      const gx=j%pk.cc, gy=Math.floor(j/pk.cc);
+      const tx=pk.baseX+pk.cellW*(gx+.5), ty=pk.baseY+pk.cellH*(gy+.5);
+      x=mix(q[0],tx,swarmT);y=mix(q[1],ty,swarmT);
+      col=TOP20[op].hex;a=mix(.88,.9,swarmT);sizeMul=mix(1.18,.6,swarmT);
+    } else {
+      col=op===-1?PRIVATE_HEX:op===-3?JDG_HEX:SPOLKA_HEX;
+      const startA=op===-1?0:.88;
+      a=mix(startA,0,fadeT);sizeMul=op===-1?1.0:1.18;
+    }
+    if(a<=.006)continue;
+    let b=buckets.get(col);
+    if(!b){b={alpha:a,pts:[]};buckets.set(col,b);}
+    b.pts.push(x,y,sizeMul);
+  }
+  buckets.forEach(({alpha,pts},col)=>{
+    ctx.globalAlpha=alpha;ctx.fillStyle=col;ctx.beginPath();
+    for(let k=0;k<pts.length;k+=3){const x=pts[k],y=pts[k+1],r=pts[k+2];ctx.moveTo(x+r,y);ctx.arc(x,y,r,0,6.283);}
+    ctx.fill();
+  });
+  ctx.globalAlpha=1;
+  if(swarmT<=0){hideGraphSvg();return;}
+
+  if(rankIn<=0){hideGraphSvg();return;}
+  const tiles=TOP20_TILES.map((tl,i)=>({i,o:TOP20[i],tx:mx+tl.x*areaW,ty:top+tl.y*areaH,tw:tl.w*areaW,th:tl.h*areaH}));
+  syncRankingSVG(tiles,rankIn,null);
+}
+function renderMarket3Zoom(p){
+  const t=ease(Math.max(0,Math.min(1,p)));
+  const SR={x:W*.02,y:H*.04,w:W*.96,h:H*.92};
+  const mx=SR.x+Math.max(20,SR.w*.03), areaW=SR.w-2*Math.max(20,SR.w*.03), areaH=SR.h*.82, top=SR.y+(SR.h-areaH)/2;
+  const zoom=ease(t),zk=1+zoom*4,zfx=mx+areaW/2,zfy=top+areaH/2;
+  const dissolve=ease(Math.max(0,Math.min(1,(t-.72)/.28)));
+  const alpha=1-dissolve,blurPx=dissolve*16;
+  const packing=getPacking(mx,areaW,top,areaH);
+  const buckets=new Map();
+  for(let i=0;i<N;i++){
+    const op=P[i].op;
+    if(op<0)continue;
+    const pk=packing[op],j=RANK_INDEX[i]||0;
+    const gx=j%pk.cc, gy=Math.floor(j/pk.cc);
+    const x=pk.baseX+pk.cellW*(gx+.5), y=pk.baseY+pk.cellH*(gy+.5);
+    const col=TOP20[op].hex;
+    let b=buckets.get(col);
+    if(!b){b=[];buckets.set(col,b);}
+    b.push(x,y);
+  }
+  if(blurPx>0.3){
+    zbCtx.clearRect(0,0,W,H);
+    zbCtx.save();
+    zbCtx.translate(zfx,zfy);zbCtx.scale(zk,zk);zbCtx.translate(-zfx,-zfy);
+    zbCtx.globalAlpha=.9;
+    buckets.forEach((pts,col)=>{
+      zbCtx.fillStyle=col;zbCtx.beginPath();
+      for(let k=0;k<pts.length;k+=2){const x=pts[k],y=pts[k+1];zbCtx.moveTo(x+.6,y);zbCtx.arc(x,y,.6,0,6.283);}
+      zbCtx.fill();
+    });
+    zbCtx.globalAlpha=1;
+    zbCtx.restore();
+    ctx.save();
+    ctx.filter=`blur(${blurPx}px)`;
+    ctx.globalAlpha=alpha;
+    ctx.drawImage(zoomBlurCanvas,0,0,W,H);
+    ctx.restore();
+  }else{
+    ctx.save();
+    ctx.translate(zfx,zfy);ctx.scale(zk,zk);ctx.translate(-zfx,-zfy);
+    ctx.globalAlpha=.9;
+    buckets.forEach((pts,col)=>{
+      ctx.fillStyle=col;ctx.beginPath();
+      for(let k=0;k<pts.length;k+=2){const x=pts[k],y=pts[k+1];ctx.moveTo(x+.6,y);ctx.arc(x,y,.6,0,6.283);}
+      ctx.fill();
+    });
+    ctx.globalAlpha=1;
+    ctx.restore();
+  }
+  if(alpha<=.004){rankRoot.style("filter",null);hideGraphSvg();return;}
+  const tiles=TOP20_TILES.map((tl,i)=>({i,o:TOP20[i],tx:mx+tl.x*areaW,ty:top+tl.y*areaH,tw:tl.w*areaW,th:tl.h*areaH}));
+  syncRankingSVG(tiles,alpha,{fx:zfx,fy:zfy,k:zk});
+  rankRoot.style("filter",blurPx>0.3?`blur(${blurPx*.6}px)`:null);
+}
+function renderIdentityScene(p){
+  const rev=revealEnv(p,.05,.42);
+  const ga=Math.min(1,.7+rev*1.1);
+  const x0=5,y0=52,x1=845,y1=448,bw=x1-x0,bh=y1-y0;
+  const SR=mobileSR({x:W*.34,y:H*.06,w:W*.63,h:H*.88});
+  const sc=Math.min(SR.w/bw,SR.h/bh,1.6);
+  const slideX=(1-rev)*W*.25;
+  const ox=SR.x+(SR.w-bw*sc)/2-x0*sc+slideX,oy=SR.y+(SR.h-bh*sc)/2-y0*sc;
+  const X=x=>ox+x*sc,Y=y=>oy+y*sc,S=v=>v*sc;
+  const panel="#152847", edgeCol="rgba(168,189,217,.48)", border="rgba(168,189,217,.55)";
+  function node(x,y,w,h,type,title,sub,accent="#00E1FF"){
+    ctx.globalAlpha=ga;rrect(X(x),Y(y),S(w),S(h),S(2));ctx.fillStyle=panel;ctx.fill();ctx.strokeStyle=border;ctx.lineWidth=S(1);ctx.stroke();
+    txt(type.toUpperCase(),X(x+13),Y(y+17),S(9.5),accent,"left","600");
+    txt(title,X(x+13),Y(y+36),S(15),"#eef4ff","left","600","Spectral,serif");
+    if(sub)txt(sub,X(x+13),Y(y+h-11),S(11),"#c3d2e8","left","500");ctx.globalAlpha=1;
+  }
+  function edge(x1,y1,x2,y2,label,accent="#a8bdd9",dy=-7){
+    ctx.globalAlpha=ga*.8;ctx.strokeStyle=accent;ctx.lineWidth=S(1.2);ctx.beginPath();ctx.moveTo(X(x1),Y(y1));ctx.lineTo(X(x2),Y(y2));ctx.stroke();
+    ctx.beginPath();ctx.arc(X(x1),Y(y1),S(2.2),0,6.283);ctx.arc(X(x2),Y(y2),S(2.2),0,6.283);ctx.fillStyle=accent;ctx.fill();
+    ctx.globalAlpha=1;
+  }
+  txt(tr("REKORDY PLATFORMY","PLATFORM RECORDS"),X(15),Y(92),S(9.5),"#71809a","left","600");
+  const hosts=[[15,145,"NIP 7010556748"],[15,235,"REGON 363905731"],[15,325,"KRS 0000606096"]];
+  hosts.forEach(a=>node(a[0],a[1],180,56,tr("pole w ofercie","field in the listing"),a[2],null,"#a8bdd9"));
+
+  txt(tr("IDENTYFIKATORY","IDENTIFIERS"),X(245),Y(92),S(9.5),"#71809a","left","600");
+  node(245,180,210,58,tr("telefon","phone"),"+48 798 148 •••",null,"#ff00cd");
+  edge(195,173,245,209,tr("ten sam numer","same number"),"#ff00cd",-8);edge(195,263,245,209,tr("ten sam numer","same number"),"#ff00cd",9);
+  node(245,350,210,58,tr("adres","address"),tr("Nakielska 3, Warszawa","Nakielska 3, Warsaw"),null,"#3b9eff");
+  edge(195,263,245,379,tr("wspólny adres","shared address"),"#3b9eff",-8);edge(195,353,245,379,tr("wspólny adres","shared address"),"#3b9eff",9);
+
+  const FMT_STATS=[[tr("numer jak KRS (10 cyfr)","number formatted like a KRS ID (10 digits)"),48.7,"#ff00cd"],[tr("REGON (9 cyfr)","REGON (9 digits)"),36.3,"#00E1FF"],[tr("NIP z prefiksem PL","NIP with a PL prefix"),7.0,"#0064d7"],[tr("inne formaty","other formats"),8.0,"#8fa6c6"]];
+  let segX=470,barY=125,barW=340,barH=20;
+  ctx.globalAlpha=ga;
+  ctx.save();
+  rrect(X(470),Y(barY),S(barW),S(barH),S(barH/2));ctx.clip();
+  FMT_STATS.forEach(f=>{const segW=barW*f[1]/100;ctx.fillStyle=f[2];ctx.fillRect(X(segX)-1,Y(barY),S(segW)+2,S(barH));segX+=segW;});
+  ctx.restore();
+  ctx.globalAlpha=1;
+  let legY=163;
+  FMT_STATS.forEach(f=>{
+    ctx.globalAlpha=ga;ctx.beginPath();ctx.arc(X(475),Y(legY+4),S(4),0,6.283);ctx.fillStyle=f[2];ctx.fill();ctx.globalAlpha=1;
+    txt(f[0]+" · "+f[1].toFixed(0)+"%",X(488),Y(legY+7),S(10),"#c8d4e8","left","500");
+    legY+=19;
+  });
+
+  node(470,290,215,62,tr("firma","company"),"BookingHost Sp. z o.o.",null,"#00E1FF");
+  edge(455,209,470,321,tr("identyfikuje","identifies"),"#a8bdd9",-9);edge(455,379,470,321,tr("potwierdza","confirms"),"#a8bdd9",10);
+}
+// ---- Aleph/ICIJ-style investigation graph: icon nodes, count badges, labeled connector lines ----
+const TYPE_SHAPE={person:"circle",fund:"hex",bank:"hex"};
+function shapeD(type,r){
+  const shape=TYPE_SHAPE[type]||"square";
+  if(shape==="square"){const k=r*.86,cr=r*.22;
+    return `M${-k+cr},${-k}L${k-cr},${-k}A${cr},${cr} 0 0 1 ${k},${-k+cr}L${k},${k-cr}A${cr},${cr} 0 0 1 ${k-cr},${k}L${-k+cr},${k}A${cr},${cr} 0 0 1 ${-k},${k-cr}L${-k},${-k+cr}A${cr},${cr} 0 0 1 ${-k+cr},${-k}Z`;}
+  if(shape==="hex"){const pts=[];for(let i=0;i<6;i++){const a=-Math.PI/2+i*Math.PI/3;pts.push((r*1.04*Math.cos(a)).toFixed(2)+","+(r*1.04*Math.sin(a)).toFixed(2));}return "M"+pts.join("L")+"Z";}
+  return `M${-r},0A${r},${r} 0 1,0 ${r},0A${r},${r} 0 1,0 ${-r},0Z`;
+}
+const SVG_GRAPH_SCENES=new Set(["chain0","chain1","chain2","chain3","tax0","tax1","tax2","tax3","siw0","siw1","market3","market3zoom","finding0","timeline"]);
+let SVG_HOVER_ID=null;
+const graphSvg=d3.select("#graphSvg");
+const gDefs=graphSvg.append("defs");
+gDefs.append("linearGradient").attr("id","gnodeGrad").attr("x1","0").attr("y1","0").attr("x2","0").attr("y2","1")
+  .call(g=>{g.append("stop").attr("offset","0").attr("stop-color","#1a2740");g.append("stop").attr("offset","1").attr("stop-color","#0b121e");});
+gDefs.append("filter").attr("id","gnodeShadow").attr("x","-60%").attr("y","-60%").attr("width","220%").attr("height","220%")
+  .append("feDropShadow").attr("dx","0").attr("dy","2").attr("stdDeviation","3").attr("flood-color","#000").attr("flood-opacity",".5");
+gDefs.append("filter").attr("id","gnodeGlow").attr("x","-80%").attr("y","-80%").attr("width","260%").attr("height","260%")
+  .append("feGaussianBlur").attr("stdDeviation","3.2").attr("result","blur");
+const ICON_SYMBOLS={
+  person:'<circle cx="0" cy="-5.6" r="5.4"/><path d="M-9.2,13 Q-9.2,1.2 0,1.2 Q9.2,1.2 9.2,13 Z"/>',
+  company:'<path d="M-9,-8.5 0,-13.5 9,-8.5 9,11.5 -9,11.5 Z"/><rect x="-5.3" y="-5.2" width="3.4" height="3.4" fill="#0b121e"/><rect x="1.9" y="-5.2" width="3.4" height="3.4" fill="#0b121e"/><rect x="-5.3" y="1" width="3.4" height="3.4" fill="#0b121e"/><rect x="1.9" y="1" width="3.4" height="3.4" fill="#0b121e"/>',
+  fund:'<ellipse cx="0" cy="5.2" rx="8.2" ry="2.7"/><ellipse cx="0" cy="0" rx="8.2" ry="2.7"/><ellipse cx="0" cy="-5.2" rx="8.2" ry="2.7"/><ellipse cx="0" cy="-5.2" rx="8.2" ry="2.7" fill="#0b121e" fill-opacity=".22"/>',
+  bank:'<path d="M-10.2,-1 0,-12.5 10.2,-1 Z"/><rect x="-7.4" y="0" width="2.5" height="9.4"/><rect x="-1.25" y="0" width="2.5" height="9.4"/><rect x="4.9" y="0" width="2.5" height="9.4"/><rect x="-11" y="9.4" width="22" height="2.4"/>',
+  law:'<rect x="-7.2" y="-10.5" width="14.4" height="21" rx="1.4"/><rect x="-4.2" y="-5.4" width="8.4" height="1.6" fill="#0b121e"/><rect x="-4.2" y="-.8" width="8.4" height="1.6" fill="#0b121e"/><rect x="-4.2" y="3.8" width="8.4" height="1.6" fill="#0b121e"/>',
+  flag:'<rect x="-6.8" y="-11.5" width="2.1" height="23"/><path d="M-4.7,-11.5 10.3,-6.2 -4.7,-.9 Z"/>'
+};
+Object.entries(ICON_SYMBOLS).forEach(([id,inner])=>{gDefs.append("symbol").attr("id","icon-"+id).attr("viewBox","-16 -16 32 32").html(inner);});
+const allSvgRoots=[];
+function registerSvgRoot(g){allSvgRoots.push(g);return g;}
+function showOnlyRoot(root){allSvgRoots.forEach(r=>r.style("display",r===root?null:"none"));}
+const graphRoot=registerSvgRoot(graphSvg.append("g").attr("class","graph-root"));
+const edgeLayer=graphRoot.append("g").attr("class","edge-layer");
+const nodeLayer=graphRoot.append("g").attr("class","node-layer");
+const rankRoot=registerSvgRoot(graphSvg.append("g").attr("class","rank-root").style("display","none"));
+const arcRoot=registerSvgRoot(graphSvg.append("g").attr("class","arc-root").style("display","none"));
+const timelineRoot=registerSvgRoot(graphSvg.append("g").attr("class","timeline-root").style("display","none"));
+function hideGraphSvg(){graphSvg.classed("on",false);}
+let rankGeomSig=null;
+function syncRankingSVG(tiles,rankIn,zoomT){
+  graphSvg.classed("on",true);
+  showOnlyRoot(rankRoot);
+  rankRoot.attr("transform",zoomT?`translate(${zoomT.fx},${zoomT.fy}) scale(${zoomT.k}) translate(${-zoomT.fx},${-zoomT.fy})`:null);
+  const sig=tiles[0].tw.toFixed(1)+","+tiles[0].th.toFixed(1);
+  const geomChanged=sig!==rankGeomSig;
+  rankGeomSig=sig;
+  const sel=rankRoot.selectAll("g.rtile-g").data(tiles,d=>d.i);
+  sel.exit().remove();
+  const enter=sel.enter().append("g").attr("class","rtile-g");
+  enter.append("rect").attr("class","rtile");
+  enter.append("text").attr("class","rtile-label");
+  enter.append("text").attr("class","rtile-sub");
+  enter.append("text").attr("class","rtile-count");
+  const all=enter.merge(sel);
+  all.each(function(d){
+    const g=d3.select(this),rowIn=ease(Math.max(0,Math.min(1,rankIn*1.3-d.i*.028)));
+    if(rowIn<=0){g.style("display","none");return;}
+    g.style("display",null).style("opacity",rankIn*rowIn);
+    if(!geomChanged&&this.__laidOut)return;
+    this.__laidOut=true;
+    g.select("rect.rtile").attr("x",d.tx+1.5).attr("y",d.ty+1.5).attr("width",Math.max(0,d.tw-3)).attr("height",Math.max(0,d.th-3))
+      .attr("fill","rgba(0,0,0,0.001)").attr("stroke",d.o.hex);
+    const padTile=8,label=g.select("text.rtile-label"),sub=g.select("text.rtile-sub"),count=g.select("text.rtile-count");
+    if(d.tw>60&&d.th>34){
+      const nameW=d.tw-padTile*2,rank=String(d.i+1).padStart(2,"0")+" · ",fullLabel=rank+d.o.name;
+      const fsz=Math.max(10.5,Math.min(16,d.tw/11,d.th/3.5));
+      label.attr("x",d.tx+padTile).attr("y",d.ty+padTile+fsz*.8).attr("fill","#eef4ff").text(fullLabel).style("display",null).attr("textLength",null).attr("lengthAdjust",null);
+      ctx.font="600 "+fsz+"px 'IBM Plex Mono',monospace";
+      const natural=ctx.measureText(fullLabel).width;
+      label.attr("font-size",natural>nameW?Math.max(8,fsz*nameW/natural):fsz);
+      if(d.th>52){sub.attr("x",d.tx+padTile).attr("y",d.ty+d.th-padTile*.9).attr("font-size",Math.max(9.5,fsz*.85)).attr("fill",d.o.hex).text(d.o.n+tr(" ofert"," listings")).style("display",null);}
+      else sub.style("display","none");
+      count.style("display","none");
+    }else if(d.tw>26&&d.th>18){
+      count.attr("x",d.tx+d.tw/2).attr("y",d.ty+d.th/2+4).attr("font-size",Math.max(9.5,Math.min(14,d.th/2.6))).attr("fill",d.o.hex).attr("text-anchor","middle").text(d.o.n).style("display",null);
+      label.style("display","none");sub.style("display","none");
+    }else{label.style("display","none");sub.style("display","none");count.style("display","none");}
+  });
+}
+function syncArcSVG(items){
+  graphSvg.classed("on",true);
+  showOnlyRoot(arcRoot);
+  const sel=arcRoot.selectAll("g.arc-item").data(items,d=>d.key);
+  sel.exit().remove();
+  const enter=sel.enter().append("g").attr("class","arc-item");
+  enter.append("path").attr("class","arc-bg").attr("fill","#8fa6c6");
+  enter.append("path").attr("class","arc-fg");
+  enter.append("text").attr("class","arc-pct").attr("text-anchor","middle").attr("font-family","Spectral,serif").attr("font-weight","600");
+  enter.append("text").attr("class","arc-pctlabel").attr("text-anchor","middle").attr("fill","#8fa6c6");
+  enter.append("text").attr("class","arc-name").attr("text-anchor","middle").attr("font-family","Spectral,serif").attr("font-weight","600").attr("fill","#eef4ff");
+  enter.append("text").attr("class","arc-sub").attr("text-anchor","middle").attr("fill","#8fa6c6");
+  const all=enter.merge(sel);
+  all.each(function(d){
+    const g=d3.select(this).attr("transform",`translate(${d.cx},${d.cy})`);
+    const angle=Math.max(.035,d.frac*6.283)*d.revealT;
+    g.select("path.arc-bg").attr("d",d3.arc().innerRadius(d.r-d.thick/2).outerRadius(d.r+d.thick/2).startAngle(0).endAngle(6.283)()).style("opacity",d.ga*.22);
+    g.select("path.arc-fg").attr("d",d3.arc().innerRadius(d.r-d.thick/2).outerRadius(d.r+d.thick/2).cornerRadius(d.thick/2).startAngle(0).endAngle(angle)()).attr("fill",d.accent).style("opacity",d.ga);
+    g.select("text.arc-pct").attr("y",d.r*.08).attr("font-size",Math.min(34,d.r*.36)).attr("fill",d.accent).text(d.pct).style("opacity",d.ga*d.revealT);
+    g.select("text.arc-pctlabel").attr("y",d.r*.08+22).attr("font-size",12).text(d.pctLabel).style("opacity",d.ga*d.revealT);
+    g.select("text.arc-name").attr("y",d.r+d.thick+30).attr("font-size",Math.max(13,d.r*.12)).text(d.name).style("opacity",d.ga);
+    g.select("text.arc-sub").attr("y",d.r+d.thick+50).attr("font-size",12).text(d.sub).style("opacity",d.ga);
+  });
+}
+function syncTimelineSVG(mx,y,ww,ga,progFrac,items,vertical){
+  graphSvg.classed("on",true);
+  showOnlyRoot(timelineRoot);
+  if(vertical){
+    timelineRoot.selectAll("line.tl-base").data([1]).join("line").attr("class","tl-base")
+      .attr("x1",mx).attr("y1",y).attr("x2",mx).attr("y2",y+ww).attr("stroke","#8fa6c6").attr("stroke-width",2).style("opacity",ga*.25);
+    timelineRoot.selectAll("line.tl-prog").data([1]).join("line").attr("class","tl-prog")
+      .attr("x1",mx).attr("y1",y).attr("x2",mx).attr("y2",y+ww*progFrac).attr("stroke","#ff00cd").attr("stroke-width",2).style("opacity",ga*.85);
+  }else{
+    timelineRoot.selectAll("line.tl-base").data([1]).join("line").attr("class","tl-base")
+      .attr("x1",mx).attr("y1",y).attr("x2",mx+ww).attr("y2",y).attr("stroke","#8fa6c6").attr("stroke-width",2).style("opacity",ga*.25);
+    timelineRoot.selectAll("line.tl-prog").data([1]).join("line").attr("class","tl-prog")
+      .attr("x1",mx).attr("y1",y).attr("x2",mx+ww*progFrac).attr("y2",y).attr("stroke","#ff00cd").attr("stroke-width",2).style("opacity",ga*.85);
+  }
+  const sel=timelineRoot.selectAll("g.tl-item").data(items,d=>d.i);
+  sel.exit().remove();
+  const enter=sel.enter().append("g").attr("class","tl-item");
+  enter.append("circle").attr("class","tl-dot").attr("r",8).attr("stroke","#08101d").attr("stroke-width",2.5);
+  enter.append("text").attr("class","tl-date").attr("font-weight","700");
+  enter.append("text").attr("class","tl-title").attr("font-family","Spectral,serif").attr("font-weight","600").attr("fill","#eef4ff");
+  const all=enter.merge(sel);
+  all.each(function(d){
+    const g=d3.select(this);
+    if(d.av<=0){g.style("display","none");return;}
+    g.style("display",null).style("opacity",ga*d.av);
+    g.select("circle.tl-dot").attr("fill",d.c);
+    const dateSel=g.select("text.tl-date"),titleSel=g.select("text.tl-title");
+    if(vertical){
+      g.attr("transform",`translate(${mx},${d.y})`);
+      dateSel.attr("text-anchor","start").attr("x",16).attr("y",-6).attr("font-size",16).attr("fill",d.c).text(d.d);
+      titleSel.attr("text-anchor","start").attr("x",16).attr("y",16).text(d.t).attr("textLength",null).attr("lengthAdjust",null);
+      const maxW=Math.max(60,W-mx-30);
+      if(this.__tlFitTxt!==d.t||Math.abs((this.__tlFitMaxW||0)-maxW)>2){
+        this.__tlFitTxt=d.t;this.__tlFitMaxW=maxW;
+        ctx.font="600 17px Spectral,serif";
+        this.__tlFitNat=ctx.measureText(d.t).width;
+      }
+      titleSel.attr("font-size",this.__tlFitNat>maxW?Math.max(13,17*maxW/this.__tlFitNat):17);
+    }else{
+      g.attr("transform",`translate(${d.x},${y})`);
+      const dy1=d.up?-54*d.fsc:42*d.fsc,dy2=d.up?-30*d.fsc:66*d.fsc;
+      dateSel.attr("text-anchor","middle").attr("x",0).attr("y",dy1).attr("font-size",18*d.fsc).attr("fill",d.c).text(d.d);
+      titleSel.attr("text-anchor","middle").attr("x",0).attr("y",dy2).text(d.t).attr("textLength",null).attr("lengthAdjust",null);
+      const edgeMax=2*Math.min(d.x-10,W-d.x-10);
+      const maxW=Math.max(40,Math.min(d.slotW*1.55,edgeMax)),baseFs=18.5*d.fsc;
+      if(this.__tlFitTxt!==d.t||Math.abs((this.__tlFitMaxW||0)-maxW)>2||Math.abs((this.__tlFitFs||0)-baseFs)>0.3){
+        this.__tlFitTxt=d.t;this.__tlFitMaxW=maxW;this.__tlFitFs=baseFs;
+        ctx.font="600 "+baseFs+"px Spectral,serif";
+        this.__tlFitNat=ctx.measureText(d.t).width;
+      }
+      titleSel.attr("font-size",this.__tlFitNat>maxW?Math.max(14,baseFs*maxW/this.__tlFitNat):baseFs);
+    }
+  });
+}
+function syncGraphSVG(nodes,edges,X,Y,S,fs){
+  graphSvg.classed("on",true);
+  showOnlyRoot(graphRoot);
+  const neighbors=id=>{const s=new Set([id]);edges.forEach(e=>{if(e.a===id)s.add(e.b);else if(e.b===id)s.add(e.a);});return s;};
+  const hoverSet=SVG_HOVER_ID?neighbors(SVG_HOVER_ID):null;
+  const byId={};nodes.forEach(n=>byId[n.id]=n);
+
+  const edgeSel=edgeLayer.selectAll("g.gedge").data(edges,d=>d.a+"|"+d.b+"|"+(d.label||""));
+  edgeSel.exit().remove();
+  const edgeEnter=edgeSel.enter().append("g").attr("class","gedge").style("pointer-events","none");
+  edgeEnter.append("path").attr("class","gedge-line").attr("fill","none");
+  edgeEnter.append("text").attr("class","gedge-label").attr("text-anchor","middle");
+  const edgeAll=edgeEnter.merge(edgeSel);
+  edgeAll.each(function(d){
+    const na=byId[d.a],nb=byId[d.b],sel=d3.select(this);
+    if(!na||!nb||na.alpha<=0.02||nb.alpha<=0.02){sel.style("display","none");return;}
+    sel.style("display",null);
+    const x1=X(na.x),y1=Y(na.y),x2=X(nb.x),y2=Y(nb.y);
+    const dx=x2-x1,dy=y2-y1,len=Math.hypot(dx,dy)||1,bow=Math.min(24,len*.09);
+    const bx=x1+dx*.5-dy/len*bow,by=y1+dy*.5+dx/len*bow;
+    const isHoverActive=hoverSet&&(d.a===SVG_HOVER_ID||d.b===SVG_HOVER_ID);
+    const dimmed=hoverSet&&!isHoverActive;
+    const baseA=Math.min(na.alpha,nb.alpha)*(dimmed?.12:.6);
+    sel.classed("hover-active",!!isHoverActive);
+    sel.select("path.gedge-line").attr("d",`M${x1},${y1}Q${bx},${by} ${x2},${y2}`)
+      .attr("stroke",isHoverActive?"#ffffff":"#5c6b87").attr("stroke-width",1.5)
+      .attr("stroke-dasharray",isHoverActive?null:(d.dashed?"5,4":null)).style("opacity",baseA);
+    const label=sel.select("text.gedge-label");
+    if(d.label){
+      const lbl=trs(d.label);
+      const mx=.25*x1+.5*bx+.25*x2,my=.25*y1+.5*by+.25*y2;
+      let ang=Math.atan2(y2-y1,x2-x1)*180/Math.PI;if(ang>90||ang<-90)ang+=180;
+      const maxW=Math.max(26,len*.68);
+      if(this.__lblFitTxt!==lbl||Math.abs((this.__lblFitFs||0)-(fs||13))>0.3||Math.abs((this.__lblFitMaxW||0)-maxW)>2){
+        this.__lblFitTxt=lbl;this.__lblFitFs=fs||13;this.__lblFitMaxW=maxW;
+        ctx.font="italic 600 "+(fs||13)+"px 'IBM Plex Mono',monospace";
+        this.__lblFitNatural=ctx.measureText(lbl).width;
+      }
+      const natural=this.__lblFitNatural;
+      if(natural>maxW*2.2){label.style("display","none");}
+      else{
+        const useFs=natural>maxW?Math.max(9,(fs||13)*maxW/natural):(fs||13);
+        label.style("display",null).attr("transform",`translate(${mx},${my}) rotate(${ang})`).attr("font-size",useFs)
+          .text(lbl).style("opacity",Math.min(na.alpha,nb.alpha)*(dimmed?.3:1)).attr("textLength",null).attr("lengthAdjust",null);
+      }
+    }else{label.text("").style("opacity",0);}
+  });
+
+  const nodeSel=nodeLayer.selectAll("g.gnode").data(nodes,d=>d.id);
+  nodeSel.exit().remove();
+  const nodeEnter=nodeSel.enter().append("g").attr("class","gnode");
+  const visualEnter=nodeEnter.append("g").attr("class","gnode-visual");
+  visualEnter.append("path").attr("class","gnode-glow").attr("filter","url(#gnodeGlow)").style("opacity",.55);
+  visualEnter.append("path").attr("class","gnode-shape").attr("filter","url(#gnodeShadow)");
+  visualEnter.append("path").attr("class","gnode-shape2").attr("fill","none").attr("stroke","rgba(255,255,255,.14)").attr("stroke-width",1);
+  visualEnter.append("use").attr("class","gnode-icon");
+  nodeEnter.append("circle").attr("class","gnode-ring-quote").attr("fill","none").attr("stroke","#00E1FF").attr("stroke-width",1.6);
+  nodeEnter.append("circle").attr("class","gnode-badge-bg").attr("stroke-width",1.4);
+  nodeEnter.append("text").attr("class","gnode-badge-text").attr("text-anchor","middle");
+  nodeEnter.append("text").attr("class","gnode-title").attr("font-family","Spectral,serif").attr("font-weight","600").attr("fill","#eef4ff");
+  nodeEnter.append("text").attr("class","gnode-sub").attr("fill","#c3d2e8");
+  nodeEnter.append("text").attr("class","gnode-hint").attr("fill","#00E1FF");
+  const nodeAll=nodeEnter.merge(nodeSel);
+
+  nodeAll.each(function(d){
+    const g=d3.select(this);
+    if(d.alpha<=0.02){g.style("display","none");return;}
+    g.style("display",null);
+    const dimmed=hoverSet&&!hoverSet.has(d.id);
+    const na=d.alpha*(dimmed?.22:1);
+    const cx=X(d.x),cy=Y(d.y),ir=S(d.r)*.8;
+    g.attr("transform",`translate(${cx},${cy})`).style("opacity",na).classed("quotable",!!d.quotable);
+    g.select("path.gnode-glow").attr("d",shapeD(d.type,ir)).attr("fill",d.accent);
+    g.select("path.gnode-shape").attr("d",shapeD(d.type,ir)).attr("fill","url(#gnodeGrad)").attr("stroke",d.accent).attr("stroke-width",Math.max(1.5,ir*.075));
+    g.select("path.gnode-shape2").attr("d",shapeD(d.type,ir*.88)).style("opacity",.4);
+    const iconR=ir*.62;
+    g.select("use.gnode-icon").attr("href","#icon-"+(d.type||"company")).attr("fill",d.accent)
+      .attr("x",-iconR).attr("y",-iconR).attr("width",iconR*2).attr("height",iconR*2);
+    const quoteRing=g.select("circle.gnode-ring-quote");
+    if(d.quotable){quoteRing.attr("r",ir+5).style("opacity",.85).style("display",null);}
+    else quoteRing.style("display","none");
+    if(d.badge){
+      const br=Math.max(7,ir*.36),bx=-ir*.78,by=-ir*.78;
+      g.select("circle.gnode-badge-bg").attr("cx",bx).attr("cy",by).attr("r",br).attr("fill","#101828").attr("stroke",d.accent).style("display",null);
+      g.select("text.gnode-badge-text").attr("x",bx).attr("y",by+br*.34).attr("font-size",Math.max(7.5,br*.9)).attr("fill",d.accent).text(d.badge).style("display",null);
+    }else{
+      g.select("circle.gnode-badge-bg").style("display","none");
+      g.select("text.gnode-badge-text").style("display","none");
+    }
+    const isMobile=W<640;
+    const lx=ir+11,maxLabelW=isMobile?Math.max(55,W*.22):240;
+    const titleFs=isMobile?Math.max(11,S((d.titleSize||14)+2)):Math.max(14,S((d.titleSize||14)+2));
+    const titleSel=g.select("text.gnode-title").attr("x",lx).attr("y",-ir*.1).text(d.title).attr("textLength",null).attr("lengthAdjust",null);
+    if(this.__titleFitTxt!==d.title||Math.abs((this.__titleFitFs||0)-titleFs)>0.3||Math.abs((this.__titleFitMaxW||0)-maxLabelW)>2){
+      this.__titleFitTxt=d.title;this.__titleFitFs=titleFs;this.__titleFitMaxW=maxLabelW;
+      ctx.font="600 "+titleFs+"px Spectral,serif";
+      const titleNatural=ctx.measureText(d.title).width;
+      this.__titleFitOut=titleNatural>maxLabelW?Math.max(9,titleFs*maxLabelW/titleNatural):titleFs;
+    }
+    titleSel.attr("font-size",this.__titleFitOut);
+    const subSel=g.select("text.gnode-sub");
+    if(d.sub&&!isMobile){
+      const subFs=Math.max(12,S(13.5));
+      const subTxt=trs(d.sub);
+      subSel.attr("x",lx).attr("y",ir*.78).text(subTxt).style("display",null).attr("textLength",null).attr("lengthAdjust",null);
+      if(this.__subFitTxt!==subTxt||Math.abs((this.__subFitFs||0)-subFs)>0.3||Math.abs((this.__subFitMaxW||0)-maxLabelW)>2){
+        this.__subFitTxt=subTxt;this.__subFitFs=subFs;this.__subFitMaxW=maxLabelW;
+        ctx.font=subFs+"px 'IBM Plex Mono',monospace";
+        const subNatural=ctx.measureText(subTxt).width;
+        this.__subFitOut=subNatural>maxLabelW?Math.max(8.5,subFs*maxLabelW/subNatural):subFs;
+      }
+      subSel.attr("font-size",this.__subFitOut);
+    }else subSel.style("display","none");
+    const hintSel=g.select("text.gnode-hint");
+    if(d.quotable&&na>.3&&!isMobile){hintSel.attr("x",lx).attr("y",ir*.78+(d.sub?15:0)).attr("font-size",Math.max(10.5,S(11))).text(tr("✎ kliknij, cytat","✎ click for quote")).style("display",null);}
+    else hintSel.style("display","none");
+  });
+  nodeAll.style("cursor",d=>d.quotable?"pointer":"default").style("pointer-events","auto")
+    .on("mouseenter",(event,d)=>{SVG_HOVER_ID=d.id;})
+    .on("mouseleave",()=>{SVG_HOVER_ID=null;})
+    .on("click",(event,d)=>{if(d.quotable)showQuote(d.id);});
+}
+const GNODES={};
+function gn(id,x,y,r,type,title,sub,accent,badge){GNODES[id]={x,y,r,type,title,sub,accent,badge};}
+GNODES_DATA.forEach(a=>gn(...a));
+function renderNetworkGraph(stage,p){
+  const exitUp=stage===0?ease(Math.max(0,Math.min(1,(p-.8)/.2))):0;
+  const envIn=stage===1?ease(Math.min(1,p*3)):1;
+  const fadeOut=stage===1?ease(Math.max(0,Math.min(1,(1-p)/.2))):1-exitUp;
+  const ga=Math.min(1,.55+p*1.8)*fadeOut*envIn;
+  let visible=new Set();for(let s=0;s<=stage;s++)GSTAGES[s].forEach(id=>visible.add(id));
+  const curIds=GSTAGES[stage];
+  function nodeAlpha(id){const idx=curIds.indexOf(id);if(idx<0)return ga;const local=Math.max(0,Math.min(1,p*6.5-idx*.06));return ga*ease(local);}
+  let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+  visible.forEach(id=>{const n=GNODES[id];x0=Math.min(x0,n.x-n.r);y0=Math.min(y0,n.y-n.r);x1=Math.max(x1,n.x+n.r+165);y1=Math.max(y1,n.y+n.r);});
+  const padX=50,padY=55,bw=Math.max(200,x1-x0+2*padX),bh=Math.max(160,y1-y0+2*padY);
+  let fixedSR=stage===0?{x:W*.32,y:H*.05,w:W*.65,h:H*.9}:stage===1?{x:W*.02,y:H*.04,w:W*.66,h:H*.92}:undefined;
+  if(stage===1){
+    const expand=ease(Math.max(0,Math.min(1,(p-.52)/.14)));
+    const full={x:W*.03,y:H*.03,w:W*.94,h:H*.94};
+    fixedSR={x:mix(fixedSR.x,full.x,expand),y:mix(fixedSR.y,full.y,expand),w:mix(fixedSR.w,full.w,expand),h:mix(fixedSR.h,full.h,expand)};
+  }
+  const SR=safeRect(mobileSR(fixedSR));
+  const exitOut=stage===1?ease(Math.max(0,Math.min(1,(p-.8)/.2))):0;
+  const sc=Math.min(SR.w/bw,SR.h/bh,1.6)*mix(1,.85,exitOut),ox=SR.x+(SR.w-bw*sc)/2-(x0-padX)*sc,oy=SR.y+(SR.h-bh*sc)/2-(y0-padY)*sc-exitUp*H*.4;
+  const X=x=>ox+x*sc,Y=y=>oy+y*sc,S=v=>v*sc,fs=Math.max(13,S(15));
+  const nodes=[...visible].map(id=>{const n=GNODES[id];return{id,...n,alpha:nodeAlpha(id),quotable:stage===1&&!!GQUOTES[id]};});
+  const edges=GEDGES.filter(e=>visible.has(e[0])&&visible.has(e[1])).map(e=>({a:e[0],b:e[1],label:e[2],dashed:!!e[4]}));
+  syncGraphSVG(nodes,edges,X,Y,S,fs);
+}
+function renderExplore(){drawColoredMap({s:1,cx:W/2,cy:H/2},true,1);}
+function renderForeignScale(p){
+  const ga=Math.min(1,.5+p*1.4),revealT=ease(Math.max(0,Math.min(1,p*1.5)));
+  const r=Math.min(W*.1,H*.15),thick=Math.max(9,r*.2),cy=H*.55,cx1=W*.28,cx2=W*.72;
+  syncArcSVG([
+    {key:"ao",cx:cx1,cy,r,thick,frac:.003,accent:"#00E1FF",ga,revealT,pct:tr("0,3%","0.3%"),pctLabel:tr("w Warszawie","in Warsaw"),name:"a&o Hotels and Hostels",sub:tr("1 oferta z 43 spółek w 11 krajach","1 listing out of 43 companies in 11 countries")},
+    {key:"belvilla",cx:cx2,cy,r,thick,frac:.00155,accent:"#ff8a00",ga,revealT,pct:tr("0,155%","0.155%"),pctLabel:tr("portfela Belvilli","of Belvilla's portfolio"),name:"Belvilla AG (OYO)",sub:tr("62 oferty z ponad 40 000 obiektów w 20 krajach","62 listings out of over 40,000 properties in 20 countries")}
+  ]);
+  ctx.globalAlpha=ga*.85;
+  ctx.globalAlpha=1;
+}
+const PON={};
+function pon(id,x,y,r,type,title,sub,accent,badge){PON[id]={x,y,r,type,title,sub,accent,badge};}
+PON_DATA.forEach(a=>pon(...a));
+function renderRentujemy(p){
+  const rev=revealEnv(p,.3,.32);
+  const ga=rev;
+  const ids=Object.keys(PON);
+  let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+  ids.forEach(id=>{const n=PON[id];x0=Math.min(x0,n.x-n.r);y0=Math.min(y0,n.y-n.r);x1=Math.max(x1,n.x+n.r+175);y1=Math.max(y1,n.y+n.r);});
+  const padX=50,padY=55,bw=Math.max(200,x1-x0+2*padX),bh=Math.max(160,y1-y0+2*padY);
+  const SR=mobileSR({x:W*.34,y:H*.06,w:W*.62,h:H*.88});
+  const slideX=(1-rev)*W*.4;
+  const sc=Math.min(SR.w/bw,SR.h/bh,1.6),ox=SR.x+(SR.w-bw*sc)/2-(x0-padX)*sc+slideX,oy=SR.y+(SR.h-bh*sc)/2-(y0-padY)*sc;
+  const X=x=>ox+x*sc,Y=y=>oy+y*sc,S=v=>v*sc,fs=Math.max(13,S(15));
+  const nodes=ids.map(id=>({id,...PON[id],alpha:ga}));
+  const edges=POEDGES.map(e=>({a:e[0],b:e[1],label:e[2],dashed:!!e[4]}));
+  syncGraphSVG(nodes,edges,X,Y,S,fs);
+}
+const TJN={};
+function tjn(id,x,y,r,type,title,sub,accent,badge){TJN[id]={x,y,r,type,title,sub,accent,badge};}
+TJN_DATA.forEach(a=>tjn(...a));
+function renderTanajno(p){
+  const rev=revealEnv(p,.3,.32);
+  const ga=rev;
+  const ids=Object.keys(TJN);
+  let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+  ids.forEach(id=>{const n=TJN[id];x0=Math.min(x0,n.x-n.r);y0=Math.min(y0,n.y-n.r);x1=Math.max(x1,n.x+n.r+175);y1=Math.max(y1,n.y+n.r);});
+  const padX=50,padY=55,bw=Math.max(200,x1-x0+2*padX),bh=Math.max(160,y1-y0+2*padY);
+  const SR=mobileSR({x:W*.02,y:H*.08,w:W*.62,h:H*.84});
+  const slideX=-(1-rev)*W*.4;
+  const sc=Math.min(SR.w/bw,SR.h/bh,1.6),ox=SR.x+(SR.w-bw*sc)/2-(x0-padX)*sc+slideX,oy=SR.y+(SR.h-bh*sc)/2-(y0-padY)*sc;
+  const X=x=>ox+x*sc,Y=y=>oy+y*sc,S=v=>v*sc,fs=Math.max(13,S(15));
+  const nodes=ids.map(id=>({id,...TJN[id],alpha:ga}));
+  const edges=TJEDGES.map(e=>({a:e[0],b:e[1],label:e[2],dashed:!!e[4]}));
+  syncGraphSVG(nodes,edges,X,Y,S,fs);
+}
+// ---- real tax/holding-layering structure, ICIJ-Offshore-Leaks style hub graph ----
+const TAXN={};
+function txn(id,x,y,r,type,title,sub,accent,badge){TAXN[id]={x,y,r,type,title,sub,accent,badge};}
+TAXN_DATA.forEach(a=>txn(...a));
+const TAXCLOUD_POS=TAXCLOUD.map((n,i)=>({x:250+i*76,y:480+(i%2?30:-16),name:n}));
+let taxLayout=null;
+function renderTaxStructure(stage,p){
+  const dimOut=stage===3?mix(1,.25,ease(Math.max(0,Math.min(1,(p-.6)/.4)))):1;
+  const ga=Math.min(1,.5+p*1.4)*dimOut;
+  let visible=new Set();for(let s=0;s<=stage;s++)TAXSTAGES[s].forEach(id=>visible.add(id));
+  const curIds=TAXSTAGES[stage];
+  function nodeAlpha(id){const idx=curIds.indexOf(id);if(idx<0)return ga;const local=Math.max(0,Math.min(1,p*6-idx*.08));return ga*ease(local);}
+  let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+  visible.forEach(id=>{const n=TAXN[id];x0=Math.min(x0,n.x-n.r);y0=Math.min(y0,n.y-n.r);x1=Math.max(x1,n.x+n.r+175);y1=Math.max(y1,n.y+n.r);});
+  const padX=50,padY=55,bw=Math.max(200,x1-x0+2*padX),bh=Math.max(160,y1-y0+2*padY);
+  const fixedSR=(stage===0||stage===2)?{x:W*.36,y:H*.05,w:W*.62,h:H*.9}:stage===1?{x:W*.02,y:H*.04,w:W*.66,h:H*.92}:{x:W*.02,y:H*.03,w:W*.96,h:H*.94};
+  const SR=safeRect(mobileSR(fixedSR));
+  const scT=Math.min(SR.w/bw,SR.h/bh,1.55),oxT=SR.x+(SR.w-bw*scT)/2-(x0-padX)*scT,oyT=SR.y+(SR.h-bh*scT)/2-(y0-padY)*scT;
+  if(!taxLayout)taxLayout={ox:oxT,oy:oyT,sc:scT};
+  const lk=.1;
+  taxLayout={ox:mix(taxLayout.ox,oxT,lk),oy:mix(taxLayout.oy,oyT,lk),sc:mix(taxLayout.sc,scT,lk)};
+  let ox=taxLayout.ox,oy=taxLayout.oy,sc=taxLayout.sc;
+  const X=x=>ox+x*sc,Y=y=>oy+y*sc,S=v=>v*sc,fs=Math.max(13,S(15));
+  const nodes=[...visible].map(id=>({id,...TAXN[id],alpha:nodeAlpha(id),titleSize:13.5}));
+  const edges=TAXEDGES.filter(e=>visible.has(e[0])&&visible.has(e[1])).map(e=>({a:e[0],b:e[1],label:e[2],dashed:!!e[4]}));
+  syncGraphSVG(nodes,edges,X,Y,S,fs);
+  if(stage>=2){
+    TAXCLOUD_POS.forEach(pt=>{const hub1=TAXN.swietochowska,hub2=TAXN.piotrowicz;
+      const dLeft=Math.hypot(pt.x-hub1.x,pt.y-hub1.y),dRight=Math.hypot(pt.x-hub2.x,pt.y-hub2.y);
+      const hub=dLeft<dRight?hub1:hub2;
+      ctx.globalAlpha=ga*.55;ctx.strokeStyle="#5a6a85";ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(X(hub.x),Y(hub.y));ctx.lineTo(X(pt.x),Y(pt.y));ctx.stroke();ctx.globalAlpha=1;
+      ctx.globalAlpha=ga*.85;ctx.beginPath();ctx.arc(X(pt.x),Y(pt.y),S(4.5),0,6.283);ctx.fillStyle=pt.name.includes("likwidacji")?"#5a6a85":"#c8d3ea";ctx.fill();ctx.globalAlpha=1;});
+    ctx.globalAlpha=ga*.92;txt(tr("+ 9 kolejnych spółek celowych z tym samym zarządem","+ 9 more special-purpose companies with the same board"),X(700),Y(455),S(10),"#8fa6c6","center","500");ctx.globalAlpha=1;
+  }
+  if(stage>=3){ctx.globalAlpha=ga;txt(tr("13 spółek · 4 osoby w rejestrze · 1 adres: Warszawa, ul. Towarowa 28","13 companies · 4 people in the register · 1 address: Warsaw, ul. Towarowa 28"),X(700),Y(915),S(11),"#0064d7","center","600");ctx.globalAlpha=1;}
+}
+const SIWN={};
+function siwn(id,x,y,r,type,title,sub,accent,badge){SIWN[id]={x,y,r,type,title,sub,accent,badge};}
+SIWN_DATA.forEach(a=>siwn(...a));
+let siwLayout=null;
+function renderStayInWarsaw(stage,p){
+  const fadeOut=stage===1?ease(Math.max(0,Math.min(1,(1-p)/.22))):1;
+  const ga=Math.min(1,.5+p*1.4)*fadeOut;
+  let visible=new Set();for(let s=0;s<=stage;s++)SIWSTAGES[s].forEach(id=>visible.add(id));
+  const curIds=SIWSTAGES[stage];
+  function nodeAlpha(id){const idx=curIds.indexOf(id);if(idx<0)return ga;const local=Math.max(0,Math.min(1,p*6-idx*.08));return ga*ease(local);}
+  let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+  visible.forEach(id=>{const n=SIWN[id];x0=Math.min(x0,n.x-n.r);y0=Math.min(y0,n.y-n.r);x1=Math.max(x1,n.x+n.r+215);y1=Math.max(y1,n.y+n.r);});
+  const padX=50,padY=55,bw=x1-x0+2*padX,bh=y1-y0+2*padY;
+  const SR=mobileSR(stage===0?{x:W*.02,y:H*.02,w:W*.70,h:H*.96}:{x:W*.28,y:H*.04,w:W*.70,h:H*.92});
+  const scT=Math.min(SR.w/bw,SR.h/bh,1.55);
+  const enter=stage===0?ease(Math.min(1,p*5)):1,slideX=stage===0?-(1-enter)*W*.25:stage===1?(1-fadeOut)*W*.4:0;
+  const oxT=SR.x+(SR.w-bw*scT)/2-(x0-padX)*scT+slideX,oyT=SR.y+(SR.h-bh*scT)/2-(y0-padY)*scT;
+  if(!siwLayout)siwLayout={ox:oxT,oy:oyT,sc:scT};
+  const lk=stage===0?1:.1;
+  siwLayout={ox:mix(siwLayout.ox,oxT,lk),oy:mix(siwLayout.oy,oyT,lk),sc:mix(siwLayout.sc,scT,lk)};
+  const ox=siwLayout.ox,oy=siwLayout.oy,sc=siwLayout.sc;
+  const X=x=>ox+x*sc,Y=y=>oy+y*sc,S=v=>v*sc,fs=Math.max(13,S(15));
+  const nodes=[...visible].map(id=>({id,...SIWN[id],alpha:nodeAlpha(id)}));
+  const edges=SIWEDGES.filter(e=>visible.has(e[0])&&visible.has(e[1])).map(e=>({a:e[0],b:e[1],label:e[2],dashed:false}));
+  syncGraphSVG(nodes,edges,X,Y,S,fs);
+}
+function renderTimeline(p){
+  const ga=Math.min(1,.5+p*1.3),n=TIMELINE.length;
+  const rawVis=p*n*1.15,progFrac=Math.min(1,Math.max(0,rawVis)/n);
+  if(W<640){
+    const mx=Math.max(46,W*.14),topY=H*.08,hh=H*.84;
+    const items=TIMELINE.map((e,i)=>({i,d:tr(e.d,e.d_en||e.d),t:tr(e.t,e.t_en||e.t),c:e.c,y:topY+hh*(n===1?0:i/(n-1)),av:Math.max(0,Math.min(1,rawVis-i))}));
+    syncTimelineSVG(mx,topY,hh,ga,progFrac,items,true);
+  }else{
+    const mx=Math.max(70,W*.09),ww=W-2*mx,y=H*.5,fsc=Math.max(.82,Math.min(1,W/1000));
+    const slotW=ww/Math.max(1,n-1);
+    const items=TIMELINE.map((e,i)=>({i,d:tr(e.d,e.d_en||e.d),t:tr(e.t,e.t_en||e.t),c:e.c,x:mx+ww*(n===1?0:i/(n-1)),av:Math.max(0,Math.min(1,rawVis-i)),up:i%2===0,fsc,slotW}));
+    syncTimelineSVG(mx,y,ww,ga,progFrac,items,false);
+  }
+}
+const R={market0:renderMarket0,market1:renderMarket1,market2:renderMarket2,market3:renderMarket3,market3zoom:renderMarket3Zoom,identity0:renderIdentityScene,chain0:p=>renderNetworkGraph(0,p),chain1:p=>renderNetworkGraph(1,p),chain2:renderRentujemy,chain3:renderTanajno,tax0:p=>renderTaxStructure(0,p),tax1:p=>renderTaxStructure(1,p),tax2:p=>renderTaxStructure(2,p),tax3:p=>renderTaxStructure(3,p),finding0:renderForeignScale,siw0:p=>renderStayInWarsaw(0,p),siw1:p=>renderStayInWarsaw(1,p),timeline:renderTimeline,explore:renderExplore};
+function frame(){
+  if(document.hidden){requestAnimationFrame(frame);return;}
+  detect();ctx.clearRect(0,0,W,H);
+  if(heroT>0.001)renderHeroAmbient(heroT);
+  if(sceneActive||heroT>0.001){exploreFrozen=null;(R[targetViz]||renderMarket0)(actProg);}
+  else if(targetViz==="explore"){
+    if(!exploreFrozen){renderExplore();exploreFrozen=document.createElement("canvas");exploreFrozen.width=cv.width;exploreFrozen.height=cv.height;exploreFrozen.getContext("2d").drawImage(cv,0,0);}
+    else{ctx.save();ctx.setTransform(1,0,0,1,0,0);ctx.drawImage(exploreFrozen,0,0);ctx.restore();}
+  }
+  requestAnimationFrame(frame);}
+
+// chips
+cv.addEventListener("mousemove",e=>{const b=cv.getBoundingClientRect();mouse.x=e.clientX-b.left;mouse.y=e.clientY-b.top;});cv.addEventListener("mouseleave",()=>{mouse.active=false;});
+const quotePanel=document.getElementById("quotePanel");
+function showQuote(id){const q=GQUOTES[id];if(!q)return;
+  const role=LANG==="en"?(q.role_en||q.role):q.role;
+  const text=LANG==="en"?(q.text_en||q.text):q.text;
+  const src=LANG==="en"?(q.src_en||q.src):q.src;
+  quotePanel.querySelector(".qp-name").textContent=q.name;
+  quotePanel.querySelector(".qp-role").textContent=role+(q.quote?"":tr(" · streszczenie wypowiedzi, nie dosłowny cytat"," · summary of statement, not a verbatim quote"));
+  quotePanel.querySelector(".qp-text").textContent=q.quote?("„"+text+"”"):text;
+  const srcEl=quotePanel.querySelector(".qp-src");
+  srcEl.innerHTML=tr("Źródło: ","Source: ")+(q.srcUrl?'<a href="'+q.srcUrl+'" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">'+src+"</a>":src);
+  quotePanel.classList.add("on");}
+function hideQuotePanel(){quotePanel.classList.remove("on");}
+cv.addEventListener("click",()=>{hideQuotePanel();});
+document.addEventListener("click",e=>{
+  if(quotePanel.classList.contains("on")&&!quotePanel.contains(e.target)&&!e.target.closest(".gnode")){hideQuotePanel();}
+});
+const chips=document.getElementById("chips"),readout=document.getElementById("readout"),panel=document.getElementById("expPanel");
+TOP20.forEach((o,i)=>{const c=document.createElement("button");c.type="button";c.className="chip";c.dataset.op=i;c.innerHTML='<span class="dot" style="background:'+o.hex+'"></span>'+o.name+' <span style="color:var(--faint)">'+o.n+'</span>';c.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();toggleOp(i,c);});chips.appendChild(c);});
+function districtFootprint(i){const counts={};P.forEach(p=>{if(p.op===i)counts[p.di]=(counts[p.di]||0)+1;});return Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,4);}
+function showPanel(i){const o=TOP20[i],f=FACTS[i],top=districtFootprint(i);
+  const distHtml=top.map(d=>d[0]+' ('+d[1]+')').join(', ');
+  const samp=TOP20_SAMPLE[i]||[];
+  const sampHtml=samp.map((id,j)=>'<a href="https://www.airbnb.com/rooms/'+id+'" target="_blank" rel="noopener" style="color:#ff8fd6;text-decoration:none;margin-right:10px">'+tr("oferta","listing")+' '+(j+1)+' ↗</a>').join('');
+  const owner=f&&(LANG==="en"?(f.owner_en||f.owner):f.owner), chain=f&&(LANG==="en"?(f.chain_en||f.chain):f.chain), benef=f&&(LANG==="en"?(f.benef_en||f.benef):f.benef), note=f&&(LANG==="en"?(f.note_en||f.note):f.note);
+  panel.innerHTML='<span class="x" onclick="__cp()">✕</span><h4>'+o.name+'</h4>'+'<div class="row"><b>'+tr("Oferty:","Listings:")+'</b> '+o.n+' · ~'+(o.n/BIZ_N*100).toFixed(1)+tr("% rynku komercyjnego","% of the commercial market")+'</div>'+(f?'<div class="row"><b>'+tr("Właściciel:","Owner:")+'</b> '+owner+'</div><div class="row"><b>'+tr("Łańcuch:","Chain:")+'</b> '+chain+'</div><div class="row"><b>'+tr("Beneficjent:","Beneficiary:")+'</b> '+benef+'</div><div class="row" style="color:#93a7a8">'+note+'</div><div class="row" style="margin-top:4px"><b>'+tr("Źródła:","Sources:")+'</b> '+f.sources+'</div>':'<div class="row" style="color:#93a7a8">'+tr("Sprawdzone pod kątem prasy, powiązań, wspólnych adresów i kontaktów, bez dodatkowych ustaleń poza samym wpisem do rejestru.","Checked against press coverage, connections, shared addresses and contacts, no findings beyond the registry entry itself.")+'</div>')+'<div class="row" style="margin-top:6px"><b>'+tr("Dzielnice:","Districts:")+'</b> '+distHtml+'</div>'+(sampHtml?'<div class="row" style="margin-top:6px"><b>'+tr("Zobacz w Airbnb:","See on Airbnb:")+'</b></div><div>'+sampHtml+'</div>':'');panel.classList.add("on");}
+function hidePanel(){panel.classList.remove("on");}
+window.__cp=()=>{hidePanel();};
+function toggleOp(i,el){if(filterOp===i){filterOp=null;el.classList.remove("active");el.style.background="";hidePanel();readout.innerHTML=tr("Cały rynek · 10 047 ofert","Whole market · 10,047 listings");}else{filterOp=i;document.querySelectorAll(".chip").forEach(x=>{x.classList.remove("active");if(x.dataset.op)x.style.background="";});el.classList.add("active");el.style.background=TOP20[i].hex;readout.innerHTML="<b>"+TOP20[i].name+"</b> · "+TOP20[i].n+tr(" ofert · ~"," listings · ~")+(TOP20[i].n/BIZ_N*100).toFixed(1)+"%";showPanel(i);}}
+document.querySelector(".chips").style.pointerEvents="auto";
+const LBL_EN={"Źródła:":"Sources:","Źródło:":"Source:","Oferty:":"Listings:","Trzy formaty, ta sama firma:":"Three formats, the same company:","Zobacz w Airbnb:":"See on Airbnb:"};
+function applyLangToLabels(){
+  document.querySelectorAll(".lbl").forEach(el=>{
+    if(el.dataset.pl===undefined)el.dataset.pl=el.textContent;
+    el.textContent=LANG==="en"?(LBL_EN[el.dataset.pl]||el.dataset.pl):el.dataset.pl;
+  });
+}
+applyLangToLabels();
+document.querySelectorAll(".lang-btn").forEach(btn=>btn.addEventListener("click",()=>{
+  LANG=btn.dataset.lang;
+  document.body.dataset.lang=LANG;
+  document.querySelectorAll(".lang-btn").forEach(b=>b.classList.toggle("active",b.dataset.lang===LANG));
+  applyLangToLabels();
+  if(filterOp===null)readout.innerHTML=tr("Cały rynek · 10 047 ofert","Whole market · 10,047 listings");
+  else readout.innerHTML="<b>"+TOP20[filterOp].name+"</b> · "+TOP20[filterOp].n+tr(" ofert · ~"," listings · ~")+(TOP20[filterOp].n/BIZ_N*100).toFixed(1)+"%";
+  if(panel.classList.contains("on")&&filterOp!==null)showPanel(filterOp);
+  hideQuotePanel();
+}));
+requestAnimationFrame(frame);
+</script></body></html>
